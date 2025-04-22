@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+
+- use javascript
+- always check the [package.json](mdc:package.json) before importing any package
+- this is vankine template, [layout.js](mdc:app/layout.js) for more info
+- our company name is ChipMakerHub 
