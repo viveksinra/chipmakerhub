@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+// Brand blues
+$blue-light:  #6EC6FF;
+$blue-main:   #2196F3;
+$blue-dark:   #0069C0;
+
+// Generate hover/active variants
+$blue-hover:  lighten($blue-main, 10%);  // ~ #42A5F5
+$blue-active: darken($blue-main, 10%);   // ~ #1976D2
+
+// (Optional) Accent for CTAs
+$accent-main: #FFB300;
+$accent-light: lighten($accent-main, 10%);
+$accent-dark: darken($accent-main, 10%);

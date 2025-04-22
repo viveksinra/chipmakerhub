@@ -47,7 +47,7 @@ export default function Layout({ headerStyle, footerStyle, pageCls, breadcrumbTi
         <>
             <div id="page" className={`page_wapper hfeed site ${pageCls ? pageCls : ""}`}>
 
-                {!headerStyle && <Header1 handleSearch={handleSearch} handleOptionalPanel={handleOptionalPanel} handleMobileMenu={handleMobileMenu} />}
+                {!headerStyle && <Header2 handleSearch={handleSearch} handleOptionalPanel={handleOptionalPanel} handleMobileMenu={handleMobileMenu} />}
                 {headerStyle == 1 ? <Header1 handleSearch={handleSearch} handleOptionalPanel={handleOptionalPanel} handleMobileMenu={handleMobileMenu} /> : null}
                 {headerStyle == 2 ? <Header2 handleSearch={handleSearch} handleOptionalPanel={handleOptionalPanel} handleMobileMenu={handleMobileMenu} /> : null}
                 {headerStyle == 3 ? <Header3 handleSearch={handleSearch} handleOptionalPanel={handleOptionalPanel} handleMobileMenu={handleMobileMenu} /> : null}
@@ -62,7 +62,7 @@ export default function Layout({ headerStyle, footerStyle, pageCls, breadcrumbTi
                     <div id="content" className="site-content">
                         {children}
                     </div>
-                    {!footerStyle && < Footer1 />}
+                    {!footerStyle && < Footer2 />}
                     {footerStyle == 1 ? < Footer1 /> : null}
                     {footerStyle == 2 ? < Footer2 /> : null}
                     {footerStyle == 3 ? < Footer3 /> : null}
