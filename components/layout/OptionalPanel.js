@@ -40,20 +40,18 @@ export default function OptionalPanel({ isOptionalPanel, handleOptionalPanel }) 
                             <Link href="#" className="logo navbar-brand">
                                 <img src="/assets/images/logo/ChipMakerHub.png" alt="ChipMakerHub" className="logo_default" />
                             </Link>
-                            <div className="about_company"> Denounce with righteous indignation and dislike men who are beguiled
-                                and demoralized by the charms pleasure moment so blinded desire that they cannot foresee the
-                                pain and trouble. </div>
+                            <div className="about_company"> ChipMakersHub connects you with pre-vetted VLSI freelance experts worldwide, ready to contribute across the entire VLSI design lifecycle—from RTL to physical design and beyond.  </div>
                         </div>
                         <div className="contnet_box">
                             <div className="post_contet_modal">
-                                <h2 className="title_no_a_28"> Latest Portfolio</h2>
+                                <h2 className="title_no_a_28"> What we offer </h2>
                                 <div className="post_enable">
                                     <Swiper {...swiperOptions} className="theme_carousel">
                                         <SwiperSlide className="modal_post_grid">
                                             <Link href="/blog-details">
                                                 <img src="/assets/images/blog/blog-9-min.png" className="main_img  img-fluid" alt="img" />
                                                 <h2 className="tit_ho title_no_a_20">
-                                                    Former insures only the marine perils
+                                                    ASIC & FPGA Design
                                                 </h2>
                                             </Link>
                                         </SwiperSlide>
@@ -61,14 +59,15 @@ export default function OptionalPanel({ isOptionalPanel, handleOptionalPanel }) 
                                             <Link href="/blog-details">
                                                 <img src="/assets/images/blog/blog-8-min.png" className="main_img  img-fluid" alt="img" />
                                                 <h2 className="tit_ho title_no_a_20">
-                                                    Insurance covers risk of fire absence
+                                                    RTL Development & Verification
                                                 </h2>
                                             </Link>
                                         </SwiperSlide>
                                         <SwiperSlide className="modal_post_grid">
                                             <Link href="/blog-details">
                                                 <img src="/assets/images/blog/blog-7-min.png" className="main_img  img-fluid" alt="img" />
-                                                <h2 className="tit_ho title_no_a_20">Erving the interests of our clients
+                                                <h2 className="tit_ho title_no_a_20">
+                                                    DFT (Design For Testability)
                                                 </h2>
                                             </Link>
                                         </SwiperSlide>
@@ -76,7 +75,7 @@ export default function OptionalPanel({ isOptionalPanel, handleOptionalPanel }) 
                                             <Link href="/blog-details">
                                                 <img src="/assets/images/blog/blog-6.png" className="main_img  img-fluid" alt="img" />
                                                 <h2 className="tit_ho title_no_a_20">
-                                                    Guide To Audio Visual With JavaScript GSA
+                                                    Physical Design & Signoff
                                                 </h2>
                                             </Link>
                                         </SwiperSlide>
@@ -84,8 +83,7 @@ export default function OptionalPanel({ isOptionalPanel, handleOptionalPanel }) 
                                             <Link href="/blog-details">
                                                 <img src="/assets/images/blog/blog-5.png" className="main_img  img-fluid" alt="img" />
                                                 <h2 className="tit_ho title_no_a_20">
-                                                    Building Web Layouts For Dual Foldable
-                                                    Devices
+                                                    Analog & Mixed-Signal Design
                                                 </h2>
                                             </Link>
                                         </SwiperSlide>
@@ -97,19 +95,18 @@ export default function OptionalPanel({ isOptionalPanel, handleOptionalPanel }) 
                                                 <i className="fi-rs-arrow-small-right" />
                                             </button>
                                         </div>
-
                                     </Swiper>
                                 </div>
                             </div>
-                            <h2 className="title_no_a_28"> Need Any Help? Or Looking For an Agent</h2>
+                            <h2 className="title_no_a_28"> Need Any Help? </h2>
                             <div className="contact_panel">
                                 <div className="c_pan">
-                                    <Link href="tel:9806071234">
-                                        <i className="fi-rr-phone-call" /> 9806071234 </Link>
+                                    <Link href="tel:+91 8848009689">
+                                        <i className="fi-rr-phone-call" /> +91 8848009689 </Link>
                                 </div>
                                 <div className="c_pan">
-                                    <Link href="mailto:sendmail@example.com">
-                                        <i className="fi-rr-envelope" /> sendmail@example.com </Link>
+                                    <Link href="mailto:contact@chipmakerhub.com">
+                                        <i className="fi-rr-envelope" /> contact@chipmakerhub.com </Link>
                                 </div>
                                 <div className="c_pan">
                                     <a className="wk_hours">
