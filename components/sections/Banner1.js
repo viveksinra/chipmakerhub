@@ -95,7 +95,7 @@ export default function Banner1() {
                                     </div>
                                     <div className="section_title type_one">
                                         <div className="title_whole">
-                                            <h2 className="title"> Excellent 12,534+ reviews</h2>
+                                            <h2 className="title"> Excellent 125+ reviews</h2>
                                         </div>
                                         <p>4.8 of 5 <small><i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /></small></p>
                                     </div>

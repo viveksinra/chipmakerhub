@@ -92,9 +92,7 @@ export default function Header2({ handleSearch, handleOptionalPanel, handleMobil
                                 <div className="col-xl-6 col-lg-8 col-md-0 col-sm-0 col-xs-0 column_menu">
                                     <div className="navbar_content d-flex align-items-center">
                                         <NavbarNav />
-                                        <div className="search search-toggler" onClick={handleSearch}>
-                                            <i className="fi-rs-search" />
-                                        </div>
+                                       
                                     </div>
                                 </div>
                                 <div className="col-xl-4 col-lg-4 col-md-0 col-sm-0 col-xs-0 nav_tog_column">
