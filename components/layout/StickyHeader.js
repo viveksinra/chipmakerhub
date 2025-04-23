@@ -33,9 +33,17 @@ export default function StickyHeader({ scroll, handleSearch, handleOptionalPanel
                                             <span className="line" />
                                         </div>
                                         {/*menu icon*/}
+                                        <div className="button me-3">
+                                            <Link href="#" className="theme_btn">
+                                                For Freelancer
+                                                <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </Link>
+                                        </div>
                                         <div className="button">
                                             <Link href="#" className="theme_btn">
-                                                Get A Quote
+                                                For Company
                                                 <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
