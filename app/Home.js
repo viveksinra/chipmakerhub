@@ -1,3 +1,4 @@
+"use client"
 import Layout from "@/components/layout/Layout";
 import Banner1 from "@/components/sections/Banner1";
 import Content1 from "@/components/sections/Content1";
