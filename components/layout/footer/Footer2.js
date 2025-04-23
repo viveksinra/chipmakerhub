@@ -257,7 +257,7 @@ export default function Footer2({ }) {
                                                 <i className=" fi-rr-headphones" /></div>
                                             <div className="content">
                                                 <h6 className="tite color_white">Need Help?</h6>
-                                                <div className="title_20"><Link href="tel:+000(123)45688" className="color_white">+000(123)456 88</Link>
+                                                <div className="title_20"><Link href="tel:+000(123)45688" className="color_white">+33 752158205</Link>
                                                 </div>
                                             </div>
                                         </div>

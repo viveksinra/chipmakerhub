@@ -12,9 +12,9 @@ export default function Process2() {
                     <div className="row">
                         <div className="col-lg-7 m-auto">
                             <div className="section_title text-center type_four">
-                                <h4 className="sm_title"> Working Process</h4>
+                                <h4 className="sm_title">How It Works</h4>
                                 <div className="title_whole">
-                                    <h2 className="title"> Easy Way to Get Our Popular Insurance Services</h2>
+                                    <h2 className="title">Access World's Top VLSI Talent</h2>
                                 </div>
                             </div>
                         </div>
@@ -38,10 +38,9 @@ export default function Process2() {
                                         <p className="step">Step 01</p>
                                         <div className="title_22">
                                             <Link href="#">
-                                                Meet Our Agent </Link></div>
+                                                Initial Consultation</Link></div>
                                     </div>
-                                    <p>Sed ut perspiciatis undey
-                                        este natus volutate</p>
+                                    <p>Schedule a detailed discussion with our VLSI experts to understand your project requirements and team needs.</p>
                                 </div>
                             </div>
                         </div>
@@ -60,10 +59,9 @@ export default function Process2() {
                                         <p className="step">Step 02</p>
                                         <div className="title_22">
                                             <Link href="#">
-                                                Select Insurance </Link></div>
+                                                Talent Matching</Link></div>
                                     </div>
-                                    <p>Sed ut perspiciatis undey
-                                        este natus volutate</p>
+                                    <p>Our team carefully selects and matches pre-vetted VLSI professionals from our global network to your specific needs.</p>
                                 </div>
                             </div>
                         </div>
@@ -82,10 +80,9 @@ export default function Process2() {
                                         <p className="step">Step 03</p>
                                         <div className="title_22">
                                             <Link href="#">
-                                                Create Account </Link></div>
+                                                Technical Assessment</Link></div>
                                     </div>
-                                    <p>Sed ut perspiciatis undey
-                                        este natus volutate</p>
+                                    <p>Conduct thorough technical evaluations and interviews to ensure the perfect fit for your project requirements.</p>
                                 </div>
                             </div>
                         </div>
@@ -104,10 +101,9 @@ export default function Process2() {
                                         <p className="step">Step 04</p>
                                         <div className="title_22">
                                             <Link href="#">
-                                                Get Insurance </Link></div>
+                                                Project Onboarding</Link></div>
                                     </div>
-                                    <p>Sed ut perspiciatis undey
-                                        este natus volutate</p>
+                                    <p>Seamlessly integrate the selected talent into your team with our comprehensive onboarding and collaboration support.</p>
                                 </div>
                             </div>
                         </div>

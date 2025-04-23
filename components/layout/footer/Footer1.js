@@ -32,7 +32,7 @@ export default function Footer1({ }) {
                             </div>
                             <div className="content">
                                 <h6 className="tite">Need Help?</h6>
-                                <div className="title_20"><Link href="tel:+000(123)45688">+000(123)456 88</Link></div>
+                                <div className="title_20"><Link href="tel:+000(123)45688">+33 752158205</Link></div>
                             </div>
                         </div>
                     </div>

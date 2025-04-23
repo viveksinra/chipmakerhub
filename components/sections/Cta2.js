@@ -9,14 +9,13 @@ export default function Cta2() {
                         <div className="section_title type_one">
                             <div className="title_whole">
                                 <h2 className="title">
-                                    Find an Insurance Agent or Start
-                                    Tracking your Claims
+                                   Ready to Hire Top VLSI Talent?
                                 </h2>
                             </div>
                         </div>
                         <div className="theme_btn_all">
                             <Link href="#" className="theme_btn">
-                                Track Your Claim <span> <i className=" fi-rr-arrow-small-up" /></span>
+                                Hire Now <span> <i className=" fi-rr-arrow-small-up" /></span>
                             </Link>
                         </div>
                         <div className="d-flex align-items-center contact_header_one">
@@ -25,7 +24,7 @@ export default function Cta2() {
                             </div>
                             <div className="content">
                                 <h6 className="tite">Need Help?</h6>
-                                <div className="title_20"><Link href="tel:+000(123)45688">+000(123)456 88</Link></div>
+                                <div className="title_20"><Link href="tel:+000(123)45688">+33 752158205</Link></div>
                             </div>
                         </div>
                     </div>

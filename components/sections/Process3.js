@@ -1,6 +1,5 @@
 import Link from "next/link"
 
-
 export default function Process3() {
     return (
         <>
@@ -12,9 +11,9 @@ export default function Process3() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="section_title text-center type_five">
-                                <h4 className="sm_title"> Our performance</h4>
+                                <h4 className="sm_title"> Our Process</h4>
                                 <div className="title_whole">
-                                    <h2 className="title"> How To Get Online Insurance Loan</h2>
+                                    <h2 className="title"> How Do We Verify Freelancers?</h2>
                                 </div>
                             </div>
                         </div>
@@ -36,12 +35,8 @@ export default function Process3() {
                                     <div className="con_top">
                                         <div className="title_20">
                                             <Link href="#">
-                                                Download and
-                                                complete your Data </Link></div>
-                                        <p>Sed ut persiciatis omnis
-                                            natus errorsit voluptatem
-                                            accusantium doloremue
-                                            laudantium totam rem</p>
+                                                Technical Background Evaluation</Link></div>
+                                        <p>We validate freelancers by cross-checking their years of experience, reviewing their project portfolios to assess domain-specific expertise in RTL design, verification, DFT, P&R, STA, and more.</p>
                                     </div>
                                 </div>
                             </div>
@@ -59,12 +54,8 @@ export default function Process3() {
                                     <div className="con_top">
                                         <div className="title_20">
                                             <Link href="#">
-                                                Verification to get
-                                                a Credit limit </Link></div>
-                                        <p>Sed ut persiciatis omnis
-                                            natus errorsit voluptatem
-                                            accusantium doloremue
-                                            laudantium totam rem</p>
+                                                EDA Tools Proficiency Check</Link></div>
+                                        <p>We confirm freelancers' proficiency in using industry-standard EDA tools such as Synopsys, Cadence, and Siemens to ensure they can handle complex VLSI design and verification tasks.</p>
                                     </div>
                                 </div>
                             </div>
@@ -82,12 +73,8 @@ export default function Process3() {
                                     <div className="con_top">
                                         <div className="title_20">
                                             <Link href="#">
-                                                Select Truncations
-                                                and funding </Link></div>
-                                        <p>Sed ut persiciatis omnis
-                                            natus errorsit voluptatem
-                                            accusantium doloremue
-                                            laudantium totam rem</p>
+                                                Live Technical Screening</Link></div>
+                                        <p>Each freelancer undergoes interviews conducted by seasoned VLSI professionals, who assess their technical expertise, problem-solving skills, and depth of experience.</p>
                                     </div>
                                 </div>
                             </div>
@@ -102,11 +89,8 @@ export default function Process3() {
                                     <div className="con_top">
                                         <div className="title_20">
                                             <Link href="#">
-                                                Use Insurance anytime anywhere </Link></div>
-                                        <p>Sed ut persiciatis omnis
-                                            natus errorsit voluptatem
-                                            accusantium doloremue
-                                            laudantium totam rem</p>
+                                                Industry Benchmark Comparison</Link></div>
+                                        <p>We compare our verification process with top MNC companies to ensure we maintain the highest standards in freelancer selection and quality assurance.</p>
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +101,6 @@ export default function Process3() {
                 <div className="pd_bottom_80" />
                 {/*-============spacing==========-*/}
             </section>
-
         </>
     )
 }
