@@ -71,7 +71,7 @@ export default function ServiceStyle6() {
                                             <FaMicrochip size={40} style={iconInnerStyle} />
                                         </div>
                                         <div className="content d-flex align-items-center bg_light_1">
-                                            <img src="/assets/images/service/service-1-min-1.jpg" className="img-fluid" alt="service" />
+                                            <img src="/assets/images/chipMaker/men.jpeg"  className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
                                                     <Link href="/service-details">
@@ -105,7 +105,7 @@ export default function ServiceStyle6() {
                                             <FaCode size={40} style={iconInnerStyle} />
                                         </div>
                                         <div className="content d-flex align-items-center bg_light_1">
-                                            <img src="/assets/images/service/service-8-min.jpg" className="img-fluid" alt="service" />
+                                        <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
                                                     <Link href="/service-details">
@@ -138,7 +138,7 @@ export default function ServiceStyle6() {
                                             <FaSearchPlus size={40} style={iconInnerStyle} />
                                         </div>
                                         <div className="content d-flex align-items-center bg_light_1">
-                                            <img src="/assets/images/service/service-6-min.jpg" className="img-fluid" alt="service" />
+                                        <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
                                                     <Link href="/service-details">
@@ -172,7 +172,7 @@ export default function ServiceStyle6() {
                                             <FaLayerGroup size={40} style={iconInnerStyle} />
                                         </div>
                                         <div className="content d-flex align-items-center bg_light_1">
-                                            <img src="/assets/images/service/service-1-min-1.jpg" className="img-fluid" alt="service" />
+                                        <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
                                                     <Link href="/service-details">
@@ -206,7 +206,7 @@ export default function ServiceStyle6() {
                                             <FaChartLine size={40} style={iconInnerStyle} />
                                         </div>
                                         <div className="content d-flex align-items-center bg_light_1">
-                                            <img src="/assets/images/service/service-3-min.jpg" className="img-fluid" alt="service" />
+                                        <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
                                                     <Link href="/service-details">
@@ -240,7 +240,7 @@ export default function ServiceStyle6() {
                                             <FaMemory size={40} style={iconInnerStyle} />
                                         </div>
                                         <div className="content d-flex align-items-center bg_light_1">
-                                            <img src="/assets/images/service/service-4-min.jpg" className="img-fluid" alt="service" />
+                                        <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
                                                     <Link href="/service-details">
@@ -274,7 +274,7 @@ export default function ServiceStyle6() {
                                             <FaLaptopCode size={40} style={iconInnerStyle} />
                                         </div>
                                         <div className="content d-flex align-items-center bg_light_1">
-                                            <img src="/assets/images/service/service-3-min.jpg" className="img-fluid" alt="service" />
+                                        <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
                                                     <Link href="/service-details">
@@ -308,7 +308,7 @@ export default function ServiceStyle6() {
                                             <FaUserTie size={40} style={iconInnerStyle} />
                                         </div>
                                         <div className="content d-flex align-items-center bg_light_1">
-                                            <img src="/assets/images/service/service-4-min.jpg" className="img-fluid" alt="service" />
+                                        <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
                                                     <Link href="/service-details">
