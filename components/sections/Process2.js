@@ -12,9 +12,8 @@ export default function Process2() {
                     <div className="row">
                         <div className="col-lg-7 m-auto">
                             <div className="section_title text-center type_four">
-                                <h4 className="sm_title">How It Works</h4>
                                 <div className="title_whole">
-                                    <h2 className="title">Access World's Top VLSI Talent</h2>
+                                    <h2 className="title">How It Works: Access World’s Top VLSI Talent</h2>
                                 </div>
                             </div>
                         </div>

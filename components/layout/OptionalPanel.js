@@ -38,7 +38,7 @@ export default function OptionalPanel({ isOptionalPanel, handleOptionalPanel }) 
                     <div className="option_content scrollbarcolor ">
                         <div className="log_bx">
                             <Link href="#" className="logo navbar-brand">
-                                <img src="/assets/images/logo/ChipMakerHub.png" alt="ChipMakerHub" className="logo_default" />
+                                <img src="/assets/images/logo/ChipMakersHub.png" alt="ChipMakersHub" className="logo_default" />
                             </Link>
                             <div className="about_company"> ChipMakersHub connects you with pre-vetted VLSI freelance experts worldwide, ready to contribute across the entire VLSI design lifecycle—from RTL to physical design and beyond.  </div>
                         </div>
@@ -114,7 +114,7 @@ export default function OptionalPanel({ isOptionalPanel, handleOptionalPanel }) 
                                     </a>
                                 </div>
                             </div>
-                            <div className="c_pan"> © {new Date().getFullYear()} ChipMakerHub. All Rights Reserved. </div>
+                            <div className="c_pan"> © {new Date().getFullYear()} ChipMakersHub. All Rights Reserved. </div>
                         </div>
                     </div>
                 </div>

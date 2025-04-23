@@ -78,7 +78,7 @@ export default function Banner1() {
                                         </h2>
                                     </div>
                                     <p>
-                                    Welcome to ChipMakerHub - the premier platform for VLSI freelancing excellence
+                                    Welcome to ChipMakersHub - the premier platform for VLSI freelancing excellence
                                     </p>
                                 </div>
                                 <div className="newsteller_simple">

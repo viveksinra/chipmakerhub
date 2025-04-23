@@ -105,13 +105,13 @@ export default function Footer4({ }) {
                             <div className="col-lg-5">
                                 <div className="logo_box">
                                     <Link href="#" className="logo navbar-brand">
-                                        <img src="/assets/images/footer-logo-three.png" alt="ChipMakerHub" className="logo_default" />
+                                        <img src="/assets/images/footer-logo-three.png" alt="ChipMakersHub" className="logo_default" />
                                     </Link>
                                 </div>
                             </div>
                             <div className="col-lg-7 text-md-end">
                                 <div className="position-relative color_white">
-                                    Copyright {new Date().getFullYear()}, ChipMakerHub. All Rights Reserved</div>
+                                    Copyright {new Date().getFullYear()}, ChipMakersHub. All Rights Reserved</div>
                             </div>
                         </div>
                     </div>

@@ -85,17 +85,17 @@ export default function Header2({ handleSearch, handleOptionalPanel, handleMobil
                                 <div className="col-xl-2 col-lg-12 col-md-5 col-sm-5 col-xs-5">
                                     <div className="logobox">
                                         <Link href="/" className="logo navbar-brand">
-                                            <img src="/assets/images/logo/ChipMakerHub.png" alt="ChipMakerHub" className="logo_default" />
+                                            <img src="/assets/images/logo/ChipMakersHub.png" alt="ChipMakersHub" className="logo_default" />
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="col-xl-6 col-lg-8 col-md-0 col-sm-0 col-xs-0 column_menu">
+                                <div className="col-xl-5 col-lg-8 col-md-0 col-sm-0 col-xs-0 column_menu">
                                     <div className="navbar_content d-flex align-items-center">
                                         <NavbarNav />
                                        
                                     </div>
                                 </div>
-                                <div className="col-xl-4 col-lg-4 col-md-0 col-sm-0 col-xs-0 nav_tog_column">
+                                <div className="col-xl-5 col-lg-4 col-md-0 col-sm-0 col-xs-0 nav_tog_column">
                                     <div className="d-flex right_content align-items-center">
                                         <div className="navbar_togglers hamburger_menu" onClick={handleMobileMenu}>
                                             <span className="line" />

@@ -30,7 +30,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ChipMakerHub",
+  title: "ChipMakersHub",
   description: "Hire the World's Top VLSI Freelancers",
 };
 

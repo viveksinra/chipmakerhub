@@ -43,7 +43,6 @@ export default function ServiceStyle6() {
                         <div className="row align-items-end">
                             <div className="col-lg-6">
                                 <div className="section_title type_one">
-                                    <h4 className="sm_title"> For Companies</h4>
                                     <div className="title_whole">
                                         <h2 className="title"> Need top-tier VLSI freelancers for your next project? </h2>
                                     </div>
@@ -54,6 +53,7 @@ export default function ServiceStyle6() {
                             </div>
                             <div className="col-lg-6">
                                 <p className="mr_bottom_10">ChipMakersHub connects you with pre-vetted VLSI freelance experts worldwide, ready to contribute across the entire VLSI design lifecycle—from RTL to physical design and beyond. </p>
+                                <p className="mr_bottom_10" style={{ fontWeight: 'bold' }}>Scale faster. Hire smarter. Tap into on-demand expertise — when and where you need it. </p>
                                 {/*-============spacing==========-*/}
                                 <div className="pd_bottom_20" />
                                 {/*-============spacing==========-*/}

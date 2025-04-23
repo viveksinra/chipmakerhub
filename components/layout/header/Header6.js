@@ -10,7 +10,7 @@ export default function Header6({ handleSearch, handleOptionalPanel, handleMobil
                         <div className="col-lg-2 col-md-10 col-sm-10 col-xs-10 col_log">
                             <div className="logo_box">
                                 <Link href="/" className="logo navbar-brand">
-                                    <img src="/assets/images/logo-white.svg" className="img-fluid" alt="ChipMakerHub" />
+                                    <img src="/assets/images/logo-white.svg" className="img-fluid" alt="ChipMakersHub" />
                                 </Link>
                             </div>
                         </div>
