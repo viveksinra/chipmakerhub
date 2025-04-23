@@ -66,7 +66,7 @@ export default function Team1() {
                                             <p> Senior Manager</p>
                                             <Link className="link trans" href="#">
                                                 <svg width={13} height={13} viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" className="trans">
-                                                    <path className="trans" d="M1 12.25L12.25 1M12.25 1H3.8125M12.25 1V9.4375" stroke="#2D947A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                    <path className="trans" d="M1 12.25L12.25 1M12.25 1H3.8125M12.25 1V9.4375" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </Link>
                                         </div>
@@ -104,7 +104,7 @@ export default function Team1() {
                                             <p> Business Consultant</p>
                                             <Link className="link trans" href="#">
                                                 <svg width={13} height={13} viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" className="trans">
-                                                    <path className="trans" d="M1 12.25L12.25 1M12.25 1H3.8125M12.25 1V9.4375" stroke="#2D947A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                    <path className="trans" d="M1 12.25L12.25 1M12.25 1H3.8125M12.25 1V9.4375" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </Link>
                                         </div>
@@ -142,7 +142,7 @@ export default function Team1() {
                                             <p> Junior Manager</p>
                                             <Link className="link trans" href="#">
                                                 <svg width={13} height={13} viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" className="trans">
-                                                    <path className="trans" d="M1 12.25L12.25 1M12.25 1H3.8125M12.25 1V9.4375" stroke="#2D947A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                    <path className="trans" d="M1 12.25L12.25 1M12.25 1H3.8125M12.25 1V9.4375" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </Link>
                                         </div>

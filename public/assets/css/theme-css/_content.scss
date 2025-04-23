@@ -487,7 +487,7 @@
     padding: 30px;
     color: var(--color-white);
     background: var(--color-set-one-1);
-    border: 3px solid #0F356763;
+    border: 3px solid #174ea663;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     -ms-transition: 0.5s ease-in-out;
@@ -1444,7 +1444,7 @@ body .service_post.style_one{
             &:hover {
                 .icon {
                     i {
-                        color: #F86403!important;
+                        color: #2196f3!important;
                     }
                     svg path {
                         fill: var(--color-white)!important;
@@ -3035,7 +3035,7 @@ body .service_post.style_one{
         }
         input[type=text], input[type=number], input[type=search], input[type=tel], input[type=url], input[type=password], input[type=email], textarea, select, .wp-block-search__input, body .select2-selection--single, div.wpforms-container .wpforms-form .choices__inner{
             margin-bottom: 15px;
-            border: 1px solid #2639591A;
+            border: 1px solid #174ea61A;
         }
         input[type=text]:focus, input[type=text]:focus-visible, input[type=text]:active, input[type=text]:hover, input[type=number]:focus, input[type=number]:focus-visible, input[type=number]:active, input[type=number]:hover, input[type=search]:focus, input[type=search]:focus-visible, input[type=search]:active, input[type=search]:hover, input[type=tel]:focus, input[type=tel]:focus-visible, input[type=tel]:active, input[type=tel]:hover, input[type=url]:focus, input[type=url]:focus-visible, input[type=url]:active, input[type=url]:hover, input[type=password]:focus, input[type=password]:focus-visible, input[type=password]:active, input[type=password]:hover, input[type=email]:focus, input[type=email]:focus-visible, input[type=email]:active, input[type=email]:hover, textarea:focus, textarea:focus-visible, textarea:active, textarea:hover, select:focus, select:focus-visible, select:active, select:hover, .wp-block-search__input:focus, .wp-block-search__input:focus-visible, .wp-block-search__input:active, .wp-block-search__input:hover, body .select2-selection--single:focus, body .select2-selection--single:focus-visible, body .select2-selection--single:active, body .select2-selection--single:hover, div.wpforms-container .wpforms-form .choices__inner:focus, div.wpforms-container .wpforms-form .choices__inner:focus-visible, div.wpforms-container .wpforms-form .choices__inner:active, div.wpforms-container .wpforms-form .choices__inner:hover{
             border-color: var(--color-set-two-three-6)!important;
@@ -4511,7 +4511,7 @@ body ul.portfolio_filter{
     &.type_three{
         border-style: solid;
         border-width: 10px;
-        border-color: #008BF91A;
+        border-color: #1a73e81A;
         .image_box img {
             height: 340px!important;
         }

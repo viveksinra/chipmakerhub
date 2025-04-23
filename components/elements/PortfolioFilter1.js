@@ -77,7 +77,7 @@ export default function PortfolioFilter1() {
                             </div>
                             <Link href="/portfolio-details" className="lnk trans">
                                 <svg className="trans" width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#008BF9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </Link>
                         </div>
@@ -99,7 +99,7 @@ export default function PortfolioFilter1() {
                             </div>
                             <Link href="/portfolio-details" className="lnk trans">
                                 <svg className="trans" width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#008BF9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </Link>
                         </div>
@@ -121,7 +121,7 @@ export default function PortfolioFilter1() {
                             </div>
                             <Link href="/portfolio-details" className="lnk trans">
                                 <svg className="trans" width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#008BF9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </Link>
                         </div>
@@ -143,7 +143,7 @@ export default function PortfolioFilter1() {
                             </div>
                             <Link href="/portfolio-details" className="lnk trans">
                                 <svg className="trans" width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#008BF9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </Link>
                         </div>
@@ -165,7 +165,7 @@ export default function PortfolioFilter1() {
                             </div>
                             <Link href="/portfolio-details" className="lnk trans">
                                 <svg className="trans" width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#008BF9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </Link>
                         </div>
@@ -187,7 +187,7 @@ export default function PortfolioFilter1() {
                             </div>
                             <Link href="/portfolio-details" className="lnk trans">
                                 <svg className="trans" width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#008BF9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </Link>
                         </div>
@@ -209,7 +209,7 @@ export default function PortfolioFilter1() {
                             </div>
                             <Link href="/portfolio-details" className="lnk trans">
                                 <svg className="trans" width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#008BF9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </Link>
                         </div>
@@ -231,7 +231,7 @@ export default function PortfolioFilter1() {
                             </div>
                             <Link href="/portfolio-details" className="lnk trans">
                                 <svg className="trans" width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#008BF9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M1 7.75H16M16 7.75L9.25 1M16 7.75L9.25 14.5" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </Link>
                         </div>

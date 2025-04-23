@@ -123,7 +123,7 @@ export default function Testimonial5() {
                                             <svg width={55} height={55} viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx={28} cy={27} r={20} fill="white" />
                                                 <circle cx="27.5" cy="27.5" r="27.5" fill="white" fillOpacity="0.1" />
-                                                <path d="M22 33.25L33.25 22M33.25 22H24.8125M33.25 22V30.4375" stroke="#2D947A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M22 33.25L33.25 22M33.25 22H24.8125M33.25 22V30.4375" stroke="#1a73e8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                             <h6 className="title_no_a_20">We’ve More <br />
                                                 Then 2563+ Global

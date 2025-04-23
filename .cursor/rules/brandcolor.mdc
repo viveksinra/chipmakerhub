@@ -4,15 +4,25 @@ globs:
 alwaysApply: false
 ---
 // Brand blues
-$blue-light:  #6EC6FF;
-$blue-main:   #2196F3;
-$blue-dark:   #0069C0;
+$blue-light:  #4285f4;  // Lighter blue 
+$blue-main:   #1a73e8;  // Medium blue (primary)
+$blue-dark:   #174ea6;  // Darker blue
 
 // Generate hover/active variants
-$blue-hover:  lighten($blue-main, 10%);  // ~ #42A5F5
-$blue-active: darken($blue-main, 10%);   // ~ #1976D2
+$blue-hover:  lighten($blue-main, 10%);  // Lighter version of primary blue
+$blue-active: darken($blue-main, 10%);   // Darker version of primary blue
 
-// (Optional) Accent for CTAs
+// Secondary blues
+$blue-secondary: #2196f3;  // Material design blue
+$blue-ocean:     #0277bd;  // Ocean blue
+$blue-deep:      #0d47a1;  // Deep blue
+
+// Transparency variants
+$blue-trans-light: rgba(23, 78, 166, 0.03);  // Very light transparent blue
+$blue-trans-medium: rgba(23, 78, 166, 0.1);  // Medium transparent blue
+$blue-trans-hex: #1a73e81A;  // Hex transparency format
+
+// (Optional) Accent for CTAs - keeping amber for contrast
 $accent-main: #FFB300;
 $accent-light: lighten($accent-main, 10%);
 $accent-dark: darken($accent-main, 10%);

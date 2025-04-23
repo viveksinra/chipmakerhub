@@ -13,7 +13,7 @@ import ServiceStyle6 from "@/myComponent/ServiceStyle6";
 export default function Home() {
   return (
     <>
-    <Layout headerStyle={4} footerStyle={2}>
+    <Layout headerStyle={2} footerStyle={2}>
         <Banner1 />
         <ServiceStyle6 />
         <Content1 />
