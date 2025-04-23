@@ -64,8 +64,8 @@ export default function Banner1() {
     return (
         <>
             <section className="single_banner style_one" style={{ backgroundColor: 'rgba(23, 78, 166, 0.1)' }}>
-                <div className="image_bg">
-                    <img src="/assets/images/slider/banner-1-bg.jpg" className="img-fluid" alt="img" />
+                <div className="image_bg" >
+                    <img style={{ paddingBottom: '120px' }} src="/assets/images/slider/banner-1-bg.jpg" className="img-fluid" alt="img" height="600px" />
                 </div>
                 <div className="content_box" style={{ marginTop: '-120px' }}>
                     <div className="large-container">
@@ -74,14 +74,11 @@ export default function Banner1() {
                                 <div className="section_title type_one">
                                     <div className="title_whole">
                                         <h2 className="title">
-                                            Put your insurance
-                                            lead generation on
-                                            autopilot
+                                           Hire the World's Top VLSI Freelancers
                                         </h2>
                                     </div>
                                     <p>
-                                        Sit amet consectetur volutpat luctus ultrices sagittis justo. Integer
-                                        nibh nisi adipiscingrna eleifend nunc consecteture
+                                    Welcome to ChipMakerHub - the premier platform for VLSI freelancing excellence
                                     </p>
                                 </div>
                                 <div className="newsteller_simple">
@@ -108,14 +105,14 @@ export default function Banner1() {
                             <div className="col-lg-6">
                                 <div className="image slider-container" style={sliderStyles.sliderContainer}>
                                     <div className="slider" style={sliderStyles.slider}>
-                                        <img src="/assets/images/slider/banner-single-4-1.jpg" 
+                                        <img src="/assets/images/chipMaker/men.jpeg" 
                                             style={{
                                                 ...sliderStyles.slide,
                                                 ...(currentSlide === 0 ? sliderStyles.activeSlide : {})
                                             }}
                                             className="img-fluid" 
                                             alt="img" />
-                                        <img src="/assets/images/slider/banner-single-4-2.jpg" 
+                                        <img src="/assets/images/chipMaker/women.jpg" 
                                             style={{
                                                 ...sliderStyles.slide,
                                                 ...(currentSlide === 1 ? sliderStyles.activeSlide : {})
@@ -141,8 +138,8 @@ export default function Banner1() {
                     </div>
                 </div>
                 <div className="section_title abso type_one">
-                    <div className="title_whole">
-                        <h2 className="title"> INSURANCE</h2>
+                    <div className="title_whole" style={{fontSize: '10px'}}>
+                        <h2 className="title" style={{fontSize: '100px'}}> CHIPMAKERHUB</h2>
                     </div>
                 </div>
             </section>
