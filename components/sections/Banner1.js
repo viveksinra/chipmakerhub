@@ -85,7 +85,7 @@ export default function Banner1() {
                                     <div className="input_group">
                                         <form method="post">
                                             <input type="email" name="EMAIL" placeholder="Your email address" required />
-                                            <input type="submit" value="Sign up" />
+                                            <input type="submit" value="Contact Us" />
                                         </form>
                                     </div>
                                 </div>
