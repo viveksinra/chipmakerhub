@@ -105,7 +105,7 @@ export default function Banner1() {
                             <div className="col-lg-6">
                                 <div className="image slider-container" style={sliderStyles.sliderContainer}>
                                     <div className="slider" style={sliderStyles.slider}>
-                                        <img src="/assets/images/chipMaker/men.jpeg" 
+                                        <img src="/assets/images/chipMaker/menchip.jpg" 
                                             style={{
                                                 ...sliderStyles.slide,
                                                 ...(currentSlide === 0 ? sliderStyles.activeSlide : {})
