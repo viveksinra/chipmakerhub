@@ -37,7 +37,7 @@ export default function Slider4() {
                                     <div className="col-md-12 text-center">
                                         <div className="slider_content">
                                             <h6 className="animate_up">
-                                                Welcome To Vankine
+                                                Welcome To ChipMakerHub
                                             </h6>
                                             <h1 className="animate_left">A Moments Of Caring <br />
                                                 Your Dream Home </h1>

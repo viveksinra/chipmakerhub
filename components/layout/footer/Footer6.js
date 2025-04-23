@@ -17,7 +17,7 @@ export default function Footer6({ }) {
                                 <div className="footer_widgets_box pd_bottom_30">
                                     <div className="logo_box">
                                         <Link href="#" className="logo navbar-brand">
-                                            <img src="/assets/images/footer-logo-blue.png" alt="Vankine" className="logo_default" />
+                                            <img src="/assets/images/footer-logo-blue.png" alt="ChipMakerHub" className="logo_default" />
                                         </Link>
                                     </div>
                                     {/*-============spacing==========-*/}
@@ -320,7 +320,7 @@ export default function Footer6({ }) {
                                                     <img src="/assets/images/shield.svg" className="img-fluid" alt="img" />
                                                 </div>
                                                 <Link className="links color_white" href="#">
-                                                    Copyright {new Date().getFullYear()}, Vankine. All Rights Reserved
+                                                    Copyright {new Date().getFullYear()}, ChipMakerHub. All Rights Reserved
                                                 </Link>
                                             </div>
                                         </li>

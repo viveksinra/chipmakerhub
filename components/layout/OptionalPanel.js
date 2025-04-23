@@ -38,7 +38,7 @@ export default function OptionalPanel({ isOptionalPanel, handleOptionalPanel }) 
                     <div className="option_content scrollbarcolor ">
                         <div className="log_bx">
                             <Link href="#" className="logo navbar-brand">
-                                <img src="/assets/images/logo/ChipMakerHub.png" alt="Vankine" className="logo_default" />
+                                <img src="/assets/images/logo/ChipMakerHub.png" alt="ChipMakerHub" className="logo_default" />
                             </Link>
                             <div className="about_company"> Denounce with righteous indignation and dislike men who are beguiled
                                 and demoralized by the charms pleasure moment so blinded desire that they cannot foresee the
@@ -117,7 +117,7 @@ export default function OptionalPanel({ isOptionalPanel, handleOptionalPanel }) 
                                     </a>
                                 </div>
                             </div>
-                            <div className="c_pan"> © {new Date().getFullYear()} Vankine. All Rights Reserved. </div>
+                            <div className="c_pan"> © {new Date().getFullYear()} ChipMakerHub. All Rights Reserved. </div>
                         </div>
                     </div>
                 </div>

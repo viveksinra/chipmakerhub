@@ -15,17 +15,16 @@ export default function Footer2({ }) {
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 pd_right_70">
                                 <div className="footer_widgets_box pd_bottom_30">
-                                    <div className="logo_box">
+                                    <div className="logo_box" style={{backgroundColor: 'white'}}>
                                         <Link href="#" className="logo navbar-brand">
-                                            <img src="/assets/images/footer-logo-green.png" alt="Vankine" className="logo_default" />
+                                            <img src="/assets/images/logo/ChipMakerHub.png" alt="ChipMakerHub" className="logo_default" />
                                         </Link>
                                     </div>
                                     {/*-============spacing==========-*/}
                                     <div className="pd_bottom_35" />
                                     {/*-============spacing==========-*/}
                                     <div className="position-relative color_white">
-                                        Sed ut perspiciatis  omnis  laudantium natus errors voluptatem accusantium
-                                        doloremque laudantium totam
+                                    Your one-stop VLSI freelancing platform connecting companies with skilled semiconductor professionals specializing in RTL design, verification, DFT, physical design, and more.
                                     </div>
                                     {/*-============spacing==========-*/}
                                     <div className="pd_bottom_25" />
@@ -79,8 +78,8 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="#">
-                                                                House Insurance
+                                                            <Link className="links color_white" href="/service-details">
+                                                                ASIC & FPGA Design
                                                             </Link>
                                                         </div>
                                                     </li>
@@ -89,8 +88,8 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="#">
-                                                                Medical Insurance
+                                                            <Link className="links color_white" href="/service-details">
+                                                                RTL Development & Verification
                                                             </Link>
                                                         </div>
                                                     </li>
@@ -99,8 +98,8 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="#">
-                                                                Car Insurance
+                                                            <Link className="links color_white" href="/service-details">
+                                                                DFT (Design For Testability)
                                                             </Link>
                                                         </div>
                                                     </li>
@@ -109,8 +108,8 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="#">
-                                                                Business Insurance
+                                                            <Link className="links color_white" href="/service-details">
+                                                                Physical Design & Signoff
                                                             </Link>
                                                         </div>
                                                     </li>
@@ -119,8 +118,8 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="#">
-                                                                Travel Insurance
+                                                            <Link className="links color_white" href="/service-details">
+                                                                Analog & Mixed-Signal Design
                                                             </Link>
                                                         </div>
                                                     </li>
@@ -129,8 +128,8 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="#">
-                                                                Fire Insurance
+                                                            <Link className="links color_white" href="/service-details">
+                                                                Embedded System & SoC Development
                                                             </Link>
                                                         </div>
                                                     </li>
@@ -139,8 +138,18 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="#">
-                                                                Marrige Insurance
+                                                            <Link className="links color_white" href="/service-details">
+                                                                Semiconductor Consulting & Training
+                                                            </Link>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div className="d-flex align-items-center">
+                                                            <div className="icon trans">
+                                                                <i className="fi-rr-arrow-small-right color_white" />
+                                                            </div>
+                                                            <Link className="links color_white" href="/service-details">
+                                                                Chip Architect
                                                             </Link>
                                                         </div>
                                                     </li>
@@ -163,58 +172,68 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="#">
-                                                                My Account
-                                                            </Link>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="d-flex align-items-center">
-                                                            <div className="icon trans">
-                                                                <i className="fi-rr-arrow-small-right color_white" />
-                                                            </div>
-                                                            <Link className="links color_white" href="#">
-                                                                Need A Career?
-                                                            </Link>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="d-flex align-items-center">
-                                                            <div className="icon trans">
-                                                                <i className="fi-rr-arrow-small-right color_white" />
-                                                            </div>
-                                                            <Link className="links color_white" href="#">
-                                                                News &amp; Blog
-                                                            </Link>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="d-flex align-items-center">
-                                                            <div className="icon trans">
-                                                                <i className="fi-rr-arrow-small-right color_white" />
-                                                            </div>
-                                                            <Link className="links color_white" href="#">
-                                                                Payment Way
-                                                            </Link>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="d-flex align-items-center">
-                                                            <div className="icon trans">
-                                                                <i className="fi-rr-arrow-small-right color_white" />
-                                                            </div>
-                                                            <Link className="links color_white" href="#">
-                                                                Team Member
-                                                            </Link>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="d-flex align-items-center">
-                                                            <div className="icon trans">
-                                                                <i className="fi-rr-arrow-small-right color_white" />
-                                                            </div>
-                                                            <Link className="links color_white" href="#">
+                                                            <Link className="links color_white" href="/about-us">
                                                                 About Us
+                                                            </Link>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div className="d-flex align-items-center">
+                                                            <div className="icon trans">
+                                                                <i className="fi-rr-arrow-small-right color_white" />
+                                                            </div>
+                                                            <Link className="links color_white" href="/contact-us">
+                                                                Contact Us
+                                                            </Link>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div className="d-flex align-items-center">
+                                                            <div className="icon trans">
+                                                                <i className="fi-rr-arrow-small-right color_white" />
+                                                            </div>
+                                                            <Link className="links color_white" href="/faqs">
+                                                                FAQs
+                                                            </Link>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div className="d-flex align-items-center">
+                                                            <div className="icon trans">
+                                                                <i className="fi-rr-arrow-small-right color_white" />
+                                                            </div>
+                                                            <Link className="links color_white" href="/join-freelancer">
+                                                                Join as Freelancer
+                                                            </Link>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div className="d-flex align-items-center">
+                                                            <div className="icon trans">
+                                                                <i className="fi-rr-arrow-small-right color_white" />
+                                                            </div>
+                                                            <Link className="links color_white" href="/hire-freelancer">
+                                                                Hire a Freelancer
+                                                            </Link>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div className="d-flex align-items-center">
+                                                            <div className="icon trans">
+                                                                <i className="fi-rr-arrow-small-right color_white" />
+                                                            </div>
+                                                            <Link className="links color_white" href="/terms-conditions">
+                                                                Terms and Conditions
+                                                            </Link>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div className="d-flex align-items-center">
+                                                            <div className="icon trans">
+                                                                <i className="fi-rr-arrow-small-right color_white" />
+                                                            </div>
+                                                            <Link className="links color_white" href="/privacy-policy">
+                                                                Privacy Policy
                                                             </Link>
                                                         </div>
                                                     </li>
@@ -227,14 +246,14 @@ export default function Footer2({ }) {
                             <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <div className="footer_widgets_box pd_bottom_30">
                                     <div className="fwidget_title">
-                                        <h2 className="title color_white"> Newsletter </h2>
+                                        <h2 className="title color_white"> Hear Back from Us </h2>
                                         {/*-============spacing==========-*/}
                                         <div className="pd_bottom_25" />
                                         {/*-============spacing==========-*/}
                                     </div>
                                     <div className="bottom_content">
                                         <div className="color_white position_p_relative">
-                                            Sed ut perspiciatis unde omniste natus errors volupta accus
+                                            We're here to help! Reach out to us through our contact form or email.
                                         </div>
                                         {/*-============spacing==========-*/}
                                         <div className="pd_bottom_25" />
@@ -244,7 +263,7 @@ export default function Footer2({ }) {
                                                 <form method="post">
                                                     <div className="mc4wp-form-fields">
                                                         <input type="email" name="EMAIL" placeholder="Your email address" required />
-                                                        <input type="submit" value="Sign up" />
+                                                        <input type="submit" value="Contact Us" />
                                                     </div>
                                                 </form>
                                             </div>
@@ -282,7 +301,7 @@ export default function Footer2({ }) {
                                                     <img src="/assets/images/shield.svg" className="img-fluid" alt="img" />
                                                 </div>
                                                 <Link className="links color_white" href="#">
-                                                    Copyright {new Date().getFullYear()}, Vankine. All Rights Reserved
+                                                    Copyright {new Date().getFullYear()}, ChipMakerHub. All Rights Reserved
                                                 </Link>
                                             </div>
                                         </li>
@@ -294,11 +313,9 @@ export default function Footer2({ }) {
                                     <ul className="list_box color_one linline">
                                         <li>
                                             <div className="d-flex align-items-center">
-                                                <div className="icon trans">
-                                                    <i className=" fi-rr-clock" />
-                                                </div>
+                                           
                                                 <Link className="links color_white" href="#">
-                                                    Working Hours : Sun-monday, 09am-5pm
+                                                Where the world connects for VLSI work
                                                 </Link>
                                             </div>
                                         </li>

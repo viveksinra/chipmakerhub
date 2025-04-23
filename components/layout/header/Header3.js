@@ -17,7 +17,7 @@ export default function Header3({ handleSearch, handleOptionalPanel, handleMobil
                                     <div className="col-lg-3 width_50">
                                         <div className="logo_box">
                                             <Link href="/" className="logo navbar-brand">
-                                                <img src="/assets/images/Logo-green.png" alt="Vankine" className="logo_default" />
+                                                <img src="/assets/images/Logo-green.png" alt="ChipMakerHub" className="logo_default" />
                                             </Link>
                                         </div>
                                     </div>
@@ -144,7 +144,7 @@ export default function Header3({ handleSearch, handleOptionalPanel, handleMobil
                                 <div className="row">
                                     <div className="col-lg-3 col-md-3 col-sm-12">
                                         <Link href="/" className="logo navbar-brand">
-                                            <img src="/assets/images/logo-white.svg" alt="Vankine " className="logo_default" />
+                                            <img src="/assets/images/logo-white.svg" alt="ChipMakerHub " className="logo_default" />
                                         </Link>
                                         <div className="menu_content_in">
                                             <div className="navbar_content d-flex align-items-center">

@@ -89,7 +89,7 @@ export default function Header1({ handleSearch, handleOptionalPanel, handleMobil
                                         {/*logo-shape*/}
                                         {/*logo*/}
                                         <Link href="/" className="logo navbar-brand">
-                                            <img src="/assets/images/logo-white.svg" alt="Vankine" className="logo_default" />
+                                            <img src="/assets/images/logo-white.svg" alt="ChipMakerHub" className="logo_default" />
                                         </Link>
                                         {/*logo*/}
                                     </div>
