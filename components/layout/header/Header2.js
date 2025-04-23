@@ -104,7 +104,7 @@ export default function Header2({ handleSearch, handleOptionalPanel, handleMobil
                                         </div>
                                         <div className="button me-3">
                                             <Link href="#" className="theme_btn">
-                                                For Freelancer
+                                                Apply as a Freelancer
                                                 <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
@@ -112,7 +112,7 @@ export default function Header2({ handleSearch, handleOptionalPanel, handleMobil
                                         </div>
                                         <div className="button">
                                             <Link href="#" className="theme_btn">
-                                                For Company
+                                                Hire Top VLSI Talent
                                                 <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>

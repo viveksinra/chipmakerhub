@@ -16,13 +16,13 @@ export default function StickyHeader({ scroll, handleSearch, handleOptionalPanel
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="col-xl-6 col-lg-8 col-md-0 col-sm-0 col-xs-0 column_menu">
+                                <div className="col-xl-5 col-lg-8 col-md-0 col-sm-0 col-xs-0 column_menu">
                                     <div className="navbar_content d-flex align-items-center">
                                         <NavbarNav />
                                       
                                     </div>
                                 </div>
-                                <div className="col-xl-4 col-lg-4 col-md-7 col-sm-7 col-xs-7 nav_tog_column">
+                                <div className="col-xl-5 col-lg-4 col-md-7 col-sm-7 col-xs-7 nav_tog_column">
                                     <div className="d-flex right_content align-items-center">
                                         {/*menu icon*/}
                                         <div className="navbar_togglers hamburger_menu" onClick={handleMobileMenu}>
@@ -33,7 +33,7 @@ export default function StickyHeader({ scroll, handleSearch, handleOptionalPanel
                                         {/*menu icon*/}
                                         <div className="button me-3">
                                             <Link href="#" className="theme_btn">
-                                                For Freelancer
+                                                Apply as a Freelancer
                                                 <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
@@ -41,7 +41,7 @@ export default function StickyHeader({ scroll, handleSearch, handleOptionalPanel
                                         </div>
                                         <div className="button">
                                             <Link href="#" className="theme_btn">
-                                                For Company
+                                                Hire Top VLSI Talent
                                                 <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
