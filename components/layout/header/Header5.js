@@ -15,7 +15,7 @@ export default function Header5({ handleSearch, handleOptionalPanel, handleMobil
                                 <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                     <div className="logo_box">
                                         <Link href="/" className="logo navbar-brand">
-                                            <img src="/assets/images/theme-logo.png" alt="Vankine " className="logo_default" />
+                                            <img src="/assets/images/logo/ChipMakerHub.png" alt="Vankine " className="logo_default" />
                                         </Link>
                                     </div>
                                 </div>
