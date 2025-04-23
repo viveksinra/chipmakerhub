@@ -14,10 +14,9 @@ export default function Content1() {
                             <div className="row">
                                 <div className="col-lg-9 pd_right_70">
                                     <div className="section_title type_two">
-                                        <h4 className="sm_title"> Why Choose Us</h4>
+                                        <h4 className="sm_title"> </h4>
                                         <div className="title_whole">
-                                            <h2 className="title"> We Help you to Build
-                                                for Better Future</h2>
+                                            <h2 className="title"> Why Choose Us</h2>
                                         </div>
                                         {/*-============spacing==========-*/}
                                         <div className="pd_bottom_5" />
