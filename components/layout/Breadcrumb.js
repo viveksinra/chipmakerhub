@@ -1,10 +1,10 @@
 import Link from "next/link"
 
-export default function Breadcrumb({breadcrumbTitle}) {
+export default function Breadcrumb({breadcrumbTitle, backgroundImage='url(assets/images/page-image-1-min.jpg)'}) {
     return (
         <>
             <section className="page_header_default pg_bg_cover alignment_center">
-                <div className="bakground_cover" style={{ backgroundImage: 'url(assets/images/page-image-1-min.jpg)' }} />
+                <div className="bakground_cover" style={{ backgroundImage: backgroundImage }} />
                 <div className="page_header_content">
                     <div className="container">
                         <div className="row">

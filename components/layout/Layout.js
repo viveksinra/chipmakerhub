@@ -18,7 +18,7 @@ import Header3 from "./header/Header3"
 import Header4 from "./header/Header4"
 import Header5 from "./header/Header5"
 import Header6 from "./header/Header6"
-export default function Layout({ headerStyle, footerStyle, pageCls, breadcrumbTitle, children }) {
+export default function Layout({ headerStyle, footerStyle, pageCls, breadcrumbTitle, backgroundImage, children }) {
     // Search
     const [isSearch, setSearch] = useState(false)
     const handleSearch = () => setSearch(!isSearch)
@@ -58,7 +58,7 @@ export default function Layout({ headerStyle, footerStyle, pageCls, breadcrumbTi
                 <StickyHeader scroll={scroll} handleSearch={handleSearch} handleOptionalPanel={handleOptionalPanel} handleMobileMenu={handleMobileMenu} />
 
                 <div id="wrapper_full" className="content_all_warpper">
-                    {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
+                    {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} backgroundImage={backgroundImage} />}
                     <div id="content" className="site-content">
                         {children}
                     </div>
