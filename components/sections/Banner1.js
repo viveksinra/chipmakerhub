@@ -99,7 +99,7 @@ export default function Banner1() {
     return (
         <>
             <section className="single_banner style_one" 
-            // style={{ backgroundColor: 'rgba(23, 78, 166, 0.1)' }}
+            style={{ backgroundColor: 'rgba(23, 78, 166, 0.1)' }}
             >
                 <div className="image_bg" >
                     <img style={{ paddingBottom: '120px' }} src="/assets/images/slider/banner-1-bg.jpg" className="img-fluid" alt="img" height="600px" />
