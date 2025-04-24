@@ -74,30 +74,20 @@ export default function Banner1() {
                                 <div className="section_title type_one">
                                     <div className="title_whole">
                                         <h2 className="title">
-                                           Hire the World's Top VLSI Freelancers
+                                           Hire the World's Top VLSI Freelancer
                                         </h2>
                                     </div>
                                     <p>
-                                    Welcome to ChipMakersHub - the premier platform for VLSI freelancing excellence
+                                    Welcome to ChipMakersHub — the premier platform for VLSI freelancing excellence. 
                                     </p>
-                                </div>
-                                <div className="newsteller_simple">
-                                    <div className="input_group">
-                                        <form method="post">
-                                            <input type="email" name="EMAIL" placeholder="Your email address" required />
-                                            <input type="submit" value="Contact Us" />
-                                        </form>
-                                    </div>
-                                </div>
-                                <div className="review_box d-flex align-items-center">
-                                    <div className="rimage">
-                                        <img src="/assets/images/slider/review-girls.png" className="img-fluid" alt="img" />
-                                    </div>
-                                    <div className="section_title type_one">
-                                        <div className="title_whole">
-                                            <h2 className="title"> Excellent 125+ reviews</h2>
-                                        </div>
-                                        <p>4.8 of 5 <small><i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /> <i className="fa fa-star" /></small></p>
+                                    <p>
+                                    ChipMakersHub connects forward-thinking companies with top-tier semiconductor professionals specializing in RTL design, verification, DFT, physical design, and the full spectrum of chip development expertise.
+                                    </p>
+                                    <p>
+                                    Power your projects with the industry's most trusted freelance VLSI talent.
+                                    </p>
+                                    <div className="btn_box">
+                                        <a href="#" className="theme-btn one">Hire Top VLSI Talent</a>
                                     </div>
                                 </div>
                             </div>
@@ -137,11 +127,7 @@ export default function Banner1() {
                         </div>
                     </div>
                 </div>
-                <div className="section_title abso type_one">
-                    <div className="title_whole" style={{fontSize: '10px'}}>
-                        <h2 className="title" style={{fontSize: '100px'}}> CHIPMAKERHUB</h2>
-                    </div>
-                </div>
+   
             </section>
 
         </>
