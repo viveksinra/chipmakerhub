@@ -34,9 +34,9 @@ export default function Contact() {
                                     </div>
                                     <div className="contact-infor">
                                         <h6 className="title_no_a_24">Email</h6>
-                                        <Link href="mailto:support@gmail.com">support@gmail.com
+                                        <Link href="mailto:contact@chipmakershub.com">contact@chipmakershub.com
                                         </Link>
-                                        <Link href="mailto:infoinsurace.com">infoinsurace.com</Link>
+                                        {/* <Link href="mailto:infoinsurace.com">infoinsurace.com</Link> */}
                                     </div>
                                 </div>
                                 {/*-============spacing==========-*/}
@@ -50,9 +50,11 @@ export default function Contact() {
                                     </div>
                                     <div className="contact-infor">
                                         <h6 className="title_no_a_24">Call Us</h6>
-                                        <Link href="tel:+00012345688">+000 (123) 456 88
+                                        <Link href="tel:+91 8848009689">+91 8848009689
                                         </Link>
-                                        <Link href="tel:+12345678">+12345 678</Link>
+                                        <Link href="tel:+91 9709733933">+91 9709733933
+                                        </Link>
+                                        <Link href="tel:+33 752158205">+33 752158205</Link>
                                     </div>
                                 </div>
                                 {/*-============spacing==========-*/}
@@ -67,20 +69,7 @@ export default function Contact() {
                 </section>
                 {/*-contact end*/}\
                 {/*map*/}
-                <section className="contact-map-section">
-                    <div className="container-no">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <section className="map-section">
-                                    {/*Map Outer*/}
-                                    <div className="map-outer">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.6895046810805!2d-122.52642526124438!3d38.00014098339506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085976736097a2f%3A0xbe014d20e6e22654!2sSan%20Rafael%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1678975266976!5m2!1svi!2s" height={570} style={{ border: 0, width: "100%" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+             
                 {/*map*/}
                 {/*form*/}
                 <section className="form-section bg_light_1 position-relative">
@@ -94,8 +83,7 @@ export default function Contact() {
                                     <h4 className="sm_title"> Get In Touch</h4>
                                     <div className="title_whole">
                                         <h2 className="title"> Need Any Help?
-                                            Or Looking For
-                                            an Agent</h2>
+                                           </h2>
                                     </div>
                                     <p> On the other hand denounce righteousy indignation and dislike men</p>
                                 </div>

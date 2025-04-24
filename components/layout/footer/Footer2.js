@@ -252,33 +252,26 @@ export default function Footer2({ }) {
                                         {/*-============spacing==========-*/}
                                     </div>
                                     <div className="bottom_content">
-                                        <div className="color_white position_p_relative">
-                                            We're here to help! Reach out to us through our contact form or email.
-                                        </div>
+                                   
                                         {/*-============spacing==========-*/}
                                         <div className="pd_bottom_25" />
                                         {/*-============spacing==========-*/}
-                                        <div className="newsteller_simple button_style_one">
-                                            <div className="input_group">
-                                                <form method="post">
-                                                    <div className="mc4wp-form-fields">
-                                                        <input type="email" name="EMAIL" placeholder="Your email address" required />
-                                                        <input type="submit" value="Contact Us" />
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            {/*-============spacing==========-*/}
-                                            <div className="pd_bottom_25" />
-                                            {/*-============spacing==========-*/}
-                                        </div>
+                          
                                         <div className="d-flex align-items-center contact_header_one">
                                             <div className="icon_s">
                                                 <i className=" fi-rr-headphones" /></div>
                                             <div className="content">
+                                            <div className="content">
                                                 <h6 className="tite color_white">Need Help?</h6>
-                                                <div className="title_20"><Link href="tel:+000(123)45688" className="color_white">+33 752158205</Link>
+                                           
+                                            </div>
+                                            <div className="title_20" style={{display: 'flex', flexDirection: 'column', gap: '4px'}}>
+                                                    <Link href="tel:+91 8848009689" className="color_white">+91 8848009689</Link>
+                                                    <Link href="tel:+91 9709733933" className="color_white">+91 9709733933</Link>
+                                                    <Link href="tel:+33 752158205" className="color_white">+33 752158205</Link>
                                                 </div>
                                             </div>
+                                       
                                         </div>
                                     </div>
                                 </div>
