@@ -10,3 +10,12 @@ alwaysApply: true
 - always check the [package.json](mdc:package.json) before importing any package
 - this is vankine template, [layout.js](mdc:app/layout.js) for more info
 - our company name is ChipMakersHub 
+- in css if not sure, use inline css like style:{{}}, else check these files we are using
+- Custom theme files:
+/public/assets/css/theme.css
+/public/assets/css/global-settings.css
+Plugin CSS files:
+Bootstrap CSS (bootstrap.min.css)
+Various icon fonts (Flaticon, Font Awesome, UIcons)
+Animation libraries (animate.min.css)
+Slider/carousel CSS (owl.css, slick.css)

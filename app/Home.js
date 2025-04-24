@@ -4,6 +4,7 @@ import Banner1 from "@/components/sections/Banner1";
 import Content1 from "@/components/sections/Content1";
 import Cta1 from "@/components/sections/Cta1";
 import Cta2 from "@/components/sections/Cta2";
+import Cta3 from "@/components/sections/Cta3";
 import Process1 from "@/components/sections/Process1";
 import Process2 from "@/components/sections/Process2";
 import Process3 from "@/components/sections/Process3";
@@ -20,7 +21,7 @@ export default function Home() {
         <Content1 />
         <Process3 />
         <Process2 />
-        <Cta2 />
+        <Cta3 />
 
     </Layout>
     </>
