@@ -1,166 +1,144 @@
 "use client"
 import Layout from "@/components/layout/Layout"
-import Testimonial4 from "@/components/sections/Testimonial4"
 import Link from "next/link"
 import { useState } from "react"
+
 export default function Faq() {
-    const [isActive, setIsActive] = useState({
-        status: false,
-        key: 1,
-    })
+    // FAQ data for each tab
+    const generalFaqs = [
+        {
+            question: "What is CMH?",
+            answer: "ChipMakersHub connects forward-thinking companies with top-tier semiconductor professionals specializing in RTL design, verification, DFT, physical design, and the full spectrum of chip development expertise."
+        },
+        {
+            question: "What sets ChipMakersHub apart from traditional freelance marketplaces?",
+            answer: "Unlike general freelancing platforms, ChipMakersHub is purpose-built for the semiconductor industry. We understand the complexities of the chip design lifecycle — from architecture, RTL design, and verification to DFT, physical design, STA, AMS, and FPGA development. Our platform connects you with pre-vetted experts and enables seamless collaboration tailored to the unique demands of chip development."
+        },
+        {
+            question: "Is ChipMakersHub a global platform?",
+            answer: "Yes, ChipMakersHub is a global platform, connecting semiconductor professionals and companies worldwide to enable seamless international collaboration and access to top-tier talent across borders."
+        },
+        {
+            question: "How do I get paid?",
+            answer: "Once your engagement begins, you'll be paid based on the agreed payment schedule—whether hourly, weekly, or monthly. Payments are processed securely after services are rendered, and all transactions are handled with complete confidentiality and compliance."
+        }
+    ];
+    const freelancerFaqs = [
+        {
+            question: "How do I sign up as a freelancer?",
+            answer: "To sign up as a freelancer, click on the 'Sign Up as a Freelancer' button on our homepage, complete your profile with your professional details, skills, and portfolio, and submit for verification. Our team will review your application and guide you through the verification process."
+        },
+        {
+            question: "Is there a fee to join as a freelancer?",
+            answer: "Basic registration on ChipMakersHub is free for freelancers. We operate on a commission-based model, taking a percentage only when you successfully complete a project. Premium membership plans with additional benefits are also available."
+        },
+        {
+            question: "How does the verification process work?",
+            answer: "Our verification process includes a review of your professional background, portfolio, and skills assessment. Depending on your specialization, this may include technical interviews, reference checks, or skill-specific tests to ensure quality standards."
+        },
+        {
+            question: "How do I get paid for my work?",
+            answer: "ChipMakersHub handles all payment transactions securely. Once a project is completed and approved, payments are released based on agreed terms."
+        }
+    ];
+    const companyFaqs = [
+        {
+            question: "How do I hire a freelancer on ChipMakersHub?",
+            answer: "Register your company, post a detailed project description specifying your requirements, review proposals from qualified freelancers, select the best match, and begin collaboration through our secure platform."
+        },
+        {
+            question: "How are freelancers vetted on your platform?",
+            answer: "All freelancers undergo a comprehensive verification process that includes professional background checks, portfolio review, skill assessments, and for certain specializations, technical interviews. Only professionals who meet our quality standards are approved."
+        }
+    ];
+
+    const tabList = [
+        { key: 'general', label: 'General', faqs: generalFaqs },
+        { key: 'freelancer', label: 'For Freelancers', faqs: freelancerFaqs },
+        { key: 'company', label: 'For Companies', faqs: companyFaqs },
+    ];
+
+    const [activeTab, setActiveTab] = useState('general');
+    const [isActive, setIsActive] = useState({ status: false, key: 0 });
 
     const handleToggle = (key) => {
         if (isActive.key === key) {
-            setIsActive({
-                status: false,
-            })
+            setIsActive({ status: false, key: 0 });
         } else {
-            setIsActive({
-                status: true,
-                key,
-            })
+            setIsActive({ status: true, key });
         }
-    }
+    };
+
+    const currentFaqs = tabList.find(tab => tab.key === activeTab).faqs;
+
     return (
         <>
-               <Layout breadcrumbTitle="FAQs" backgroundImage="url(assets/images/chipMaker/aboutus.jpg)">
-                {/*-faq*/}
+            <Layout breadcrumbTitle="FAQs" backgroundImage="url(assets/images/chipMaker/aboutus.jpg)">
                 <section className="faq-section">
-                    {/*-============spacing==========-*/}
                     <div className="pd_top_90" />
-                    {/*-============spacing==========-*/}
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-5">
                                 <div className="section_title type_one">
                                     <h4 className="sm_title"> Faqs</h4>
                                     <div className="title_whole">
-                                        <h2 className="title"> Frequently Asked
-                                            Questions!</h2>
+                                        <h2 className="title"> Frequently Asked Questions!</h2>
                                     </div>
-                                    <p> Sed ut perspiciatis unde natus voluptatem accusantium doloremque laudantium
-                                        aperiam
-                                        inventore veritatis architecto beatae</p>
+                                    <p> ChipMakersHub is your trusted partner for semiconductor talent and solutions.</p>
                                 </div>
-                                {/*-============spacing==========-*/}
                                 <div className="pd_bottom_40" />
-                                {/*-============spacing==========-*/}
                                 <div className="theme_btn_all">
                                     <Link href="#" className="theme_btn big rotate">
                                         Contact Us <span> <i className=" fi-rr-arrow-small-up" /></span>
                                     </Link>
                                 </div>
-                                {/*-============spacing==========-*/}
                                 <div className="pd_bottom_30" />
-                                {/*-============spacing==========-*/}
                             </div>
                             <div className="col-lg-7">
+                                <div style={{ marginBottom: 30 }}>
+                                    <ul className="nav nav-tabs links trans" style={{ borderBottom: '1px solid #eee', marginBottom: 24 }}>
+                                        {tabList.map(tab => (
+                                            <li key={tab.key} className="nav-item" style={{ display: 'inline-block', marginRight: 16 }}>
+                                                <button
+                                                    className={activeTab === tab.key ? "nav-link active" : "nav-link"}
+                                                    style={activeTab === tab.key ? { background: '#0d6efd', color: '#fff', borderRadius: 7 } : { background: '#f8f9fa', color: '#222', borderRadius: 7 }}
+                                                    onClick={() => { setActiveTab(tab.key); setIsActive({ status: false, key: 0 }); }}
+                                                >
+                                                    {tab.label}
+                                                </button>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                                 <section className="block_faq">
                                     <div className="accordion-box">
-                                        <div className={isActive.key == 1 ? "accordion  active-block" : "accordion"}>
-                                            <div className={isActive.key == 1 ? "question faq_header active" : "question faq_header"} onClick={() => handleToggle(1)}>
-                                                <div className="question_box ">
-                                                    <div className="title_no_a_18 trans">What Is Insurance Services?
+                                        {currentFaqs.map((faq, idx) => (
+                                            <div key={idx} className={isActive.key === idx ? "accordion active-block" : "accordion"}>
+                                                <div
+                                                    className={isActive.key === idx ? "question faq_header active" : "question faq_header"}
+                                                    onClick={() => handleToggle(idx)}
+                                                >
+                                                    <div className="question_box ">
+                                                        <div className="title_no_a_18 trans">{faq.question}</div>
+                                                        <span className="icon_fq trans fi-rs-arrow-small-right" />
                                                     </div>
-                                                    <span className="icon_fq trans fi-rs-arrow-small-right" />
+                                                </div>
+                                                <div
+                                                    className="answer accordion-content"
+                                                    style={{ display: isActive.key === idx ? "block" : "none" }}
+                                                >
+                                                    {faq.answer}
                                                 </div>
                                             </div>
-                                            <div className="answer accordion-content" style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
-                                                Serenity Is Multi-Faceted Blockchain Based Ecosystem, Energy
-                                                Retailer
-                                                For The People, Focusing On The Promotion Of Sustainable Living,
-                                                Renewable Energy Production And Smart Energy Grid Utility Services.
-                                            </div>
-                                        </div>
-                                        <div className={isActive.key == 2 ? "accordion  active-block" : "accordion"}>
-                                            <div className={isActive.key == 2 ? "question faq_header active" : "question faq_header"} onClick={() => handleToggle(2)}>
-                                                <div className="question_box ">
-                                                    <div className="title_no_a_18 trans">How Many Service We Provide ?
-                                                    </div>
-                                                    <span className="icon_fq trans fi-rs-arrow-small-right" />
-                                                </div>
-                                            </div>
-                                            <div className="answer accordion-content" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
-                                                Quis autem vel eum iure reprehenderit ea voluptate esse molestiae
-                                                consequatur veillum voluptas nullaes
-                                            </div>
-                                        </div>
-                                        <div className={isActive.key == 3 ? "accordion  active-block" : "accordion"}>
-                                            <div className={isActive.key == 3 ? "question faq_header active" : "question faq_header"} onClick={() => handleToggle(3)}>
-                                                <div className="question_box">
-                                                    <div className="title_no_a_18 trans">How Much Experience Our Team
-                                                        Member
-                                                        ?</div>
-                                                    <span className="icon_fq trans fi-rs-arrow-small-right" />
-                                                </div>
-                                            </div>
-                                            <div className="answer accordion-content" style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
-                                                Serenity Is Multi-Faceted Blockchain Based Ecosystem, Energy
-                                                Retailer
-                                                For The People, Focusing On The Promotion Of Sustainable Living,
-                                                Renewable Energy Production And Smart Energy Grid Utility Services.
-                                            </div>
-                                        </div>
-                                        <div className={isActive.key == 4 ? "accordion  active-block" : "accordion"}>
-                                            <div className={isActive.key == 4 ? "question faq_header active" : "question faq_header"} onClick={() => handleToggle(4)}>
-                                                <div className="question_box ">
-                                                    <div className="title_no_a_18 trans">Why We Are The Best Company?
-                                                    </div>
-                                                    <span className="icon_fq trans fi-rs-arrow-small-right" />
-                                                </div>
-                                            </div>
-                                            <div className="answer accordion-content" style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
-                                                Serenity Is Multi-Faceted Blockchain Based Ecosystem, Energy
-                                                Retailer
-                                                For The People, Focusing On The Promotion Of Sustainable Living,
-                                                Renewable Energy Production And Smart Energy Grid Utility Services.
-                                            </div>
-                                        </div>
-                                        <div className={isActive.key == 5 ? "accordion  active-block" : "accordion"}>
-                                            <div className={isActive.key == 5 ? "question faq_header active" : "question faq_header"} onClick={() => handleToggle(5)}>
-                                                <div className="question_box ">
-                                                    <div className="title_no_a_18 trans">Build your Business ?</div>
-                                                    <span className="icon_fq trans fi-rs-arrow-small-right" />
-                                                </div>
-                                            </div>
-                                            <div className="answer accordion-content" style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
-                                                Serenity Is Multi-Faceted Blockchain Based Ecosystem, Energy
-                                                Retailer
-                                                For The People, Focusing On The Promotion Of Sustainable Living,
-                                                Renewable Energy Production And Smart Energy Grid Utility Services.
-                                            </div>
-                                        </div>
-                                        <div className={isActive.key == 6 ? "accordion  active-block" : "accordion"}>
-                                            <div className={isActive.key == 6 ? "question faq_header active" : "question faq_header"} onClick={() => handleToggle(6)}>
-                                                <div className="question_box ">
-                                                    <div className="title_no_a_18 trans">How Much Experience Our Team
-                                                        Member
-                                                        ?</div>
-                                                    <span className="icon_fq trans fi-rs-arrow-small-right" />
-                                                </div>
-                                            </div>
-                                            <div className="answer accordion-content" style={{ display: `${isActive.key == 6 ? "block" : "none"}` }}>
-                                                Serenity Is Multi-Faceted Blockchain Based Ecosystem, Energy
-                                                Retailer
-                                                For The People, Focusing On The Promotion Of Sustainable Living,
-                                                Renewable Energy Production And Smart Energy Grid Utility Services.
-                                            </div>
-                                        </div>
+                                        ))}
                                     </div>
                                 </section>
                             </div>
                         </div>
                     </div>
-                    {/*-============spacing==========-*/}
                     <div className="pd_bottom_40" />
-                    {/*-============spacing==========-*/}
                 </section>
-                {/*-faq end*/}
-                {/*-faqs*/}
-       
-
-
             </Layout>
         </>
-    )
+    );
 }

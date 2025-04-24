@@ -4,7 +4,7 @@ export default function Contact() {
 
     return (
         <>
-            <Layout breadcrumbTitle="Contact" backgroundImage="url(assets/images/chipMaker/aboutus.jpg)">
+            <Layout breadcrumbTitle="Contact" backgroundImage="url(assets/gif/landscape/chip.gif)">
                 {/*-contact*/}
                 <section className="contact-section">
                     {/*-============spacing==========-*/}
@@ -85,7 +85,7 @@ export default function Contact() {
                                         <h2 className="title"> Need Any Help?
                                            </h2>
                                     </div>
-                                    <p> On the other hand denounce righteousy indignation and dislike men</p>
+                                    <p> We're here to help you navigate the world of VLSI freelancing</p>
                                 </div>
                                 {/*-============spacing==========-*/}
                                 <div className="pd_bottom_40" />
