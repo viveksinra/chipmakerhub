@@ -73,7 +73,7 @@ export default function Faq() {
 
     return (
         <>
-            <Layout breadcrumbTitle="FAQs" backgroundImage="url(assets/images/chipMaker/aboutus.jpg)">
+            <Layout breadcrumbTitle="FAQs" backgroundImage="url(assets/gif/portrait/chip3.gif)">
                 <section className="faq-section">
                     <div className="pd_top_90" />
                     <div className="container">
