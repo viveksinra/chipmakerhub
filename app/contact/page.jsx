@@ -4,7 +4,7 @@ export default function Contact() {
 
     return (
         <>
-            <Layout breadcrumbTitle="Contact">
+            <Layout breadcrumbTitle="Contact" backgroundImage="url(assets/images/chipMaker/aboutus.jpg)">
                 {/*-contact*/}
                 <section className="contact-section">
                     {/*-============spacing==========-*/}
