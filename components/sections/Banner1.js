@@ -98,14 +98,16 @@ export default function Banner1() {
 
     return (
         <>
-            <section className="single_banner style_one" style={{ backgroundColor: 'rgba(23, 78, 166, 0.1)' }}>
+            <section className="single_banner style_one" 
+            // style={{ backgroundColor: 'rgba(23, 78, 166, 0.1)' }}
+            >
                 <div className="image_bg" >
                     <img style={{ paddingBottom: '120px' }} src="/assets/images/slider/banner-1-bg.jpg" className="img-fluid" alt="img" height="600px" />
                 </div>
                 <div className="content_box" style={{ marginTop: '-120px', paddingLeft: '20px' }}>
                     <div className="large-container">
                         <div className="row align-items-center">
-                            <div className="col-lg-6">
+                        <div className="col-lg-6" >
                                 <div className="section_title type_one">
                                     <motion.div 
                                         className="title_whole"
@@ -118,23 +120,36 @@ export default function Banner1() {
                                             initial={{ opacity: 0, y: 30 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.8 }}
-                                            style={{ position: 'relative' }}
+                                            style={{ 
+                                                position: 'relative', 
+                                                fontSize: '3.5rem',
+                                                fontWeight: '800',
+                                                lineHeight: '1.1',
+                                                marginBottom: '30px',
+                                                background: 'linear-gradient(90deg, #0a2456, #1e4bb8)',
+                                                WebkitBackgroundClip: 'text',
+                                                WebkitTextFillColor: 'transparent',
+                                                textShadow: '0px 3px 5px rgba(0,0,0,0.1)'
+                                            }}
                                         >
                                             Hire the World's Top <span style={{ 
-                                                color: '#1e4bb8',
                                                 position: 'relative',
-                                                display: 'inline-block'
+                                                display: 'inline-block',
+                                                background: 'linear-gradient(90deg, #1e4bb8, #2a5fd9)',
+                                                WebkitBackgroundClip: 'text',
+                                                WebkitTextFillColor: 'transparent',
+                                                textShadow: '0px 2px 4px rgba(0,0,0,0.15)'
                                             }}>
                                                 VLSI
                                                 <motion.span 
                                                     style={{
                                                         position: 'absolute',
-                                                        bottom: '2px',
+                                                        bottom: '5px',
                                                         left: 0,
                                                         width: '100%',
-                                                        height: '4px',
+                                                        height: '8px',
                                                         backgroundColor: 'rgba(30, 75, 184, 0.3)',
-                                                        borderRadius: '2px'
+                                                        borderRadius: '4px'
                                                     }}
                                                     initial={{ width: 0 }}
                                                     animate={{ width: '100%' }}
@@ -150,15 +165,25 @@ export default function Banner1() {
                                         custom={1}
                                         variants={textVariants}
                                         style={{ 
-                                            background: 'rgba(255, 255, 255, 0.7)',
-                                            padding: '15px 20px',
-                                            borderRadius: '8px',
-                                            marginTop: '20px',
-                                            boxShadow: '0 5px 15px rgba(0, 0, 0, 0.03)'
+                                            background: 'rgba(235, 242, 255, 0.9)',
+                                            padding: '20px 25px',
+                                            borderRadius: '16px',
+                                            marginTop: '25px',
+                                            marginBottom: '25px',
+                                            boxShadow: '0 8px 20px rgba(30, 75, 184, 0.08)',
+                                            borderLeft: '5px solid #1e4bb8'
                                         }}
                                     >
-                                        <p>
-                                            Welcome to <span style={{ fontWeight: 'bold', color: '#1e4bb8' }}>ChipMakersHub</span> — the premier platform for VLSI freelancing excellence.
+                                        <p style={{
+                                            fontSize: '18px',
+                                            margin: 0,
+                                            fontWeight: '500'
+                                        }}>
+                                            Welcome to <span style={{ 
+                                                fontWeight: '700', 
+                                                color: '#1e4bb8', 
+                                                fontSize: '20px'
+                                            }}>ChipMakersHub</span> — the premier platform for VLSI freelancing excellence.
                                         </p>
                                     </motion.div>
                                     
@@ -167,6 +192,13 @@ export default function Banner1() {
                                         animate="visible"
                                         custom={2}
                                         variants={textVariants}
+                                        style={{
+                                            lineHeight: '1.7',
+                                            fontSize: '17px',
+                                            color: '#344054',
+                                            marginBottom: '20px',
+                                            padding: '0 5px'
+                                        }}
                                     >
                                         <p>
                                             ChipMakersHub connects forward-thinking companies with top-tier semiconductor professionals specializing in RTL design, verification, DFT, physical design, and the full spectrum of chip development expertise.
@@ -178,9 +210,34 @@ export default function Banner1() {
                                         animate="visible"
                                         custom={3}
                                         variants={textVariants}
+                                        style={{
+                                            fontSize: '18px',
+                                            fontWeight: '600',
+                                            color: '#0f2c69',
+                                            marginBottom: '30px',
+                                            borderBottom: '2px dashed rgba(30, 75, 184, 0.2)',
+                                            paddingBottom: '25px',
+                                            background: 'linear-gradient(135deg, rgba(30, 75, 184, 0.05), rgba(30, 75, 184, 0.02))',
+                                            padding: '15px 20px',
+                                            borderRadius: '10px',
+                                            boxShadow: '0 3px 10px rgba(30, 75, 184, 0.05)'
+                                        }}
                                     >
                                         <p>
-                                            Power your projects with the industry's most trusted freelance VLSI talent.
+                                            Power your projects with the industry's most trusted freelance <span style={{
+                                                fontWeight: '700',
+                                                color: '#1e4bb8',
+                                                position: 'relative',
+                                                display: 'inline-block'
+                                            }}>VLSI <span style={{
+                                                position: 'absolute',
+                                                bottom: '0px',
+                                                left: '0',
+                                                width: '100%',
+                                                height: '3px',
+                                                backgroundColor: 'rgba(30, 75, 184, 0.3)',
+                                                borderRadius: '2px'
+                                            }}></span></span> talent.
                                         </p>
                                     </motion.div>
                                
@@ -192,7 +249,7 @@ export default function Banner1() {
                                             ...buttonPulse
                                         }}
                                         custom={4}
-                                        style={{ marginTop: '25px', display: 'inline-block' }}
+                                        style={{ marginTop: '15px', display: 'inline-block' }}
                                     >
                                         <Link href="/contact">
                                             <motion.button 
@@ -204,24 +261,30 @@ export default function Banner1() {
                                                 }}
                                                 whileTap={{ scale: 0.95 }}
                                                 style={{
-                                                    background: '#1e4bb8',
+                                                    background: 'linear-gradient(135deg, #1e4bb8, #174EA6)',
                                                     color: 'white',
-                                                    padding: '12px 32px',
-                                                    fontSize: '16px',
-                                                    borderRadius: '8px',
+                                                    padding: '15px 36px',
+                                                    fontSize: '17px',
+                                                    fontWeight: '600',
+                                                    borderRadius: '12px',
                                                     border: 'none',
                                                     cursor: 'pointer',
-                                                    boxShadow: '0px 4px 10px rgba(30, 75, 184, 0.3)',
+                                                    boxShadow: '0px 8px 15px rgba(30, 75, 184, 0.25)',
                                                     display: 'flex',
                                                     alignItems: 'center',
-                                                    gap: '8px',
-                                                    width: 'auto'
+                                                    gap: '10px',
+                                                    width: 'auto',
+                                                    letterSpacing: '0.5px'
                                                 }}
                                             >
                                                 <span>Hire Top VLSI Talent</span>
                                                 <motion.span
                                                     animate={{ x: [0, 5, 0] }}
                                                     transition={{ duration: 1, repeat: Infinity }}
+                                                    style={{
+                                                        fontSize: '20px',
+                                                        fontWeight: 'bold'
+                                                    }}
                                                 >
                                                     →
                                                 </motion.span>
