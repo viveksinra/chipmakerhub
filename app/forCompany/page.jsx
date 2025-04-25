@@ -1,5 +1,7 @@
 "use client"
 import Layout from "@/components/layout/Layout"
+import Content1 from "@/components/sections/Content1"
+import Cta3 from "@/components/sections/Cta3"
 import { useEffect } from "react"
 
 export default function ForCompany() {
@@ -11,9 +13,11 @@ export default function ForCompany() {
                 {/*-about*/}
                 <section className="about-section position-relative">
                     {/*-============spacing==========-*/}
-                    <div className="pd_top_90" />
+                    {/* <div className="pd_top_90" /> */}
                     {/*-============spacing==========-*/}
-                
+                    <Content1 />
+        <Cta3 />
+
                 </section>
             </Layout>
         </>
