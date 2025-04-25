@@ -1,6 +1,7 @@
 "use client"
 import Layout from "@/components/layout/Layout"
 import Content6 from "@/components/sections/Content6"
+import Cta4 from "@/components/sections/Cta4"
 import Service8 from "@/components/sections/Service8"
 import { useEffect } from "react"
 
@@ -17,6 +18,7 @@ export default function ForFreelancer() {
                     {/*-============spacing==========-*/}
                     {/* <Service8 /> */}
                     <Content6 />
+                    <Cta4 />
                 </section>
             </Layout>
         </>

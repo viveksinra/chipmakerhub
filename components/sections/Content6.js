@@ -147,7 +147,7 @@ export default function Content6() {
                 <div className="ab_img_right_bottom z_0">
                     <img src="/assets/images/bg-2-2.png" className="img-fluid" alt="img" />
                 </div>
-        <Cta4 />
+        
 
             </section>
 
