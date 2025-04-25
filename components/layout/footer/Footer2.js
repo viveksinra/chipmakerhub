@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { FaLinkedin, FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6"
 
 export default function Footer2({ }) {
     return (
@@ -38,23 +39,23 @@ export default function Footer2({ }) {
                                     <div className="social-icons">
                                         <ul>
                                             <li>
-                                                <Link href="#" className="m_icon">
-                                                    <i className="fab fa-facebook" />
+                                                <Link href="https://www.linkedin.com/company/chipmakershub/" target="_blank" className="m_icon">
+                                                    <FaLinkedin />
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="#" className="m_icon">
-                                                    <i className="fab fa-twitter" />
+                                                <Link href="https://www.instagram.com/chipmakershub?igsh=MWU4cXFncmx3d2ttYg==" target="_blank" className="m_icon">
+                                                    <FaInstagram />
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="#" className="m_icon">
-                                                    <i className="fab fa-skype" />
+                                                <Link href="https://www.facebook.com/share/16MfwxpGA4/" target="_blank" className="m_icon">
+                                                    <FaFacebook />
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="#" className="m_icon">
-                                                    <i className="fab fa-instagram" />
+                                                <Link href="https://x.com/chipmakershub?t=wr4ulZeX_w4P5cSrDHAsiA&s=09" target="_blank" className="m_icon">
+                                                    <FaXTwitter />
                                                 </Link>
                                             </li>
                                         </ul>

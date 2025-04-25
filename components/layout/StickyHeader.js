@@ -32,7 +32,7 @@ export default function StickyHeader({ scroll, handleSearch, handleOptionalPanel
                                         </div>
                                         {/*menu icon*/}
                                         <div className="button me-3">
-                                            <Link href="#" style={{
+                                            <Link href="/forFreelancer" style={{
                                                 background: '#ffffff',
                                                 color: '#174ea6',
                                                 border: '2px solid #174ea6',
@@ -54,7 +54,7 @@ export default function StickyHeader({ scroll, handleSearch, handleOptionalPanel
                                             </Link>
                                         </div>
                                         <div className="button">
-                                            <Link href="#" className="theme_btn">
+                                            <Link href="/forCompany" className="theme_btn">
                                                 Hire Top VLSI Talent
                                                 <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

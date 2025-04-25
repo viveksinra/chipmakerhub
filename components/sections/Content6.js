@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Cta4 from "./Cta4"
 
 
 export default function Content6() {
@@ -9,25 +10,22 @@ export default function Content6() {
                     <img src="/assets/images/line-st-2.png" className="img-fluid" alt="img" />
                 </div>
                 {/*-============spacing==========-*/}
-                <div className="pd_top_320" />
+                <div className="pd_top_80" />
                 {/*-============spacing==========-*/}
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-7 col-md-12">
                             <div className="section_title type_one">
-                                <h4 className="sm_title"> Amazing Company</h4>
+                                <h4 className="sm_title"> Apply as a Freelancer</h4>
                                 <div className="title_whole">
-                                    <h2 className="title"> We Help you Build and Grow Your Business</h2>
+                                    <h2 className="title"> Unlock Your Potential in VLSI Freelancing</h2>
                                 </div>
                             </div>
                             {/*-============spacing==========-*/}
                             <div className="pd_bottom_20" />
                             {/*-============spacing==========-*/}
                             <div className="position-relative border_left_abolute_5px_two pd_left_40">
-                                Sit amet consectetur adipiscing elites varius montes, massa, blandit orci. Sed
-                                egestas tellus est aliquet eget.
-                                At tristique nisl nullam pharetra sed tempor sed ipsum eivera consectetur augue
-                                molestie amet utiverra
+                            Are you a Chip Architect, RTL Designer, Verification Engineer, or a specialist in DFT, Physical Design, STA, AMS, or FPGA? Chip Makers Hub provides the perfect platform to showcase your skills and connect with top semiconductor companies worldwide.
                             </div>
                             {/*-============spacing==========-*/}
                             <div className="pd_bottom_30" />
@@ -40,9 +38,8 @@ export default function Content6() {
                                         <div className="content">
                                             <div className="title_22">
                                                 <Link href="#">
-                                                    Insurance Agency </Link></div>
-                                            <p>On the other hand denoue
-                                                with right indignation</p>
+                                               1. Submit your profile </Link></div>
+                                            <p>Showcase your skills, experience, and specialization in VLSI domains</p>
                                         </div>
                                     </div>
                                     {/*-============spacing==========-*/}
@@ -56,8 +53,8 @@ export default function Content6() {
                                         <div className="content">
                                             <div className="title_22">
                                                 <Link href="#">
-                                                    Fsat &amp; Easy Process </Link></div>
-                                            <p>At vero eos et accu samus dignissimos ducimus</p>
+                                              2.  Get Verified </Link></div>
+                                            <p>Undergo screening and background checks to become a trusted professional on the platform</p>
                                         </div>
                                     </div>
                                     {/*-============spacing==========-*/}
@@ -71,8 +68,8 @@ export default function Content6() {
                                         <div className="content">
                                             <div className="title_22">
                                                 <Link href="#">
-                                                    Control Over Policy </Link></div>
-                                            <p>Nam libero tempore cums soluta nobis cumque</p>
+                                              3. Get Matched </Link></div>
+                                            <p>We shortlist and recommend your profile for projects that align with your expertise.</p>
                                         </div>
                                     </div>
                                     {/*-============spacing==========-*/}
@@ -86,8 +83,8 @@ export default function Content6() {
                                         <div className="content">
                                             <div className="title_22">
                                                 <Link href="#">
-                                                    Save Your Money </Link></div>
-                                            <p>Blame belongs those Who duty through weakness</p>
+                                               4. Start Collaborating</Link></div>
+                                            <p>Onboard with the client, align on deliverables, and begin working seamlessly.</p>
                                         </div>
                                     </div>
                                     {/*-============spacing==========-*/}
@@ -101,26 +98,57 @@ export default function Content6() {
                                 <div className="image">
                                     <img src="/assets/images/h3-ch-1-min.png" alt="img" className="img-fluid" />
                                 </div>
-                                <div className="abso_content">
+                                {/* <div className="abso_content">
                                     <img src="/assets/images/rotate-logo-green-1.png" alt="img" className="img-fluid" />
                                     <div className="authour_box">
                                         <div className="d-flex align-items-center">
                                             <img src="/assets/images/testimonial/test-1-min.png" alt="img" className="img-fluid" />
                                             <h6 className="title_no_a_18">Wilcoxon</h6>
                                         </div>
-                                        <h6 className="title_no_a_26">We’re Best Insurance Company</h6>
+                                        <h6 className="title_no_a_26">We're Best Insurance Company</h6>
                                     </div>
+                                </div> */}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/*-============spacing==========-*/}
+                    <div className="pd_bottom_40" />
+                    {/*-============spacing==========-*/}
+                    
+                    <div className="row justify-content-center">
+                        <div className="col-lg-8 text-center">
+                            <div className="section_title type_one" style={{textAlign: 'center'}}>
+                                <div className="title_whole">
+                                    <h2 className="title">Receive Monthly Payments</h2>
                                 </div>
+                            </div>
+                            {/*-============spacing==========-*/}
+                            <div className="pd_bottom_20" />
+                            {/*-============spacing==========-*/}
+                            <div style={{
+                                position: 'relative', 
+                                padding: '15px 20px',
+                                textAlign: 'center',
+                                borderLeft: 'none',
+                                boxShadow: '0px 0px 15px rgba(0,0,0,0.1)',
+                                borderRadius: '5px',
+                                backgroundColor: '#fff'
+                            }}>
+                                Get paid on a fixed monthly schedule for the duration of your engagement.
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 {/*-============spacing==========-*/}
-                <div className="pd_bottom_80" />
+                <div className="pd_bottom_20" />
                 {/*-============spacing==========-*/}
                 <div className="ab_img_right_bottom z_0">
                     <img src="/assets/images/bg-2-2.png" className="img-fluid" alt="img" />
                 </div>
+        <Cta4 />
+
             </section>
 
         </>
