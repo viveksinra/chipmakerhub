@@ -36,7 +36,7 @@ export default function Process3() {
                                         <div className="title_20">
                                             <Link href="#">
                                                 Technical Background Evaluation</Link></div>
-                                        <p>We validate freelancers by cross-checking their years of experience, reviewing their project portfolios to assess domain-specific expertise in RTL design, verification, DFT, P&R, STA, and more.</p>
+                                        <p>We validate freelancers by cross-checking their years of experience, reviewing their project portfolios to assess domain-specific expertise (e.g., RTL design, verification, DFT, P&R, STA, etc.), and confirming their proficiency to use industry-standard EDA tools such as Synopsys, Cadence, and Siemens.</p>
                                     </div>
                                 </div>
                             </div>
@@ -54,8 +54,8 @@ export default function Process3() {
                                     <div className="con_top">
                                         <div className="title_20">
                                             <Link href="#">
-                                                EDA Tools Proficiency Check</Link></div>
-                                        <p>We confirm freelancers' proficiency in using industry-standard EDA tools such as Synopsys, Cadence, and Siemens to ensure they can handle complex VLSI design and verification tasks.</p>
+                                                Live Screening</Link></div>
+                                        <p>Each freelancer undergoes interviews conducted by seasoned VLSI professionals, who assess their technical expertise, problem-solving skills, and depth of experience.</p>
                                     </div>
                                 </div>
                             </div>
@@ -73,8 +73,8 @@ export default function Process3() {
                                     <div className="con_top">
                                         <div className="title_20">
                                             <Link href="#">
-                                                Live Technical Screening</Link></div>
-                                        <p>Each freelancer undergoes interviews conducted by seasoned VLSI professionals, who assess their technical expertise, problem-solving skills, and depth of experience.</p>
+                                                Communication & Soft Skills Assessment</Link></div>
+                                        <p>We also evaluate each freelancer's communication skills to ensure they can effectively collaborate with clients and teams across different geographies.</p>
                                     </div>
                                 </div>
                             </div>
@@ -89,8 +89,8 @@ export default function Process3() {
                                     <div className="con_top">
                                         <div className="title_20">
                                             <Link href="#">
-                                                Industry Benchmark Comparison</Link></div>
-                                        <p>We compare our verification process with top MNC companies to ensure we maintain the highest standards in freelancer selection and quality assurance.</p>
+                                                Team Spirit & Professional Behavior</Link></div>
+                                        <p>Our screening process includes behavioral assessments to ensure the freelancer exhibits team spirit, a collaborative attitude, and professional conduct essential for successful project execution.</p>
                                     </div>
                                 </div>
                             </div>
