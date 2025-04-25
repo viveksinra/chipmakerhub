@@ -12,7 +12,7 @@ export default function Cta3() {
                     }}>
                         Ready to get started?
                     </h2>
-                    <Link href="/contact">
+                    <Link href="/hireATalent">
                         <button 
                             className="theme-btn-1" 
                             style={{

@@ -29,56 +29,56 @@ export default function NavbarNav() {
                     </Link>
                     <ul className="sub_menu">
                         <li className="menu-item nav-item">
-                            <Link href="/portfolio-style-1" className="nav_link">
+                            <Link href="/hireATalent?type=asic" className="nav_link">
                                 <span className="text-link">
                                     ASIC & FPGA Design
                                 </span>
                             </Link>
                         </li>
                         <li className="menu-item nav-item">
-                            <Link href="/portfolio-style-2" className="nav_link">
+                            <Link href="/hireATalent?type=rtl" className="nav_link">
                                 <span className="text-link">
                                 RTL Development & Verification
                                 </span>
                             </Link>
                         </li>
                         <li className="menu-item nav-item">
-                            <Link href="/portfolio-details" className="nav_link">
+                            <Link href="/hireATalent?type=dft" className="nav_link">
                                 <span className="text-link">
                                 DFT (Design For Testability)
                                 </span>
                             </Link>
                         </li>
                         <li className="menu-item nav-item">
-                            <Link href="/portfolio-details" className="nav_link">
+                            <Link href="/hireATalent?type=physical" className="nav_link">
                                 <span className="text-link">
                                 Physical Design & Signoff
                                 </span>
                             </Link>
                         </li>
                         <li className="menu-item nav-item">
-                            <Link href="/portfolio-details" className="nav_link">
+                            <Link href="/hireATalent?type=analog" className="nav_link">
                                 <span className="text-link">
                                 Analog & Mixed-Signal Design
                                 </span>
                             </Link>
                         </li>
                         <li className="menu-item nav-item">
-                            <Link href="/portfolio-details" className="nav_link">
+                            <Link href="/hireATalent?type=embedded" className="nav_link">
                                 <span className="text-link">
                                 Embedded System & SoC Development
                                 </span>
                             </Link>
                         </li>
                         <li className="menu-item nav-item">
-                            <Link href="/portfolio-details" className="nav_link">
+                            <Link href="/hireATalent?type=consulting" className="nav_link">
                                 <span className="text-link">
                                 Semiconductor Consulting & Training
                                 </span>
                             </Link>
                         </li>
                         <li className="menu-item nav-item">
-                            <Link href="/portfolio-details" className="nav_link">
+                            <Link href="/hireATalent?type=chipArchitect" className="nav_link">
                                 <span className="text-link">
                                 Chip Architect
                                 </span>
@@ -95,7 +95,7 @@ export default function NavbarNav() {
                     </Link>
                 </li>
                 <li className="menu-item  nav-item">
-                    <Link href="/contact" className="nav_link">
+                    <Link href="/career" className="nav_link">
                         <span className="text-link">
                             Career
                         </span>
