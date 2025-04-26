@@ -12,6 +12,7 @@ export default function CareerForm() {
         hearAbout: ''
     });
     const [submitted, setSubmitted] = useState(false);
+    const [error, setError] = useState('');
 
     const handleChange = (e) => {
         const { name, value, type, files } = e.target;
@@ -21,10 +22,35 @@ export default function CareerForm() {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Here you would handle the form submission, e.g., send to API or email
-        setSubmitted(true);
+        setError('');
+        
+        try {
+            const formData = new FormData();
+            
+            // Append all form fields to FormData
+            Object.entries(form).forEach(([key, value]) => {
+                if (value !== null) {
+                    formData.append(key, value);
+                }
+            });
+
+            const response = await fetch('/api/career', {
+                method: 'POST',
+                body: formData,
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.error || 'Failed to submit application');
+            }
+
+            setSubmitted(true);
+        } catch (err) {
+            setError(err.message || 'An error occurred while submitting your application');
+        }
     };
 
     return (
@@ -35,6 +61,11 @@ export default function CareerForm() {
             </div>
         ) : (
             <form onSubmit={handleSubmit} style={{ background: '#fff', padding: 24, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                {error && (
+                    <div style={{ color: 'red', marginBottom: '1rem', textAlign: 'center' }}>
+                        {error}
+                    </div>
+                )}
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
                         <label>Name:</label>
@@ -62,7 +93,19 @@ export default function CareerForm() {
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
                         <label>Upload Resume/CV:</label>
-                        <input type="file" name="resume" accept=".pdf,.doc,.docx" onChange={handleChange} required className="form-control" />
+                        <input 
+                            type="file" 
+                            name="resume" 
+                            accept=".pdf,.doc,.docx" 
+                            onChange={handleChange} 
+                            required 
+                            className="form-control" 
+                        />
+                        {form.resume && (
+                            <small className="text-muted">
+                                Selected file: {form.resume.name}
+                            </small>
+                        )}
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
                         <label>Cover Letter / Message: (Tell us why you're interested and how you can contribute)</label>

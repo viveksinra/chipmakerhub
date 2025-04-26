@@ -34,6 +34,8 @@ export default function CompanyForm() {
         consent: false
     });
     const [submitted, setSubmitted] = useState(false);
+    const [error, setError] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e) => {
         const { name, value, type, files, checked } = e.target;
@@ -56,11 +58,43 @@ export default function CompanyForm() {
         }
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Here you would handle the form submission, e.g., send to API or email
-        console.log('Form submitted:', form);
-        setSubmitted(true);
+        setError('');
+        setIsSubmitting(true);
+        
+        try {
+            const formData = new FormData();
+            
+            // Append all non-nested form fields to FormData
+            Object.entries(form).forEach(([key, value]) => {
+                if (key !== 'requiredSkills' && value !== null) {
+                    formData.append(key, value);
+                }
+            });
+            
+            // Append requiredSkills fields
+            Object.entries(form.requiredSkills).forEach(([key, value]) => {
+                formData.append(`requiredSkills.${key}`, value);
+            });
+
+            const response = await fetch('/api/company', {
+                method: 'POST',
+                body: formData,
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.error || 'Failed to submit project requirements');
+            }
+
+            setSubmitted(true);
+        } catch (err) {
+            setError(err.message || 'An error occurred while submitting your project requirements');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -71,6 +105,11 @@ export default function CompanyForm() {
             </div>
         ) : (
             <form onSubmit={handleSubmit} style={{ background: '#fff', padding: 24, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                {error && (
+                    <div style={{ color: 'red', marginBottom: '1rem', textAlign: 'center' }}>
+                        {error}
+                    </div>
+                )}
                 <h4 className="mb-4">Project Requirement Submission Form</h4>
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
@@ -249,8 +288,8 @@ export default function CompanyForm() {
                     </div>
                     
                     <div className="col-lg-12 col-md-12 col-sm-12 text-center mt-3">
-                        <button type="submit" className="btn" disabled={!form.consent} style={{ background: '#2f55d4', color: '#fff', padding: '10px 32px', borderRadius: 4, fontWeight: 600, fontSize: 18 }}>
-                            Submit Requirements
+                        <button type="submit" className="btn" disabled={!form.consent || isSubmitting} style={{ background: '#2f55d4', color: '#fff', padding: '10px 32px', borderRadius: 4, fontWeight: 600, fontSize: 18 }}>
+                            {isSubmitting ? 'Submitting...' : 'Submit Requirements'}
                         </button>
                     </div>
                 </div>
