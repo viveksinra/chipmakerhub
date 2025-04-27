@@ -153,7 +153,7 @@ export default function TermsConditions() {
                             <div className="col-lg-12">
                                 <div className="terms-conditions-content">
                                     <div className="last-modified mb-5">
-                                        <p><strong>Last Updated:</strong> October 1, 2023</p>
+                                        <p><strong>Last Updated:</strong> April 27, 2025</p>
                                     </div>
 
                                     {TERMS_CONDITIONS_CONTENT.map((section, index) => (

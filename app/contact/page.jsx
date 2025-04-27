@@ -1,8 +1,38 @@
+"use client"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { FaLinkedin, FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6"
+import { useState } from "react"
 
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        // Form submission logic here
+        console.log("Form submitted:", formData);
+        
+        // Example: Reset form after submission
+        setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+        });
+    };
 
     return (
         <>
@@ -55,7 +85,7 @@ export default function Contact() {
                     <div className="pd_bottom_40" />
                     {/*-============spacing==========-*/}
                 </section>
-                {/*-contact end*/}\
+                {/*-contact end*/}
                 {/*map*/}
              
                 {/*map*/}
@@ -101,36 +131,80 @@ export default function Contact() {
                             <div className="col-lg-8 col-md-12">
                                 <section className="contact_form_box_all">
                                     <div className="contact_form_shortcode">
-                                        <form id="contact-form" method="post" action="contact.php" role="form">
+                                        <form id="contact-form" onSubmit={handleSubmit}>
                                             <div className="messages" />
                                             <div className="controls">
                                                 <div className="row">
                                                     <div className="col-md-6 col-sm-12">
                                                         <div className="form-group">
-                                                            <input type="text" name="name" placeholder="Your Name *" required="required" data-error="Enter Your Name" />
+                                                            <label htmlFor="fullName" className="form-label">Full Name</label>
+                                                            <input 
+                                                                id="fullName"
+                                                                type="text" 
+                                                                name="name" 
+                                                                placeholder="Your Name *" 
+                                                                required="required" 
+                                                                data-error="Enter Your Name" 
+                                                                value={formData.name}
+                                                                onChange={handleChange}
+                                                            />
                                                             <div className="help-block with-errors" />
                                                         </div>
                                                     </div>
                                                     <div className="col-md-6 col-sm-12">
                                                         <div className="form-group">
-                                                            <input type="text" name="email" required="required" placeholder="Email *" data-error="Enter Your Email Id" />
+                                                            <label htmlFor="email" className="form-label">Email Address</label>
+                                                            <input 
+                                                                id="email"
+                                                                type="email" 
+                                                                name="email" 
+                                                                required="required" 
+                                                                placeholder="Email *" 
+                                                                data-error="Enter Your Email Id" 
+                                                                value={formData.email}
+                                                                onChange={handleChange}
+                                                            />
                                                             <div className="help-block with-errors" />
                                                         </div>
                                                     </div>
                                                     <div className="col-sm-12">
                                                         <div className="form-group">
-                                                            <input type="text" name="subject" required="required" placeholder=" Subject  (Optional)" />
+                                                            <label htmlFor="subject" className="form-label">Subject</label>
+                                                            <input 
+                                                                id="subject"
+                                                                type="text" 
+                                                                name="subject" 
+                                                                placeholder="Subject (Optional)" 
+                                                                value={formData.subject}
+                                                                onChange={handleChange}
+                                                            />
                                                         </div>
                                                     </div>
                                                     <div className="col-sm-12">
                                                         <div className="form-group">
-                                                            <textarea name="message" placeholder="Additional Information... (Optional) " rows={3} required="required" data-error="Please, leave us a message." />
+                                                            <label htmlFor="message" className="form-label">Message</label>
+                                                            <textarea 
+                                                                id="message"
+                                                                name="message" 
+                                                                placeholder="Additional Information... (Optional)" 
+                                                                rows={3} 
+                                                                required="required" 
+                                                                data-error="Please, leave us a message."
+                                                                value={formData.message}
+                                                                onChange={handleChange}
+                                                            />
                                                             <div className="help-block with-errors" />
                                                         </div>
                                                     </div>
                                                     <div className="col-sm-12">
                                                         <div className="form-group mg_top apbtn">
-                                                            <button className="theme_btn" type="submit">Send Message</button>
+                                                            <button 
+                                                                className="theme_btn" 
+                                                                type="submit"
+                                                                style={{ position: 'relative', zIndex: 10 }}
+                                                            >
+                                                                Send Message
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -141,7 +215,7 @@ export default function Contact() {
                             </div>
                         </div>
                     </div>
-                    <div className="ab_img_left_bottom z_0 mr_top_minus_150">
+                    <div className="ab_img_left_bottom z_0 mr_top_minus_150" style={{ zIndex: 0, pointerEvents: 'none' }}>
                         <img src="/assets/images/bg-1.png" className="img-fluid" alt="img" />
                     </div>
                     {/*-============spacing==========-*/}
@@ -149,8 +223,6 @@ export default function Contact() {
                     {/*-============spacing==========-*/}
                 </section>
                 {/*form*/}
-
-
             </Layout>
         </>
     )
