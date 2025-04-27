@@ -125,80 +125,92 @@ export default function CompanyForm() {
                         <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="contact@company.com" required className="form-control" />
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
-                        <label>Project Title <span style={{ color: 'red' }}></span></label>
+                        <label>Project Title <span style={{ color: 'red' }}>*</span></label>
                         <input type="text" name="projectTitle" value={form.projectTitle} onChange={handleChange} placeholder="Brief title for the project" required className="form-control" />
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
-                        <label>Project Description <span style={{ color: 'red' }}></span></label>
+                        <label>Project Description <span style={{ color: 'red' }}>*</span></label>
                         <textarea name="projectDescription" value={form.projectDescription} onChange={handleChange} placeholder="Describe project scope, goals, and technical context" required className="form-control" rows={4} />
                     </div>
                     
                     <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
-                        <label>Required Skills / Domains <span style={{ color: 'red' }}>*</span></label>
+                        <label className="fw-bold mb-3">Required Skills / Domains <span style={{ color: 'red' }}>*</span></label>
                         <div className="row ps-2">
-                            <div className="col-lg-4 col-md-6 mb-2">
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="rtlDesign" name="requiredSkills.rtlDesign" checked={form.requiredSkills.rtlDesign} onChange={handleChange} />
-                                    <label className="form-check-label" htmlFor="rtlDesign">RTL Design</label>
+                            {[
+                                { id: "rtlDesign", label: "RTL Design" },
+                                { id: "functionalVerification", label: "Functional Verification" },
+                                { id: "uvm", label: "UVM" },
+                                { id: "dft", label: "DFT" },
+                                { id: "physicalDesign", label: "Physical Design" },
+                                { id: "sta", label: "STA" },
+                                { id: "ams", label: "AMS" },
+                                { id: "fpga", label: "FPGA" },
+                                { id: "socIntegration", label: "SoC Integration" },
+                                { id: "scripting", label: "Scripting (Python/TCL/Perl)" },
+                                { id: "others", label: "Others" },
+                            ].map((skill) => (
+                                <div className="col-lg-4 col-md-6 mb-3" key={skill.id}>
+                                    <div 
+                                        className={`skill-box p-2 rounded ${form.requiredSkills[skill.id] ? 'selected' : ''}`}
+                                        style={{
+                                            background: form.requiredSkills[skill.id] ? '#e8efff' : '#f8f9fa',
+                                            border: `1px solid ${form.requiredSkills[skill.id] ? '#2f55d4' : '#dee2e6'}`,
+                                            borderRadius: '8px',
+                                            transition: 'all 0.2s ease',
+                                            cursor: 'pointer',
+                                            boxShadow: form.requiredSkills[skill.id] ? '0 2px 5px rgba(47, 85, 212, 0.15)' : 'none',
+                                            textAlign: 'center',
+                                            paddingTop: '8px',
+                                            paddingBottom: '8px'
+                                        }}
+                                        onClick={() => {
+                                            const e = {
+                                                target: {
+                                                    name: `requiredSkills.${skill.id}`,
+                                                    type: 'checkbox',
+                                                    checked: !form.requiredSkills[skill.id]
+                                                }
+                                            };
+                                            handleChange(e);
+                                        }}
+                                    >
+                                        <label 
+                                            htmlFor={skill.id}
+                                            style={{ 
+                                                fontWeight: form.requiredSkills[skill.id] ? '500' : 'normal',
+                                                color: form.requiredSkills[skill.id] ? '#2f55d4' : '#495057',
+                                                cursor: 'pointer',
+                                                margin: 0
+                                            }}
+                                        >
+                                            {skill.label}
+                                        </label>
+                                        <input 
+                                            type="checkbox" 
+                                            id={skill.id} 
+                                            name={`requiredSkills.${skill.id}`} 
+                                            checked={form.requiredSkills[skill.id]} 
+                                            onChange={handleChange}
+                                            style={{ display: 'none' }}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-2">
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="functionalVerification" name="requiredSkills.functionalVerification" checked={form.requiredSkills.functionalVerification} onChange={handleChange} />
-                                    <label className="form-check-label" htmlFor="functionalVerification">Functional Verification</label>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-2">
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="uvm" name="requiredSkills.uvm" checked={form.requiredSkills.uvm} onChange={handleChange} />
-                                    <label className="form-check-label" htmlFor="uvm">UVM</label>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-2">
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="dft" name="requiredSkills.dft" checked={form.requiredSkills.dft} onChange={handleChange} />
-                                    <label className="form-check-label" htmlFor="dft">DFT</label>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-2">
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="physicalDesign" name="requiredSkills.physicalDesign" checked={form.requiredSkills.physicalDesign} onChange={handleChange} />
-                                    <label className="form-check-label" htmlFor="physicalDesign">Physical Design</label>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-2">
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="sta" name="requiredSkills.sta" checked={form.requiredSkills.sta} onChange={handleChange} />
-                                    <label className="form-check-label" htmlFor="sta">STA</label>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-2">
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="ams" name="requiredSkills.ams" checked={form.requiredSkills.ams} onChange={handleChange} />
-                                    <label className="form-check-label" htmlFor="ams">AMS</label>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-2">
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="fpga" name="requiredSkills.fpga" checked={form.requiredSkills.fpga} onChange={handleChange} />
-                                    <label className="form-check-label" htmlFor="fpga">FPGA</label>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-2">
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="socIntegration" name="requiredSkills.socIntegration" checked={form.requiredSkills.socIntegration} onChange={handleChange} />
-                                    <label className="form-check-label" htmlFor="socIntegration">SoC Integration</label>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 mb-2">
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="scripting" name="requiredSkills.scripting" checked={form.requiredSkills.scripting} onChange={handleChange} />
-                                    <label className="form-check-label" htmlFor="scripting">Scripting (Python/TCL/Perl)</label>
-                                </div>
-                            </div>
+                            ))}
                             <div className="col-lg-12 col-md-12 mt-2">
                                 <label>Others (if any)</label>
-                                <input type="text" name="requiredSkills.others" value={form.requiredSkills.others} onChange={handleChange} placeholder="Any other required skills" className="form-control" />
+                                <input 
+                                    type="text" 
+                                    name="requiredSkills.others" 
+                                    value={form.requiredSkills.others} 
+                                    onChange={handleChange} 
+                                    placeholder="Any other required skills" 
+                                    className="form-control"
+                                    style={{
+                                        border: '1px solid #dee2e6',
+                                        borderRadius: '8px',
+                                        padding: '10px 15px'
+                                    }}
+                                />
                             </div>
                         </div>
                     </div>
@@ -278,7 +290,14 @@ export default function CompanyForm() {
                         <textarea name="additionalNotes" value={form.additionalNotes} onChange={handleChange} placeholder="Add any other info that would help us understand your needs" className="form-control" rows={3} />
                     </div>
                     
-             
+                    <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
+                        <div className="form-check">
+                            <input type="checkbox" className="form-check-input" id="consent" name="consent" checked={form.consent} onChange={handleChange} required />
+                            <label className="form-check-label" htmlFor="consent">
+                                I agree to ChipMakersHub's terms of service <span style={{ color: 'red' }}>*</span>
+                            </label>
+                        </div>
+                    </div>
                     
                     <div className="col-lg-12 col-md-12 col-sm-12 text-center mt-3">
                         <button type="submit" className="btn" disabled={!form.consent || isSubmitting} style={{ background: '#2f55d4', color: '#fff', padding: '10px 32px', borderRadius: 4, fontWeight: 600, fontSize: 18 }}>
