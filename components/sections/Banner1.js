@@ -132,30 +132,8 @@ export default function Banner1() {
                                                 textShadow: '0px 3px 5px rgba(0,0,0,0.1)'
                                             }}
                                         >
-                                            Hire the World's Top <span style={{ 
-                                                position: 'relative',
-                                                display: 'inline-block',
-                                                background: 'linear-gradient(90deg, #1e4bb8, #2a5fd9)',
-                                                WebkitBackgroundClip: 'text',
-                                                WebkitTextFillColor: 'transparent',
-                                                textShadow: '0px 2px 4px rgba(0,0,0,0.15)'
-                                            }}>
-                                                VLSI
-                                                {/* <motion.span 
-                                                    style={{
-                                                        position: 'absolute',
-                                                        bottom: '5px',
-                                                        left: 0,
-                                                        width: '100%',
-                                                        height: '8px',
-                                                        backgroundColor: 'rgba(30, 75, 184, 0.3)',
-                                                        borderRadius: '4px'
-                                                    }}
-                                                    initial={{ width: 0 }}
-                                                    animate={{ width: '100%' }}
-                                                    transition={{ duration: 0.8, delay: 1 }}
-                                                /> */}
-                                            </span> Freelancer
+                                            Hire the World's Top VLSI Freelancer                                          
+                                         
                                         </motion.h2>
                                     </motion.div>
                                     
