@@ -339,7 +339,7 @@ export default function Footer2({ }) {
                                             <div className="d-flex align-items-center">
                                            
                                                 <Link className="links color_white" href="#">
-                                                Where the world connects for VLSI work
+                                               Hire the World's Top VLSI Freelancer
                                                 </Link>
                                             </div>
                                         </li>

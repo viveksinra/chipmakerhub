@@ -31,7 +31,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "ChipMakersHub",
-  description: "Hire the World's Top VLSI Freelancers",
+  description: "Hire the World's Top VLSI Freelancer",
 };
 
 export default function RootLayout({ children }) {
