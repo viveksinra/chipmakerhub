@@ -40,7 +40,7 @@ export default function Career() {
 
     return (
         <>
-            <Layout breadcrumbTitle="Career" backgroundImage="url(assets/images/chipMaker/aboutus.jpg)">
+            <Layout breadcrumbTitle="Career" backgroundImage="url(assets/images/chipMaker/carrer.jpg)">
                 {/* Career Section - Text on top */}
                 <section style={{ padding: "80px 0 40px" }}>
                     <div className="container">

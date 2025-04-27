@@ -1,8 +1,36 @@
 "use client"
 import Layout from "@/components/layout/Layout"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 export default function AboutUs() {
+    // Array of feature data for mapping
+    const features = [
+        {
+            icon: "flaticon-development",
+            title: "A marketplace for VLSI freelancers",
+            description: "Connect with specialized semiconductor talent in our dedicated VLSI freelance marketplace.",
+            delay: "0.5s"
+        },
+        {
+            icon: "flaticon-system",
+            title: "On-demand VLSI talent for companies",
+            description: "Access skilled engineers when needed without long-term commitments or extensive hiring processes.",
+            delay: "0.7s"
+        },
+        {
+            icon: "flaticon-teamwork",
+            title: "Seamless project collaboration and management",
+            description: "Utilize our integrated tools for efficient communication, milestone tracking, and secure deliverables.",
+            delay: "0.9s"
+        },
+        {
+            icon: "flaticon-chip",
+            title: "Expertise in full-spectrum ASIC, FPGA, and SoC development",
+            description: "Find specialized skills across the entire semiconductor design and verification workflow.",
+            delay: "1.1s"
+        }
+    ];
+
     useEffect(() => {
         // Add animation class after component mounts
         const animateElements = document.querySelectorAll('.animate-on-scroll');
@@ -52,101 +80,31 @@ export default function AboutUs() {
                         <div className="pd_top_60" />
 
                         <div className="row">
-                            <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                                <div className="about-feature-box text-center p-4 animate-on-scroll" 
-                                    style={{ 
-                                        border: "none", 
-                                        borderRadius: "15px", 
-                                        height: "100%", 
-                                        boxShadow: "0 10px 30px rgba(0,0,0,0.08)", 
-                                        transition: "all 0.3s ease",
-                                        background: "linear-gradient(145deg, #ffffff, #f5f5f5)",
-                                        animation: 'fadeInUp 0.5s ease forwards',
-                                        transform: 'translateY(20px)',
-                                        opacity: 0
-                                    }}
-                                    onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-10px)'}
-                                    onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-                                >
-                                    <div className="icon-box mb-4">
-                                        <i className="flaticon-development" style={{ fontSize: '50px', color: '#2f55d4' }}></i>
+                            {features.map((feature, index) => (
+                                <div className="col-lg-3 col-md-6 mb-4 mb-lg-0" key={index}>
+                                    <div className="about-feature-box text-center p-4 animate-on-scroll" 
+                                        style={{ 
+                                            border: "none", 
+                                            borderRadius: "15px", 
+                                            height: "100%", 
+                                            boxShadow: "0 10px 30px rgba(0,0,0,0.08)", 
+                                            transition: "all 0.3s ease",
+                                            background: "linear-gradient(145deg, #ffffff, #f5f5f5)",
+                                            animation: `fadeInUp ${feature.delay} ease forwards`,
+                                            transform: 'translateY(20px)',
+                                            opacity: 0
+                                        }}
+                                        onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-10px)'}
+                                        onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+                                    >
+                                        <div className="icon-box mb-4">
+                                            <i className={feature.icon} style={{ fontSize: '50px', color: '#2f55d4' }}></i>
+                                        </div>
+                                        <h4 className="mb-3" style={{ fontWeight: '600' }}>{feature.title}</h4>
+                                        <p>{feature.description}</p>
                                     </div>
-                                    <h4 className="mb-3" style={{ fontWeight: '600' }}>A marketplace for VLSI freelancers</h4>
-                                    <p>Connect with specialized semiconductor talent in our dedicated VLSI freelance marketplace.</p>
                                 </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                                <div className="about-feature-box text-center p-4 animate-on-scroll" 
-                                    style={{ 
-                                        border: "none", 
-                                        borderRadius: "15px", 
-                                        height: "100%", 
-                                        boxShadow: "0 10px 30px rgba(0,0,0,0.08)", 
-                                        transition: "all 0.3s ease",
-                                        background: "linear-gradient(145deg, #ffffff, #f5f5f5)",
-                                        animation: 'fadeInUp 0.7s ease forwards',
-                                        transform: 'translateY(20px)',
-                                        opacity: 0
-                                    }}
-                                    onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-10px)'}
-                                    onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-                                >
-                                    <div className="icon-box mb-4">
-                                        <i className="flaticon-system" style={{ fontSize: '50px', color: '#2f55d4' }}></i>
-                                    </div>
-                                    <h4 className="mb-3" style={{ fontWeight: '600' }}>On-demand VLSI talent for companies</h4>
-                                    <p>Access skilled engineers when needed without long-term commitments or extensive hiring processes.</p>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <div className="about-feature-box text-center p-4 animate-on-scroll" 
-                                    style={{ 
-                                        border: "none", 
-                                        borderRadius: "15px", 
-                                        height: "100%", 
-                                        boxShadow: "0 10px 30px rgba(0,0,0,0.08)", 
-                                        transition: "all 0.3s ease",
-                                        background: "linear-gradient(145deg, #ffffff, #f5f5f5)",
-                                        animation: 'fadeInUp 0.9s ease forwards',
-                                        transform: 'translateY(20px)',
-                                        opacity: 0
-                                    }}
-                                    onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-10px)'}
-                                    onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-                                >
-                                    <div className="icon-box mb-4">
-                                        <i className="flaticon-teamwork" style={{ fontSize: '50px', color: '#2f55d4' }}></i>
-                                    </div>
-                                    <h4 className="mb-3" style={{ fontWeight: '600' }}>Seamless project collaboration and management</h4>
-                                    <p>Utilize our integrated tools for efficient communication, milestone tracking, and secure deliverables.</p>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-3 col-md-6">
-                                <div className="about-feature-box text-center p-4 animate-on-scroll" 
-                                    style={{ 
-                                        border: "none", 
-                                        borderRadius: "15px", 
-                                        height: "100%", 
-                                        boxShadow: "0 10px 30px rgba(0,0,0,0.08)", 
-                                        transition: "all 0.3s ease",
-                                        background: "linear-gradient(145deg, #ffffff, #f5f5f5)",
-                                        animation: 'fadeInUp 1.1s ease forwards',
-                                        transform: 'translateY(20px)',
-                                        opacity: 0
-                                    }}
-                                    onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-10px)'}
-                                    onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-                                >
-                                    <div className="icon-box mb-4">
-                                        <i className="flaticon-chip" style={{ fontSize: '50px', color: '#2f55d4' }}></i>
-                                    </div>
-                                    <h4 className="mb-3" style={{ fontWeight: '600' }}>Expertise in full-spectrum ASIC, FPGA, and SoC development</h4>
-                                    <p>Find specialized skills across the entire semiconductor design and verification workflow.</p>
-                                </div>
-                            </div>
+                            ))}
                         </div>
 
                         <style jsx>{`

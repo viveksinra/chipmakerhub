@@ -7,7 +7,7 @@ export default function Faq() {
     // FAQ data for each tab
     const generalFaqs = [
         {
-            question: "What is CMH?",
+            question: "What is ChipMakersHub?",
             answer: "ChipMakersHub connects forward-thinking companies with top-tier semiconductor professionals specializing in RTL design, verification, DFT, physical design, and the full spectrum of chip development expertise."
         },
         {
@@ -28,10 +28,7 @@ export default function Faq() {
             question: "How do I sign up as a freelancer?",
             answer: "To sign up as a freelancer, click on the 'Sign Up as a Freelancer' button on our homepage, complete your profile with your professional details, skills, and portfolio, and submit for verification. Our team will review your application and guide you through the verification process."
         },
-        {
-            question: "Is there a fee to join as a freelancer?",
-            answer: "Basic registration on ChipMakersHub is free for freelancers. We operate on a commission-based model, taking a percentage only when you successfully complete a project. Premium membership plans with additional benefits are also available."
-        },
+    
         {
             question: "How does the verification process work?",
             answer: "Our verification process includes a review of your professional background, portfolio, and skills assessment. Depending on your specialization, this may include technical interviews, reference checks, or skill-specific tests to ensure quality standards."
@@ -47,7 +44,7 @@ export default function Faq() {
             answer: "Register your company, post a detailed project description specifying your requirements, review proposals from qualified freelancers, select the best match, and begin collaboration through our secure platform."
         },
         {
-            question: "How are freelancers vetted on your platform?",
+            question: "How are freelancers vetted on ChipMakersHub?",
             answer: "All freelancers undergo a comprehensive verification process that includes professional background checks, portfolio review, skill assessments, and for certain specializations, technical interviews. Only professionals who meet our quality standards are approved."
         }
     ];
@@ -73,14 +70,14 @@ export default function Faq() {
 
     return (
         <>
-            <Layout breadcrumbTitle="FAQs" backgroundImage="url(assets/gif/portrait/chip3.gif)">
+            <Layout breadcrumbTitle="FAQs" backgroundImage="url(assets/images/chipMaker/faqbg.jpg)">
                 <section className="faq-section">
                     <div className="pd_top_90" />
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-5">
                                 <div className="section_title type_one">
-                                    <h4 className="sm_title"> Faqs</h4>
+                                    <h4 className="sm_title"> FAQs</h4>
                                     <div className="title_whole">
                                         <h2 className="title"> Frequently Asked Questions!</h2>
                                     </div>

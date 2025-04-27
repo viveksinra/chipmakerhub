@@ -6,7 +6,7 @@ export default function Contact() {
 
     return (
         <>
-            <Layout breadcrumbTitle="Contact" backgroundImage="url(assets/gif/landscape/chip.gif)">
+            <Layout breadcrumbTitle="Contact Us" backgroundImage="url(assets/images/chipMaker/skyscrapper.jpg)">
                 {/*-contact*/}
                 <section className="contact-section">
                     {/*-============spacing==========-*/}
@@ -14,23 +14,9 @@ export default function Contact() {
                     {/*-============spacing==========-*/}
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-4 col-md-6 col-sm-12">
-                                <div className="contact_box_content">
-                                    <div className="icon trans">
-                                        <img src="/assets/images/cont-1.png" alt="img" className="img-fluid" />
-                                    </div>
-                                    <div className="contact-infor">
-                                        <h6 className="title_no_a_24"> Location</h6>
-                                        <span>55 Main Street, 2nd Block
-                                            melbourne, Australia</span>
-                                    </div>
-                                </div>
-                                {/*-============spacing==========-*/}
-                                <div className="pd_bottom_30" />
-                                {/*-============spacing==========-*/}
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-12">
-                                <div className="contact_box_content">
+                         
+                            <div className="col-lg-6 col-md-6 col-sm-12">
+                                <div className="contact_box_content" style={{ minHeight: "180px" }}>
                                     <div className="icon trans">
                                         <img src="/assets/images/cont-2.png" alt="img" className="img-fluid" />
                                     </div>
@@ -45,8 +31,8 @@ export default function Contact() {
                                 <div className="pd_bottom_30" />
                                 {/*-============spacing==========-*/}
                             </div>
-                            <div className="col-lg-4 col-md-6 col-sm-12">
-                                <div className="contact_box_content">
+                            <div className="col-lg-6 col-md-6 col-sm-12">
+                                <div className="contact_box_content" style={{ minHeight: "180px" }}>
                                     <div className="icon trans">
                                         <img src="/assets/images/cont-3.png" alt="img" className="img-fluid" />
                                     </div>

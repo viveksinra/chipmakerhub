@@ -14,12 +14,12 @@ export default function Breadcrumb({breadcrumbTitle, backgroundImage='url(assets
                                         <span className="main_tit">{breadcrumbTitle}</span> </div>
                                 </div>
                             </div>
-                            <div className="col-lg-12 vankine">
+                            {/* <div className="col-lg-12 vankine">
                                 <ul className="breadcrumb m-auto">
                                     <li><Link href="#">Home</Link> </li>
                                     <li className="active">{breadcrumbTitle}</li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
