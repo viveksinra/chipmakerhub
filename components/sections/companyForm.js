@@ -31,7 +31,6 @@ export default function CompanyForm() {
         budgetRange: '',
         attachments: null,
         additionalNotes: '',
-        consent: false
     });
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState('');
@@ -125,12 +124,12 @@ export default function CompanyForm() {
                         <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="contact@company.com" required className="form-control" />
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
-                        <label>Project Title <span style={{ color: 'red' }}>*</span></label>
-                        <input type="text" name="projectTitle" value={form.projectTitle} onChange={handleChange} placeholder="Brief title for the project" required className="form-control" />
+                        <label>Project Title</label>
+                        <input type="text" name="projectTitle" value={form.projectTitle} onChange={handleChange} placeholder="Brief title for the project" className="form-control" />
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
-                        <label>Project Description <span style={{ color: 'red' }}>*</span></label>
-                        <textarea name="projectDescription" value={form.projectDescription} onChange={handleChange} placeholder="Describe project scope, goals, and technical context" required className="form-control" rows={4} />
+                        <label>Project Description</label>
+                        <textarea name="projectDescription" value={form.projectDescription} onChange={handleChange} placeholder="Describe project scope, goals, and technical context" className="form-control" rows={4} />
                     </div>
                     
                     <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
@@ -290,17 +289,10 @@ export default function CompanyForm() {
                         <textarea name="additionalNotes" value={form.additionalNotes} onChange={handleChange} placeholder="Add any other info that would help us understand your needs" className="form-control" rows={3} />
                     </div>
                     
-                    <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
-                        <div className="form-check">
-                            <input type="checkbox" className="form-check-input" id="consent" name="consent" checked={form.consent} onChange={handleChange} required />
-                            <label className="form-check-label" htmlFor="consent">
-                                I agree to ChipMakersHub's terms of service <span style={{ color: 'red' }}>*</span>
-                            </label>
-                        </div>
-                    </div>
+        
                     
                     <div className="col-lg-12 col-md-12 col-sm-12 text-center mt-3">
-                        <button type="submit" className="btn" disabled={!form.consent || isSubmitting} style={{ background: '#2f55d4', color: '#fff', padding: '10px 32px', borderRadius: 4, fontWeight: 600, fontSize: 18 }}>
+                        <button type="submit" className="btn" disabled={isSubmitting} style={{ background: '#2f55d4', color: '#fff', padding: '10px 32px', borderRadius: 4, fontWeight: 600, fontSize: 18 }}>
                             {isSubmitting ? 'Submitting...' : 'Submit Requirements'}
                         </button>
                     </div>
