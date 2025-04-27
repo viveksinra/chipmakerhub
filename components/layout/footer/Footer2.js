@@ -193,7 +193,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/contact-us">
+                                                            <Link className="links color_white" href="/contact">
                                                                 Contact Us
                                                             </Link>
                                                         </div>
@@ -203,7 +203,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/faqs">
+                                                            <Link className="links color_white" href="/faq">
                                                                 FAQs
                                                             </Link>
                                                         </div>
@@ -213,7 +213,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/join-freelancer">
+                                                            <Link className="links color_white" href="/forFreelancer">
                                                                 Apply as a Freelancer
                                                             </Link>
                                                         </div>
@@ -223,7 +223,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/hire-freelancer">
+                                                            <Link className="links color_white" href="/forCompany">
                                                                 Hire Top VLSI Talent
                                                             </Link>
                                                         </div>
