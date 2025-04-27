@@ -240,7 +240,7 @@ export default function Banner1() {
                                             ...buttonPulse
                                         }}
                                         custom={4}
-                                        style={{ marginTop: '15px', display: 'inline-block' }}
+                                        style={{ marginTop: '15px', display: 'inline-block', background: 'linear-gradient(135deg, #1e4bb8, #174EA6)', borderRadius: '12px' }}
                                     >
                                         <Link href="/contact">
                                             <motion.button 
@@ -268,7 +268,7 @@ export default function Banner1() {
                                                     letterSpacing: '0.5px'
                                                 }}
                                             >
-                                                <span>Hire Top VLSI Talent</span>
+                                                <span style={{ color: 'white' }}>Hire Top VLSI Talent</span>
                                                 <motion.span
                                                     animate={{ x: [0, 5, 0] }}
                                                     transition={{ duration: 1, repeat: Infinity }}

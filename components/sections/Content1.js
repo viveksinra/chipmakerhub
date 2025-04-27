@@ -85,12 +85,22 @@ export default function Content1() {
                                     <path d="M511.94 27.9446C450.328 34.2751 426.172 86.6367 388.192 42.1471C376.849 28.8672 369.496 15.8049 356.881 7.85635C320.869 -14.8308 288.183 39.7147 254.098 21.6142C232.361 10.0692 201.495 -12.2949 160.749 11.4556C139.809 23.6643 131.75 43.9955 121.113 68.4992C98.9077 119.645 51.9621 120.301 18.0526 171.855C-10.8735 215.844 -1.72306 261.738 34.5651 282.861C76.3006 307.166 118.003 290.991 175.305 284.117C225.771 278.064 241.38 321.316 288.013 349.769C320.203 369.405 356.398 361.394 387.85 339.164C428.965 310.102 443.933 276.977 463.164 237.902C484.401 194.736 514.067 182.433 539.686 166.375C618.882 116.728 578.36 21.1282 511.94 27.9446Z" fill="#1a73e8" />
                                 </svg>
                                 <div className="image one">
-                                <img src="/assets/images/chipMaker/men.jpeg" width={375} height={490} decoding="async" data-src="/assets/images/chipMaker/men.jpeg" alt="img" data-ll-status="loaded" className="entered litespeed-loaded" /><noscript>&lt;img width="375" height="490"
+                                <img 
+                                  src="/assets/images/chipMaker/groupPic.png" 
+                                  width={375} 
+                                  height={490} 
+                                  decoding="async" 
+                                  data-src="/assets/images/chipMaker/men.jpeg" 
+                                  alt="img" 
+                                  data-ll-status="loaded" 
+                                  className="entered litespeed-loaded" 
+                                  style={{borderRadius: '20px'}}
+                                /><noscript>&lt;img width="375" height="490"
                                         decoding="async"
                                         src="/assets/images/chipMaker/men.jpeg"
                                         alt="img" /&gt;</noscript></div>
                                 <div className="image two">
-                                    <img src="/assets/images/chipMaker/women.jpg" width={648} height={648} decoding="async" data-src="/assets/images/chipMaker/women.jpg" alt="img" data-ll-status="loaded" className="entered litespeed-loaded" /><noscript>&lt;img width="648" height="648"
+                                    <img src="/assets/images/chipMaker/girlWithPc.png" width={648} height={648} decoding="async" data-src="/assets/images/chipMaker/women.jpg" alt="img" data-ll-status="loaded" className="entered litespeed-loaded" /><noscript>&lt;img width="648" height="648"
                                         decoding="async"
                                         src="/assets/images/chipMaker/women.jpg"
                                         alt="img" /&gt;</noscript></div>
