@@ -218,7 +218,7 @@ export default function Banner1() {
                                             ...buttonPulse
                                         }}
                                         custom={4}
-                                        style={{ marginTop: '15px', display: 'inline-block', background: 'linear-gradient(135deg, #1e4bb8, #174EA6)', borderRadius: '12px' }}
+                                        style={{ marginTop: '15px', marginBottom: '15px', display: 'inline-block', background: 'linear-gradient(135deg, #1e4bb8, #174EA6)', borderRadius: '12px' }}
                                     >
                                         <Link href="/hireATalent">
                                             <motion.button 
