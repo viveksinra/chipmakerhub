@@ -90,7 +90,7 @@ export default function NavbarNav() {
                 <li className="menu-item  nav-item" style={{marginRight: '20px', padding: '25px 0px'}}>
                     <Link href="/contact" className="nav_link">
                         <span className="text-link" style={{fontSize: '16px'}}>
-                            Contact
+                            Contact Us
                         </span>
                     </Link>
                 </li>
