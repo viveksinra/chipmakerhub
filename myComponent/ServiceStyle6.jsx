@@ -74,7 +74,7 @@ export default function ServiceStyle6() {
                                             <img src="/assets/images/chipMaker/men.jpeg"  className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
-                                                    <Link href="/service-details">
+                                                    <Link href="/hireATalent">
                                                         ASIC & FPGA Design
                                                     </Link>
                                                 </div>
@@ -83,7 +83,7 @@ export default function ServiceStyle6() {
                                                 </p>
                                             </div>
                                             <div className="right">
-                                                <Link href="/service-details" className="link">
+                                                <Link href="/hireATalent" className="link">
                                                     <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M6.53522 0H22.9415C23.2315 0 23.5098 0.115234 23.7149 0.320352C23.92 0.52547 24.0352 0.803669 24.0352 1.09375V17.5C24.0352 17.7901 23.92 18.0683 23.7149 18.2734C23.5098 18.4785 23.2315 18.5937 22.9415 18.5937C22.6514 18.5937 22.3732 18.4785 22.1681 18.2734C21.963 18.0683 21.8477 17.7901 21.8477 17.5V3.73333L1.83938 23.7417C1.63205 23.9349 1.35781 24.04 1.07446 24.035C0.791099 24.03 0.520746 23.9153 0.320352 23.7149C0.119958 23.5145 0.00516988 23.2441 0.000170402 22.9608C-0.00482908 22.6774 0.100351 22.4032 0.293551 22.1958L20.3019 2.1875H6.53522C6.24514 2.1875 5.96694 2.07227 5.76182 1.86715C5.5567 1.66203 5.44147 1.38383 5.44147 1.09375C5.44147 0.803669 5.5567 0.52547 5.76182 0.320352C5.96694 0.115234 6.24514 0 6.53522 0Z" />
                                                         <defs>
@@ -108,7 +108,7 @@ export default function ServiceStyle6() {
                                         <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
-                                                    <Link href="/service-details">
+                                                    <Link href="/hireATalent">
                                                     RTL Development & Verification
                                                     </Link></div>
                                                 <p className="trans">
@@ -116,7 +116,7 @@ export default function ServiceStyle6() {
                                                 </p>
                                             </div>
                                             <div className="right">
-                                                <Link href="/service-details" className="link">
+                                                <Link href="/hireATalent" className="link">
                                                     <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M6.53522 0H22.9415C23.2315 0 23.5098 0.115234 23.7149 0.320352C23.92 0.52547 24.0352 0.803669 24.0352 1.09375V17.5C24.0352 17.7901 23.92 18.0683 23.7149 18.2734C23.5098 18.4785 23.2315 18.5937 22.9415 18.5937C22.6514 18.5937 22.3732 18.4785 22.1681 18.2734C21.963 18.0683 21.8477 17.7901 21.8477 17.5V3.73333L1.83938 23.7417C1.63205 23.9349 1.35781 24.04 1.07446 24.035C0.791099 24.03 0.520746 23.9153 0.320352 23.7149C0.119958 23.5145 0.00516988 23.2441 0.000170402 22.9608C-0.00482908 22.6774 0.100351 22.4032 0.293551 22.1958L20.3019 2.1875H6.53522C6.24514 2.1875 5.96694 2.07227 5.76182 1.86715C5.5567 1.66203 5.44147 1.38383 5.44147 1.09375C5.44147 0.803669 5.5567 0.52547 5.76182 0.320352C5.96694 0.115234 6.24514 0 6.53522 0Z" />
                                                         <defs>
@@ -141,7 +141,7 @@ export default function ServiceStyle6() {
                                         <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
-                                                    <Link href="/service-details">
+                                                    <Link href="/hireATalent">
                                                         DFT (Design For Testability)
                                                     </Link>
                                                 </div>
@@ -150,7 +150,7 @@ export default function ServiceStyle6() {
                                                 </p>
                                             </div>
                                             <div className="right">
-                                                <Link href="/service-details" className="link">
+                                                <Link href="/hireATalent" className="link">
                                                     <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M6.53522 0H22.9415C23.2315 0 23.5098 0.115234 23.7149 0.320352C23.92 0.52547 24.0352 0.803669 24.0352 1.09375V17.5C24.0352 17.7901 23.92 18.0683 23.7149 18.2734C23.5098 18.4785 23.2315 18.5937 22.9415 18.5937C22.6514 18.5937 22.3732 18.4785 22.1681 18.2734C21.963 18.0683 21.8477 17.7901 21.8477 17.5V3.73333L1.83938 23.7417C1.63205 23.9349 1.35781 24.04 1.07446 24.035C0.791099 24.03 0.520746 23.9153 0.320352 23.7149C0.119958 23.5145 0.00516988 23.2441 0.000170402 22.9608C-0.00482908 22.6774 0.100351 22.4032 0.293551 22.1958L20.3019 2.1875H6.53522C6.24514 2.1875 5.96694 2.07227 5.76182 1.86715C5.5567 1.66203 5.44147 1.38383 5.44147 1.09375C5.44147 0.803669 5.5567 0.52547 5.76182 0.320352C5.96694 0.115234 6.24514 0 6.53522 0Z" />
                                                         <defs>
@@ -175,7 +175,7 @@ export default function ServiceStyle6() {
                                         <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
-                                                    <Link href="/service-details">
+                                                    <Link href="/hireATalent">
                                                         Physical Design & Signoff
                                                     </Link>
                                                 </div>
@@ -184,7 +184,7 @@ export default function ServiceStyle6() {
                                                 </p>
                                             </div>
                                             <div className="right">
-                                                <Link href="/service-details" className="link">
+                                                <Link href="/hireATalent" className="link">
                                                     <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M6.53522 0H22.9415C23.2315 0 23.5098 0.115234 23.7149 0.320352C23.92 0.52547 24.0352 0.803669 24.0352 1.09375V17.5C24.0352 17.7901 23.92 18.0683 23.7149 18.2734C23.5098 18.4785 23.2315 18.5937 22.9415 18.5937C22.6514 18.5937 22.3732 18.4785 22.1681 18.2734C21.963 18.0683 21.8477 17.7901 21.8477 17.5V3.73333L1.83938 23.7417C1.63205 23.9349 1.35781 24.04 1.07446 24.035C0.791099 24.03 0.520746 23.9153 0.320352 23.7149C0.119958 23.5145 0.00516988 23.2441 0.000170402 22.9608C-0.00482908 22.6774 0.100351 22.4032 0.293551 22.1958L20.3019 2.1875H6.53522C6.24514 2.1875 5.96694 2.07227 5.76182 1.86715C5.5567 1.66203 5.44147 1.38383 5.44147 1.09375C5.44147 0.803669 5.5567 0.52547 5.76182 0.320352C5.96694 0.115234 6.24514 0 6.53522 0Z" />
                                                         <defs>
@@ -209,7 +209,7 @@ export default function ServiceStyle6() {
                                         <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
-                                                    <Link href="/service-details">
+                                                    <Link href="/hireATalent">
                                                       Analog & Mixed-Signal Design
                                                     </Link>
                                                 </div>
@@ -218,7 +218,7 @@ export default function ServiceStyle6() {
                                                 </p>
                                             </div>
                                             <div className="right">
-                                                <Link href="/service-details" className="link">
+                                                <Link href="/hireATalent" className="link">
                                                     <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M6.53522 0H22.9415C23.2315 0 23.5098 0.115234 23.7149 0.320352C23.92 0.52547 24.0352 0.803669 24.0352 1.09375V17.5C24.0352 17.7901 23.92 18.0683 23.7149 18.2734C23.5098 18.4785 23.2315 18.5937 22.9415 18.5937C22.6514 18.5937 22.3732 18.4785 22.1681 18.2734C21.963 18.0683 21.8477 17.7901 21.8477 17.5V3.73333L1.83938 23.7417C1.63205 23.9349 1.35781 24.04 1.07446 24.035C0.791099 24.03 0.520746 23.9153 0.320352 23.7149C0.119958 23.5145 0.00516988 23.2441 0.000170402 22.9608C-0.00482908 22.6774 0.100351 22.4032 0.293551 22.1958L20.3019 2.1875H6.53522C6.24514 2.1875 5.96694 2.07227 5.76182 1.86715C5.5567 1.66203 5.44147 1.38383 5.44147 1.09375C5.44147 0.803669 5.5567 0.52547 5.76182 0.320352C5.96694 0.115234 6.24514 0 6.53522 0Z" />
                                                         <defs>
@@ -243,7 +243,7 @@ export default function ServiceStyle6() {
                                         <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
-                                                    <Link href="/service-details">
+                                                    <Link href="/hireATalent">
                                                       Embedded System & SoC Development
                                                     </Link>
                                                 </div>
@@ -252,7 +252,7 @@ export default function ServiceStyle6() {
                                                 </p>
                                             </div>
                                             <div className="right">
-                                                <Link href="/service-details" className="link">
+                                                <Link href="/hireATalent" className="link">
                                                     <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M6.53522 0H22.9415C23.2315 0 23.5098 0.115234 23.7149 0.320352C23.92 0.52547 24.0352 0.803669 24.0352 1.09375V17.5C24.0352 17.7901 23.92 18.0683 23.7149 18.2734C23.5098 18.4785 23.2315 18.5937 22.9415 18.5937C22.6514 18.5937 22.3732 18.4785 22.1681 18.2734C21.963 18.0683 21.8477 17.7901 21.8477 17.5V3.73333L1.83938 23.7417C1.63205 23.9349 1.35781 24.04 1.07446 24.035C0.791099 24.03 0.520746 23.9153 0.320352 23.7149C0.119958 23.5145 0.00516988 23.2441 0.000170402 22.9608C-0.00482908 22.6774 0.100351 22.4032 0.293551 22.1958L20.3019 2.1875H6.53522C6.24514 2.1875 5.96694 2.07227 5.76182 1.86715C5.5567 1.66203 5.44147 1.38383 5.44147 1.09375C5.44147 0.803669 5.5567 0.52547 5.76182 0.320352C5.96694 0.115234 6.24514 0 6.53522 0Z" />
                                                         <defs>
@@ -277,7 +277,7 @@ export default function ServiceStyle6() {
                                         <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
-                                                    <Link href="/service-details">
+                                                    <Link href="/hireATalent">
                                                    Semiconductor Consulting & Training
                                                     </Link>
                                                 </div>
@@ -286,7 +286,7 @@ export default function ServiceStyle6() {
                                                 </p>
                                             </div>
                                             <div className="right">
-                                                <Link href="/service-details" className="link">
+                                                <Link href="/hireATalent" className="link">
                                                     <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M6.53522 0H22.9415C23.2315 0 23.5098 0.115234 23.7149 0.320352C23.92 0.52547 24.0352 0.803669 24.0352 1.09375V17.5C24.0352 17.7901 23.92 18.0683 23.7149 18.2734C23.5098 18.4785 23.2315 18.5937 22.9415 18.5937C22.6514 18.5937 22.3732 18.4785 22.1681 18.2734C21.963 18.0683 21.8477 17.7901 21.8477 17.5V3.73333L1.83938 23.7417C1.63205 23.9349 1.35781 24.04 1.07446 24.035C0.791099 24.03 0.520746 23.9153 0.320352 23.7149C0.119958 23.5145 0.00516988 23.2441 0.000170402 22.9608C-0.00482908 22.6774 0.100351 22.4032 0.293551 22.1958L20.3019 2.1875H6.53522C6.24514 2.1875 5.96694 2.07227 5.76182 1.86715C5.5567 1.66203 5.44147 1.38383 5.44147 1.09375C5.44147 0.803669 5.5567 0.52547 5.76182 0.320352C5.96694 0.115234 6.24514 0 6.53522 0Z" />
                                                         <defs>
@@ -311,7 +311,7 @@ export default function ServiceStyle6() {
                                         <img src="/assets/images/chipMaker/men.jpeg" className="img-fluid" alt="service" />
                                             <div className="left">
                                                 <div className="title_26">
-                                                    <Link href="/service-details">
+                                                    <Link href="/hireATalent">
                                                   Chip Architect
                                                     </Link>
                                                 </div>
@@ -320,7 +320,7 @@ export default function ServiceStyle6() {
                                                 </p>
                                             </div>
                                             <div className="right">
-                                                <Link href="/service-details" className="link">
+                                                <Link href="/hireATalent" className="link">
                                                     <svg width={25} height={25} viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fillRule="evenodd" clipRule="evenodd" d="M6.53522 0H22.9415C23.2315 0 23.5098 0.115234 23.7149 0.320352C23.92 0.52547 24.0352 0.803669 24.0352 1.09375V17.5C24.0352 17.7901 23.92 18.0683 23.7149 18.2734C23.5098 18.4785 23.2315 18.5937 22.9415 18.5937C22.6514 18.5937 22.3732 18.4785 22.1681 18.2734C21.963 18.0683 21.8477 17.7901 21.8477 17.5V3.73333L1.83938 23.7417C1.63205 23.9349 1.35781 24.04 1.07446 24.035C0.791099 24.03 0.520746 23.9153 0.320352 23.7149C0.119958 23.5145 0.00516988 23.2441 0.000170402 22.9608C-0.00482908 22.6774 0.100351 22.4032 0.293551 22.1958L20.3019 2.1875H6.53522C6.24514 2.1875 5.96694 2.07227 5.76182 1.86715C5.5567 1.66203 5.44147 1.38383 5.44147 1.09375C5.44147 0.803669 5.5567 0.52547 5.76182 0.320352C5.96694 0.115234 6.24514 0 6.53522 0Z" />
                                                         <defs>
