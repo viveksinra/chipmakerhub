@@ -85,7 +85,7 @@ export default function Faq() {
                                 </div>
                                 <div className="pd_bottom_40" />
                                 <div className="theme_btn_all">
-                                    <Link href="#" className="theme_btn big rotate">
+                                    <Link href="/contact" className="theme_btn big rotate">
                                         Contact Us <span> <i className=" fi-rr-arrow-small-up" /></span>
                                     </Link>
                                 </div>
