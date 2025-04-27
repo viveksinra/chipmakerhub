@@ -28,7 +28,7 @@ export default function Cta3() {
                             onMouseOver={(e) => e.target.style.background = '#1a3f9d'}
                             onMouseOut={(e) => e.target.style.background = '#1e4bb8'}
                         >
-                            Hire Top Talent
+                            Hire Top VLSI Talent
                         </button>
                     </Link>
                 </div>

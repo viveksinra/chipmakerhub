@@ -67,7 +67,7 @@ export default function Footer2({ }) {
                                     <div className="col-lg-6">
                                         <div className="footer_widgets_box pd_bottom_30">
                                             <div className="fwidget_title">
-                                                <h2 className="title color_white"> Services </h2>
+                                                <h2 className="title color_white"> Hire a Talent </h2>
                                                 {/*-============spacing==========-*/}
                                                 <div className="pd_bottom_25" />
                                                 {/*-============spacing==========-*/}
@@ -267,9 +267,9 @@ export default function Footer2({ }) {
                                            
                                             </div>
                                             <div className="title_20" style={{display: 'flex', flexDirection: 'column', gap: '4px'}}>
+                                            <Link href="tel:+33 752158205" className="color_white">+33 752158205</Link>
                                                     <Link href="tel:+91 8848009689" className="color_white">+91 8848009689</Link>
                                                     <Link href="tel:+91 9709733933" className="color_white">+91 9709733933</Link>
-                                                    <Link href="tel:+33 752158205" className="color_white">+33 752158205</Link>
                                                 </div>
                                             </div>
                                        

@@ -11,7 +11,7 @@ export default function Process3() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="section_title text-center type_five">
-                                <h4 className="sm_title"> Our Process</h4>
+                                {/* <h4 className="sm_title"> Our Process</h4> */}
                                 <div className="title_whole">
                                     <h2 className="title"> How Do We Verify Freelancers?</h2>
                                 </div>
