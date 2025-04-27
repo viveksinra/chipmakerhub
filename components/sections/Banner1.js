@@ -141,7 +141,7 @@ export default function Banner1() {
                                                 textShadow: '0px 2px 4px rgba(0,0,0,0.15)'
                                             }}>
                                                 VLSI
-                                                <motion.span 
+                                                {/* <motion.span 
                                                     style={{
                                                         position: 'absolute',
                                                         bottom: '5px',
@@ -154,7 +154,7 @@ export default function Banner1() {
                                                     initial={{ width: 0 }}
                                                     animate={{ width: '100%' }}
                                                     transition={{ duration: 0.8, delay: 1 }}
-                                                />
+                                                /> */}
                                             </span> Freelancer
                                         </motion.h2>
                                     </motion.div>
@@ -224,20 +224,11 @@ export default function Banner1() {
                                         }}
                                     >
                                         <p>
-                                            Power your projects with the industry's most trusted freelance <span style={{
-                                                fontWeight: '700',
-                                                color: '#1e4bb8',
-                                                position: 'relative',
-                                                display: 'inline-block'
-                                            }}>VLSI <span style={{
-                                                position: 'absolute',
-                                                bottom: '0px',
-                                                left: '0',
-                                                width: '100%',
-                                                height: '3px',
-                                                backgroundColor: 'rgba(30, 75, 184, 0.3)',
-                                                borderRadius: '2px'
-                                            }}></span></span> talent.
+                                            Power your projects with the industry's most trusted freelance 
+                                     
+                                                 VLSI  
+                                            
+                                             talent.
                                         </p>
                                     </motion.div>
                                

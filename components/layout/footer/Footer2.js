@@ -16,9 +16,9 @@ export default function Footer2({ }) {
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 pd_right_70">
                                 <div className="footer_widgets_box pd_bottom_30">
-                                    <div className="logo_box" style={{backgroundColor: 'white'}}>
+                                    <div className="logo_box" >
                                         <Link href="#" className="logo navbar-brand">
-                                            <img src="/assets/images/logo/ChipMakersHub.png" alt="ChipMakersHub" className="logo_default" />
+                                            <img src="/assets/images/logo/ChipMakersHubWhite.png" alt="ChipMakersHub" className="logo_default" />
                                         </Link>
                                     </div>
                                     {/*-============spacing==========-*/}
