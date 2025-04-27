@@ -43,7 +43,7 @@ export default function Cta4() {
            
                 </div>
                 {showForm && (
-                 <div style={{width}}>
+                 <div >
                  <FreelanceForm />
                  </div>
            
