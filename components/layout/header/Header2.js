@@ -89,13 +89,13 @@ export default function Header2({ handleSearch, handleOptionalPanel, handleMobil
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="col-xl-5 col-lg-8 col-md-0 col-sm-0 col-xs-0 column_menu">
+                                <div className="col-xl-5 col-lg-7 col-md-0 col-sm-0 col-xs-0 column_menu">
                                     <div className="navbar_content d-flex align-items-center">
                                         <NavbarNav />
                                        
                                     </div>
                                 </div>
-                                <div className="col-xl-5 col-lg-4 col-md-0 col-sm-0 col-xs-0 nav_tog_column">
+                                <div className="col-xl-5 col-lg-5 col-md-0 col-sm-0 col-xs-0 nav_tog_column">
                                 <div className="d-flex right_content align-items-center">
                                         {/*menu icon*/}
                                         <div className="navbar_togglers hamburger_menu" onClick={handleMobileMenu}>
