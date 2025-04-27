@@ -272,14 +272,16 @@ export default function Banner1() {
                                     transition={{ duration: 0.8, delay: 0.4 }}
                                 >
                                     <div className="slider" style={sliderStyles.slider}>
-                                        <img src="/assets/images/chipMaker/menchip.jpg" 
+                                    <img src="/assets/images/chipMaker/women.jpg" 
+
                                             style={{
                                                 ...sliderStyles.slide,
                                                 ...(currentSlide === 0 ? sliderStyles.activeSlide : {})
                                             }}
                                             className="img-fluid" 
                                             alt="img" />
-                                        <img src="/assets/images/chipMaker/women.jpg" 
+                                        <img src="/assets/images/chipMaker/menchip.jpg" 
+
                                             style={{
                                                 ...sliderStyles.slide,
                                                 ...(currentSlide === 1 ? sliderStyles.activeSlide : {})
