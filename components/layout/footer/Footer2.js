@@ -2,6 +2,29 @@ import Link from "next/link"
 import { FaLinkedin, FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6"
 
 export default function Footer2({ }) {
+    const socialLinks = [
+        { 
+            icon: FaLinkedin, 
+            url: "https://www.linkedin.com/company/chipmakershub/", 
+            label: "LinkedIn" 
+        },
+        { 
+            icon: FaInstagram, 
+            url: "https://www.instagram.com/chipmakershub?igsh=MWU4cXFncmx3d2ttYg==", 
+            label: "Instagram" 
+        },
+        { 
+            icon: FaFacebook, 
+            url: "https://www.facebook.com/share/16MfwxpGA4/", 
+            label: "Facebook" 
+        },
+        { 
+            icon: FaXTwitter, 
+            url: "https://x.com/chipmakershub?t=wr4ulZeX_w4P5cSrDHAsiA&s=09", 
+            label: "Twitter" 
+        }
+    ];
+
     return (
         <>
             <footer className="footer style_one style_two">
@@ -38,26 +61,13 @@ export default function Footer2({ }) {
                                     </div>
                                     <div className="social-icons">
                                         <ul>
-                                            <li>
-                                                <Link href="https://www.linkedin.com/company/chipmakershub/" target="_blank" className="m_icon">
-                                                    <FaLinkedin />
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="https://www.instagram.com/chipmakershub?igsh=MWU4cXFncmx3d2ttYg==" target="_blank" className="m_icon">
-                                                    <FaInstagram />
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="https://www.facebook.com/share/16MfwxpGA4/" target="_blank" className="m_icon">
-                                                    <FaFacebook />
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="https://x.com/chipmakershub?t=wr4ulZeX_w4P5cSrDHAsiA&s=09" target="_blank" className="m_icon">
-                                                    <FaXTwitter />
-                                                </Link>
-                                            </li>
+                                            {socialLinks.map((social, index) => (
+                                                <li key={index}>
+                                                    <Link href={social.url} target="_blank" className="m_icon" aria-label={social.label}>
+                                                        {<social.icon />}
+                                                    </Link>
+                                                </li>
+                                            ))}
                                         </ul>
                                     </div>
                                 </div>
@@ -79,7 +89,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/service-details">
+                                                            <Link className="links color_white" href="/hireATalent">
                                                                 ASIC & FPGA Design
                                                             </Link>
                                                         </div>
@@ -89,7 +99,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/service-details">
+                                                            <Link className="links color_white" href="/hireATalent">
                                                                 RTL Development & Verification
                                                             </Link>
                                                         </div>
@@ -99,7 +109,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/service-details">
+                                                            <Link className="links color_white" href="/hireATalent">
                                                                 DFT (Design For Testability)
                                                             </Link>
                                                         </div>
@@ -109,7 +119,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/service-details">
+                                                            <Link className="links color_white" href="/hireATalent">
                                                                 Physical Design & Signoff
                                                             </Link>
                                                         </div>
@@ -119,7 +129,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/service-details">
+                                                            <Link className="links color_white" href="/hireATalent">
                                                                 Analog & Mixed-Signal Design
                                                             </Link>
                                                         </div>
@@ -129,7 +139,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/service-details">
+                                                            <Link className="links color_white" href="/hireATalent">
                                                                 Embedded System & SoC Development
                                                             </Link>
                                                         </div>
@@ -139,7 +149,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/service-details">
+                                                            <Link className="links color_white" href="/hireATalent">
                                                                 Semiconductor Consulting & Training
                                                             </Link>
                                                         </div>
@@ -149,7 +159,7 @@ export default function Footer2({ }) {
                                                             <div className="icon trans">
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
-                                                            <Link className="links color_white" href="/service-details">
+                                                            <Link className="links color_white" href="/hireATalent">
                                                                 Chip Architect
                                                             </Link>
                                                         </div>
