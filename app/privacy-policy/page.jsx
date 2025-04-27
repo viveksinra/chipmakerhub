@@ -137,7 +137,7 @@ export default function PrivacyPolicy() {
                             <div className="col-lg-12">
                                 <div className="privacy-policy-content">
                                     <div className="last-modified mb-5">
-                                        <p><strong>Last Updated:</strong> October 1, 2023</p>
+                                        <p><strong>Last Updated:</strong> April 27, 2025</p>
                                     </div>
 
                                     {PRIVACY_POLICY_CONTENT.map((section, index) => (
