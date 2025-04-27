@@ -119,9 +119,10 @@ export default function Header2({ handleSearch, handleOptionalPanel, handleMobil
                                                 display: 'inline-block',
                                                 textAlign: 'center',
                                                 textDecoration: 'none'
+                                                
                                             }}>
-                                                Apply as a Freelancer
-                                                <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                Apply as a Freelancer 
+                                                <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginLeft: '8px' }}>
                                                     <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="#174ea6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </Link>
@@ -129,7 +130,7 @@ export default function Header2({ handleSearch, handleOptionalPanel, handleMobil
                                         <div className="button">
                                             <Link href="/forCompany" className="theme_btn">
                                                 Hire Top VLSI Talent
-                                                <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginLeft: '8px' }}>
                                                     <path d="M1 11L11 1M11 1H3.5M11 1V8.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </Link>

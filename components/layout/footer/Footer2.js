@@ -204,7 +204,7 @@ export default function Footer2({ }) {
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
                                                             <Link className="links color_white" href="/join-freelancer">
-                                                                Join as Freelancer
+                                                                Apply as a Freelancer
                                                             </Link>
                                                         </div>
                                                     </li>
@@ -214,7 +214,7 @@ export default function Footer2({ }) {
                                                                 <i className="fi-rr-arrow-small-right color_white" />
                                                             </div>
                                                             <Link className="links color_white" href="/hire-freelancer">
-                                                                Hire Freelancer
+                                                                Hire Top VLSI Talent
                                                             </Link>
                                                         </div>
                                                     </li>
