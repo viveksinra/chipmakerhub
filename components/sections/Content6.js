@@ -16,7 +16,6 @@ export default function Content6() {
                     <div className="row">
                         <div className="col-lg-7 col-md-12">
                             <div className="section_title type_one">
-                                <h4 className="sm_title"> Apply as a Freelancer</h4>
                                 <div className="title_whole">
                                     <h2 className="title"> Unlock Your Potential in VLSI Freelancing</h2>
                                 </div>
@@ -91,6 +90,23 @@ export default function Content6() {
                                     <div className="pd_bottom_20" />
                                     {/*-============spacing==========-*/}
                                 </div>
+                                <div className="row justify-content-center">
+                        <div className="col-lg-12">
+                            <div className="icon_box_only type_five d-flex color_two trans">
+                                <div className="icon">
+                                    <i aria-hidden="false" className="fas fa-check-circle" /></div>
+                                <div className="content">
+                                    <div className="title_22">
+                                        <Link href="#">
+                                        5. Receive Monthly Payments</Link></div>
+                                    <p>Get paid on a fixed monthly schedule for the duration of your engagement.</p>
+                                </div>
+                            </div>
+                            {/*-============spacing==========-*/}
+                            <div className="pd_bottom_20" />
+                            {/*-============spacing==========-*/}
+                        </div>
+                    </div>
                             </div>
                         </div>
                         <div className="col-lg-5 col-md-12">
@@ -116,29 +132,8 @@ export default function Content6() {
                     <div className="pd_bottom_40" />
                     {/*-============spacing==========-*/}
                     
-                    <div className="row justify-content-center">
-                        <div className="col-lg-8 text-center">
-                            <div className="section_title type_one" style={{textAlign: 'center'}}>
-                                <div className="title_whole">
-                                    <h2 className="title">Receive Monthly Payments</h2>
-                                </div>
-                            </div>
-                            {/*-============spacing==========-*/}
-                            <div className="pd_bottom_20" />
-                            {/*-============spacing==========-*/}
-                            <div style={{
-                                position: 'relative', 
-                                padding: '15px 20px',
-                                textAlign: 'center',
-                                borderLeft: 'none',
-                                boxShadow: '0px 0px 15px rgba(0,0,0,0.1)',
-                                borderRadius: '5px',
-                                backgroundColor: '#fff'
-                            }}>
-                                Get paid on a fixed monthly schedule for the duration of your engagement.
-                            </div>
-                        </div>
-                    </div>
+                 
+                 
                 </div>
                 
                 {/*-============spacing==========-*/}

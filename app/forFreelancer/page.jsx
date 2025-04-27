@@ -10,7 +10,7 @@ export default function ForFreelancer() {
 
     return (
         <>
-            <Layout breadcrumbTitle="For Freelancer" backgroundImage="url(assets/gif/landscape/chip.gif)">
+            <Layout breadcrumbTitle="Apply as a Freelancer" backgroundImage="url(assets/images/chipMaker/applyfreelancer.jpg)">
                 {/*-about*/}
                 <section className="about-section position-relative">
                     {/*-============spacing==========-*/}
