@@ -28,8 +28,8 @@ export default function MobileMenu({ handleMobileMenu, isMobileMenu }) {
                                     <i className="fi-rs-headphones" />+91 8848009689 </Link>
                             </div> */}
                             <div className="single-mobile-header-info cont_over">
-                                <Link href="mailto:contact@chipmakerhub.com" className="cnt">
-                                    <i className="fi-rs-envelope" />contact@chipmakerhub.com </Link>
+                                <Link href="mailto:contact@chipmakershub.com" className="cnt">
+                                    <i className="fi-rs-envelope" />contact@chipmakershub.com </Link>
                             </div>
                             <div style={{
                                 display: 'flex',

@@ -30,8 +30,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ChipMakersHub - Hire the World's Top VLSI Freelancer",
-  description: "ChipMakersHub is a platform that connects companies with top-tier VLSI freelancers. We offer a wide range of services from RTL design to system integration, and we're dedicated to helping you achieve your goals.",
+  title: "ChipMakersHubs",
+  description: "Hire the World's Top VLSI Freelancer",
 };
 
 export default function RootLayout({ children }) {
