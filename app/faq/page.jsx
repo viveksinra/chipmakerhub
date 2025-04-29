@@ -26,26 +26,26 @@ export default function Faq() {
     const freelancerFaqs = [
         {
             question: "How do I sign up as a freelancer?",
-            answer: "To sign up as a freelancer, click on the 'Sign Up as a Freelancer' button on our homepage, complete your profile with your professional details, skills, and portfolio, and submit for verification. Our team will review your application and guide you through the verification process."
+            answer: "Click on “Apply as a Freelancer” on our homepage, complete your profile with professional details and portfolio, and submit your application. Our team will review it through a multi-step verification process including technical evaluation and live screening. Once approved, you’ll join our global network of verified VLSI freelancers."
         },
     
         {
             question: "How does the verification process work?",
-            answer: "Our verification process includes a review of your professional background, portfolio, and skills assessment. Depending on your specialization, this may include technical interviews, reference checks, or skill-specific tests to ensure quality standards."
+            answer: "Our verification process involves a thorough evaluation of your technical background, including your experience, portfolio, and proficiency with industry-standard EDA tools. It also includes live technical screening by experienced VLSI professionals, assessment of communication and soft skills, and an evaluation of your team spirit and professional behavior to ensure alignment with our quality standards."
         },
         {
             question: "How do I get paid for my work?",
-            answer: "ChipMakersHub handles all payment transactions securely. Once a project is completed and approved, payments are released based on agreed terms."
+            answer: "All payments on ChipMakersHub are handled securely through our platform. Once your work is approved, you get paid based on the agreed terms—either weekly or on a fixed monthly schedule—for the duration of your engagement."
         }
     ];
     const companyFaqs = [
         {
             question: "How do I hire a freelancer on ChipMakersHub?",
-            answer: "Register your company, post a detailed project description specifying your requirements, review proposals from qualified freelancers, select the best match, and begin collaboration through our secure platform."
+            answer: "Consult with our VLSI specialists to assess your needs, access pre-vetted talent from our network, and collaborate directly with selected experts for efficient project execution."
         },
         {
             question: "How are freelancers vetted on ChipMakersHub?",
-            answer: "All freelancers undergo a comprehensive verification process that includes professional background checks, portfolio review, skill assessments, and for certain specializations, technical interviews. Only professionals who meet our quality standards are approved."
+            answer: "Freelancers on ChipMakersHub undergo a thorough vetting process, which includes a review of their technical background, portfolio, and experience with industry-standard tools. They also go through live technical screenings, communication assessments, and evaluations of their team collaboration skills to ensure they meet our quality standards. Only top-tier professionals are approved to join our platform."
         }
     ];
 

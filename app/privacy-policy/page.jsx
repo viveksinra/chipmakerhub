@@ -29,9 +29,7 @@ const PRIVACY_POLICY_CONTENT = [
         title: 'Contact Details',
         paragraphs: [
           '- Full name of legal entity: ChipMakersHub Inc.',
-          '- Email address: privacy@chipmakershub.com',
-          '- Postal address: 123 Silicon Valley Way, San Jose, CA 95134, United States',
-          '- Telephone number: +1 (555) 123-4567',
+          '- Email address: contact@chipmakershub.com',
         ],
       },
     ],

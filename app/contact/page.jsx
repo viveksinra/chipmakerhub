@@ -4,6 +4,25 @@ import Link from "next/link"
 import { FaLinkedin, FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6"
 import { useState } from "react"
 
+// Notification Popup Component
+const NotificationPopup = ({ isVisible, message, onClose }) => {
+    return (
+        <div className={`notification-popup ${isVisible ? "popup-visible" : ""}`}>
+            <div className="overlay-layer" onClick={onClose}></div>
+            <div className="popup-content">
+                <div className="close-notification" onClick={onClose}>
+                    <i className="fa fa-times"></i>
+                </div>
+                <div className="notification-inner">
+                    <img src="/assets/images/check-circle.png" alt="Success" className="success-icon" />
+                    <h4>{message}</h4>
+                    <button className="theme_btn" onClick={onClose}>Close</button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 export default function Contact() {
     const [formData, setFormData] = useState({
         name: "",
@@ -11,6 +30,9 @@ export default function Contact() {
         subject: "",
         message: ""
     });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [showNotification, setShowNotification] = useState(false);
+    const [notificationMessage, setNotificationMessage] = useState("");
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -22,16 +44,52 @@ export default function Contact() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // Form submission logic here
-        console.log("Form submitted:", formData);
         
-        // Example: Reset form after submission
-        setFormData({
-            name: "",
-            email: "",
-            subject: "",
-            message: ""
-        });
+        if (!formData.name || !formData.email || !formData.message) {
+            setNotificationMessage("Please fill in all required fields");
+            setShowNotification(true);
+            return;
+        }
+        
+        setIsSubmitting(true);
+        
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                setNotificationMessage("Thank you! We have received your message and will get back to you soon.");
+                setShowNotification(true);
+                
+                // Reset form after successful submission
+                setFormData({
+                    name: "",
+                    email: "",
+                    subject: "",
+                    message: ""
+                });
+            } else {
+                setNotificationMessage(result.error || "Something went wrong. Please try again.");
+                setShowNotification(true);
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            setNotificationMessage("Something went wrong. Please try again.");
+            setShowNotification(true);
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+    const closeNotification = () => {
+        setShowNotification(false);
     };
 
     return (
@@ -202,8 +260,9 @@ export default function Contact() {
                                                                 className="theme_btn" 
                                                                 type="submit"
                                                                 style={{ position: 'relative', zIndex: 10 }}
+                                                                disabled={isSubmitting}
                                                             >
-                                                                Send Message
+                                                                {isSubmitting ? "Sending..." : "Send Message"}
                                                             </button>
                                                         </div>
                                                     </div>
@@ -223,7 +282,90 @@ export default function Contact() {
                     {/*-============spacing==========-*/}
                 </section>
                 {/*form*/}
+
+                {/* Notification Popup */}
+                <NotificationPopup 
+                    isVisible={showNotification} 
+                    message={notificationMessage} 
+                    onClose={closeNotification} 
+                />
             </Layout>
+
+            {/* Custom CSS for notification popup */}
+            <style jsx>{`
+                .notification-popup {
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 9999999999;
+                    visibility: hidden;
+                    opacity: 0;
+                    overflow: auto;
+                    background: rgba(0, 0, 0, 0.5);
+                    transition: all 500ms ease;
+                }
+                
+                .notification-popup.popup-visible {
+                    visibility: visible;
+                    opacity: 1;
+                }
+                
+                .notification-popup .overlay-layer {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.5);
+                }
+                
+                .notification-popup .popup-content {
+                    position: relative;
+                    background: white;
+                    border-radius: 8px;
+                    max-width: 500px;
+                    margin: 100px auto;
+                    padding: 40px 30px;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                    z-index: 10;
+                    text-align: center;
+                }
+                
+                .notification-popup .close-notification {
+                    position: absolute;
+                    right: 15px;
+                    top: 15px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    cursor: pointer;
+                    z-index: 10;
+                    transition: all 500ms ease;
+                }
+                
+                .notification-popup .close-notification i {
+                    font-size: 20px;
+                    color: #333;
+                }
+                
+                .notification-popup .notification-inner {
+                    padding: 10px;
+                }
+                
+                .notification-popup .notification-inner h4 {
+                    margin: 15px 0;
+                    color: #333;
+                }
+                
+                .notification-popup .success-icon {
+                    width: 70px;
+                    height: 70px;
+                    margin-bottom: 20px;
+                }
+            `}</style>
         </>
     )
 }

@@ -99,7 +99,7 @@ export default function Content6() {
                                     <div className="title_22">
                                         <Link href="#">
                                         5. Receive Monthly Payments</Link></div>
-                                    <p>Get paid on a fixed monthly schedule for the duration of your engagement.</p>
+                                    <p>Get paid on a fixed weekly or monthly schedule for the duration of your engagement.</p>
                                 </div>
                             </div>
                             {/*-============spacing==========-*/}

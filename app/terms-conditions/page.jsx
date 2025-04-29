@@ -125,7 +125,7 @@ const TERMS_CONDITIONS_CONTENT = [
   {
     title: '8. Governing Law',
     paragraphs: [
-      'These Terms shall be governed and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions.',
+      'These Terms shall be governed and construed in accordance with the laws of the India, without regard to its conflict of law provisions.',
     ],
   },
   {
