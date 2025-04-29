@@ -11,10 +11,9 @@ export async function POST(request) {
         const expertiseDomain = formData.get('expertiseDomain');
         const yearsOfExperience = formData.get('yearsOfExperience');
         const cv = formData.get('cv');
-        const consent = formData.get('consent') === 'true';
 
-        // Validate required fields
-        if (!name || !email || !contact || !expertiseDomain || !yearsOfExperience || !cv || !consent) {
+        // Validate required fields (no consent)
+        if (!name || !email || !contact || !expertiseDomain || !yearsOfExperience || !cv) {
             return new Response(JSON.stringify({ 
                 success: false, 
                 error: 'All required fields must be provided' 

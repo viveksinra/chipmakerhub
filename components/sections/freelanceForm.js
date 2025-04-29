@@ -39,7 +39,6 @@ export default function FreelanceForm() {
         contact: '',
         email: '',
         cv: null,
-        consent: false
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [showDialog, setShowDialog] = useState(false);
@@ -62,12 +61,6 @@ export default function FreelanceForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
-        if (!form.name || !form.expertiseDomain || !form.yearsOfExperience || !form.contact || !form.email || !form.cv || !form.consent) {
-            setDialogMessage("Please fill in all required fields and accept the terms");
-            setShowDialog(true);
-            return;
-        }
         
         setIsSubmitting(true);
         
@@ -103,7 +96,6 @@ export default function FreelanceForm() {
                 contact: '',
                 email: '',
                 cv: null,
-                consent: false
             });
             
             // Clear the file input by resetting its value
@@ -128,35 +120,33 @@ export default function FreelanceForm() {
                 <h4 className="mb-4">Freelancer Application Form</h4>
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
-                        <label>Name <span style={{ color: 'red' }}>*</span></label>
+                        <label>Name</label>
                         <input 
                             type="text" 
                             name="name" 
                             value={form.name} 
                             onChange={handleChange} 
                             placeholder="Your Full Name" 
-                            required 
                             className="form-control" 
                             disabled={isSubmitting}
                         />
                     </div>
                     
                     <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
-                        <label>Expertise/Domain <span style={{ color: 'red' }}>*</span></label>
+                        <label>Expertise/Domain</label>
                         <input 
                             type="text" 
                             name="expertiseDomain" 
                             value={form.expertiseDomain} 
                             onChange={handleChange} 
                             placeholder="e.g., RTL Design, Physical Design, Verification" 
-                            required 
                             className="form-control" 
                             disabled={isSubmitting}
                         />
                     </div>
                     
                     <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
-                        <label>Years of Experience <span style={{ color: 'red' }}>*</span></label>
+                        <label>Years of Experience</label>
                         <input 
                             type="number" 
                             name="yearsOfExperience" 
@@ -164,48 +154,44 @@ export default function FreelanceForm() {
                             onChange={handleChange} 
                             min="0" 
                             placeholder="e.g., 5" 
-                            required 
                             className="form-control" 
                             disabled={isSubmitting}
                         />
                     </div>
                     
                     <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
-                        <label>Contact Number <span style={{ color: 'red' }}>*</span></label>
+                        <label>Contact Number</label>
                         <input 
                             type="tel" 
                             name="contact" 
                             value={form.contact} 
                             onChange={handleChange} 
                             placeholder="Your Phone Number" 
-                            required 
                             className="form-control" 
                             disabled={isSubmitting}
                         />
                     </div>
                     
                     <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
-                        <label>Email Address <span style={{ color: 'red' }}>*</span></label>
+                        <label>Email Address</label>
                         <input 
                             type="email" 
                             name="email" 
                             value={form.email} 
                             onChange={handleChange} 
                             placeholder="your.email@example.com" 
-                            required 
                             className="form-control" 
                             disabled={isSubmitting}
                         />
                     </div>
                     
                     <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
-                        <label>Upload CV/Resume <span style={{ color: 'red' }}>*</span></label>
+                        <label>Upload CV/Resume</label>
                         <input 
                             type="file" 
                             name="cv" 
                             accept=".pdf,.doc,.docx" 
                             onChange={handleChange} 
-                            required 
                             className="form-control" 
                             disabled={isSubmitting}
                         />
@@ -219,29 +205,13 @@ export default function FreelanceForm() {
                         )}
                     </div>
                     
-                    <div className="col-lg-12 col-md-12 col-sm-12 mb-3">
-                        <div className="form-check">
-                            <input 
-                                type="checkbox" 
-                                className="form-check-input" 
-                                id="consentCheck" 
-                                name="consent" 
-                                checked={form.consent} 
-                                onChange={handleChange} 
-                                required
-                                disabled={isSubmitting}
-                            />
-                            <label className="form-check-label" htmlFor="consentCheck">
-                                I agree to share my information with ChipMakersHub for freelance opportunities <span style={{ color: 'red' }}>*</span>
-                            </label>
-                        </div>
-                    </div>
+     
                     
                     <div className="col-lg-12 col-md-12 col-sm-12 text-center mt-3">
                         <button 
                             type="submit" 
                             className="btn" 
-                            disabled={!form.consent || isSubmitting} 
+                            disabled={isSubmitting} 
                             style={{ 
                                 background: '#2f55d4', 
                                 color: '#fff', 
