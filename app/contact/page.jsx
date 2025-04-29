@@ -2,24 +2,36 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { FaLinkedin, FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import dynamic from 'next/dynamic'
 
-// Notification Popup Component
-const NotificationPopup = ({ isVisible, message, onClose }) => {
+// Dynamically import MUI components
+const Dialog = dynamic(() => import('@mui/material/Dialog'), { ssr: false })
+const DialogTitle = dynamic(() => import('@mui/material/DialogTitle'), { ssr: false })
+const DialogContent = dynamic(() => import('@mui/material/DialogContent'), { ssr: false })
+const DialogActions = dynamic(() => import('@mui/material/DialogActions'), { ssr: false })
+const Button = dynamic(() => import('@mui/material/Button'), { ssr: false })
+const CircularProgress = dynamic(() => import('@mui/material/CircularProgress'), { ssr: false })
+const Backdrop = dynamic(() => import('@mui/material/Backdrop'), { ssr: false })
+
+// Loading Overlay Component
+const LoadingOverlay = ({ isVisible }) => {
+    if (!isVisible) return null;
+    
     return (
-        <div className={`notification-popup ${isVisible ? "popup-visible" : ""}`}>
-            <div className="overlay-layer" onClick={onClose}></div>
-            <div className="popup-content">
-                <div className="close-notification" onClick={onClose}>
-                    <i className="fa fa-times"></i>
-                </div>
-                <div className="notification-inner">
-                    <img src="/assets/images/check-circle.png" alt="Success" className="success-icon" />
-                    <h4>{message}</h4>
-                    <button className="theme_btn" onClick={onClose}>Close</button>
-                </div>
+        <Backdrop
+            sx={{ 
+                color: '#fff', 
+                zIndex: 9999,
+                backgroundColor: 'rgba(255, 255, 255, 0.8)'
+            }}
+            open={isVisible}
+        >
+            <div className="spinner-container">
+                <CircularProgress color="primary" />
+                <p style={{ color: '#0496de', marginTop: '15px' }}>Sending your message...</p>
             </div>
-        </div>
+        </Backdrop>
     );
 };
 
@@ -31,8 +43,14 @@ export default function Contact() {
         message: ""
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [showNotification, setShowNotification] = useState(false);
-    const [notificationMessage, setNotificationMessage] = useState("");
+    const [showDialog, setShowDialog] = useState(false);
+    const [dialogMessage, setDialogMessage] = useState("");
+    const [muiLoaded, setMuiLoaded] = useState(false);
+
+    // Set MUI loaded after hydration to avoid SSR issues
+    useEffect(() => {
+        setMuiLoaded(true);
+    }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -46,8 +64,8 @@ export default function Contact() {
         e.preventDefault();
         
         if (!formData.name || !formData.email || !formData.message) {
-            setNotificationMessage("Please fill in all required fields");
-            setShowNotification(true);
+            setDialogMessage("Please fill in all required fields");
+            setShowDialog(true);
             return;
         }
         
@@ -65,8 +83,8 @@ export default function Contact() {
             const result = await response.json();
             
             if (result.success) {
-                setNotificationMessage("Thank you! We have received your message and will get back to you soon.");
-                setShowNotification(true);
+                setDialogMessage("Thank you! We have received your message and will get back to you soon.");
+                setShowDialog(true);
                 
                 // Reset form after successful submission
                 setFormData({
@@ -76,20 +94,20 @@ export default function Contact() {
                     message: ""
                 });
             } else {
-                setNotificationMessage(result.error || "Something went wrong. Please try again.");
-                setShowNotification(true);
+                setDialogMessage(result.error || "Something went wrong. Please try again.");
+                setShowDialog(true);
             }
         } catch (error) {
             console.error("Error submitting form:", error);
-            setNotificationMessage("Something went wrong. Please try again.");
-            setShowNotification(true);
+            setDialogMessage("Something went wrong. Please try again.");
+            setShowDialog(true);
         } finally {
             setIsSubmitting(false);
         }
     };
 
-    const closeNotification = () => {
-        setShowNotification(false);
+    const closeDialog = () => {
+        setShowDialog(false);
     };
 
     return (
@@ -205,6 +223,7 @@ export default function Contact() {
                                                                 data-error="Enter Your Name" 
                                                                 value={formData.name}
                                                                 onChange={handleChange}
+                                                                disabled={isSubmitting}
                                                             />
                                                             <div className="help-block with-errors" />
                                                         </div>
@@ -221,6 +240,7 @@ export default function Contact() {
                                                                 data-error="Enter Your Email Id" 
                                                                 value={formData.email}
                                                                 onChange={handleChange}
+                                                                disabled={isSubmitting}
                                                             />
                                                             <div className="help-block with-errors" />
                                                         </div>
@@ -235,6 +255,7 @@ export default function Contact() {
                                                                 placeholder="Subject (Optional)" 
                                                                 value={formData.subject}
                                                                 onChange={handleChange}
+                                                                disabled={isSubmitting}
                                                             />
                                                         </div>
                                                     </div>
@@ -250,6 +271,7 @@ export default function Contact() {
                                                                 data-error="Please, leave us a message."
                                                                 value={formData.message}
                                                                 onChange={handleChange}
+                                                                disabled={isSubmitting}
                                                             />
                                                             <div className="help-block with-errors" />
                                                         </div>
@@ -283,87 +305,54 @@ export default function Contact() {
                 </section>
                 {/*form*/}
 
-                {/* Notification Popup */}
-                <NotificationPopup 
-                    isVisible={showNotification} 
-                    message={notificationMessage} 
-                    onClose={closeNotification} 
-                />
+                {/* Loading Overlay */}
+                {muiLoaded && <LoadingOverlay isVisible={isSubmitting} />}
+                
+                {/* MUI Dialog */}
+                {muiLoaded && (
+                    <Dialog
+                        open={showDialog}
+                        onClose={closeDialog}
+                        aria-labelledby="alert-dialog-title"
+                        aria-describedby="alert-dialog-description"
+                        PaperProps={{
+                            style: {
+                                borderRadius: '8px',
+                                maxWidth: '500px',
+                                width: '90%',
+                            }
+                        }}
+                    >
+                        <DialogTitle 
+                            id="alert-dialog-title"
+                            sx={{ 
+                                backgroundColor: '#2574de', 
+                                color: 'white',
+                                padding: '10px 24px',
+                                display: 'flex',
+                                justifyContent: 'flex-end'
+                            }}
+                        >
+                            <Button onClick={closeDialog} sx={{ color: 'white', minWidth: 'unset', padding: '0 8px', fontSize: '20px' }}>
+                                ✕
+                            </Button>
+                        </DialogTitle>
+                        <DialogContent sx={{ padding: '30px 24px', textAlign: 'center' }}>
+                            <h4 style={{ margin: '15px 0 25px', color: '#2574de', fontSize: '20px' }}>{dialogMessage}</h4>
+                        </DialogContent>
+                        <DialogActions sx={{ justifyContent: 'center', padding: '0 24px 24px' }}>
+                            <button className="theme_btn" onClick={closeDialog} style={{ minWidth: '120px' }}>
+                                Close
+                            </button>
+                        </DialogActions>
+                    </Dialog>
+                )}
             </Layout>
 
-            {/* Custom CSS for notification popup */}
+            {/* Custom CSS */}
             <style jsx>{`
-                .notification-popup {
-                    position: fixed;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    z-index: 9999999999;
-                    visibility: hidden;
-                    opacity: 0;
-                    overflow: auto;
-                    background: rgba(0, 0, 0, 0.5);
-                    transition: all 500ms ease;
-                }
-                
-                .notification-popup.popup-visible {
-                    visibility: visible;
-                    opacity: 1;
-                }
-                
-                .notification-popup .overlay-layer {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(0, 0, 0, 0.5);
-                }
-                
-                .notification-popup .popup-content {
-                    position: relative;
-                    background: white;
-                    border-radius: 8px;
-                    max-width: 500px;
-                    margin: 100px auto;
-                    padding: 40px 30px;
-                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-                    z-index: 10;
+                .spinner-container {
                     text-align: center;
-                }
-                
-                .notification-popup .close-notification {
-                    position: absolute;
-                    right: 15px;
-                    top: 15px;
-                    width: 30px;
-                    height: 30px;
-                    line-height: 30px;
-                    text-align: center;
-                    cursor: pointer;
-                    z-index: 10;
-                    transition: all 500ms ease;
-                }
-                
-                .notification-popup .close-notification i {
-                    font-size: 20px;
-                    color: #333;
-                }
-                
-                .notification-popup .notification-inner {
-                    padding: 10px;
-                }
-                
-                .notification-popup .notification-inner h4 {
-                    margin: 15px 0;
-                    color: #333;
-                }
-                
-                .notification-popup .success-icon {
-                    width: 70px;
-                    height: 70px;
-                    margin-bottom: 20px;
                 }
             `}</style>
         </>
