@@ -272,8 +272,9 @@ export default function CompanyForm() {
                                 { id: "others", label: "Others" },
                             ].map((skill) => (
                                 <div className="col-lg-4 col-md-6 mb-3" key={skill.id}>
-                                    <div 
+                                    <label
                                         className={`skill-box p-2 rounded ${form.requiredSkills[skill.id] ? 'selected' : ''}`}
+                                        htmlFor={skill.id}
                                         style={{
                                             background: form.requiredSkills[skill.id] ? '#e8efff' : '#f8f9fa',
                                             border: `1px solid ${form.requiredSkills[skill.id] ? '#2f55d4' : '#dee2e6'}`,
@@ -284,42 +285,23 @@ export default function CompanyForm() {
                                             textAlign: 'center',
                                             paddingTop: '8px',
                                             paddingBottom: '8px',
-                                            opacity: isSubmitting ? 0.7 : 1
-                                        }}
-                                        onClick={() => {
-                                            if (!isSubmitting) {
-                                                const e = {
-                                                    target: {
-                                                        name: `requiredSkills.${skill.id}`,
-                                                        type: 'checkbox',
-                                                        checked: !form.requiredSkills[skill.id]
-                                                    }
-                                                };
-                                                handleChange(e);
-                                            }
+                                            opacity: isSubmitting ? 0.7 : 1,
+                                            fontWeight: form.requiredSkills[skill.id] ? '500' : 'normal',
+                                            color: form.requiredSkills[skill.id] ? '#2f55d4' : '#495057',
+                                            margin: 0
                                         }}
                                     >
-                                        <label 
-                                            htmlFor={skill.id}
-                                            style={{ 
-                                                fontWeight: form.requiredSkills[skill.id] ? '500' : 'normal',
-                                                color: form.requiredSkills[skill.id] ? '#2f55d4' : '#495057',
-                                                cursor: isSubmitting ? 'default' : 'pointer',
-                                                margin: 0
-                                            }}
-                                        >
-                                            {skill.label}
-                                        </label>
-                                        <input 
-                                            type="checkbox" 
-                                            id={skill.id} 
-                                            name={`requiredSkills.${skill.id}`} 
-                                            checked={form.requiredSkills[skill.id]} 
+                                        {skill.label}
+                                        <input
+                                            type="checkbox"
+                                            id={skill.id}
+                                            name={`requiredSkills.${skill.id}`}
+                                            checked={form.requiredSkills[skill.id]}
                                             onChange={handleChange}
                                             disabled={isSubmitting}
                                             style={{ display: 'none' }}
                                         />
-                                    </div>
+                                    </label>
                                 </div>
                             ))}
                             <div className="col-lg-12 col-md-12 mt-2">
