@@ -168,6 +168,13 @@ export default function Career() {
                     }}></div>
                 </section>
             </Layout>
+
+            {/* Custom CSS */}
+            <style jsx global>{`
+                .spinner-container {
+                    text-align: center;
+                }
+            `}</style>
         </>
     )
 }

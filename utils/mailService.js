@@ -272,4 +272,58 @@ export const sendCompanyProjectConfirmation = async (to, companyName, contactPer
   };
   
   return sendMail(mailOptions);
+};
+
+/**
+ * Send freelancer application notification to admin
+ * @param {Object} formData - Freelancer application form data
+ * @returns {Promise} - Resolves when email is sent
+ */
+export const sendFreelancerApplication = async (formData) => {
+  const { name, email, contact, expertiseDomain, yearsOfExperience, cv } = formData;
+  
+  const mailOptions = {
+    to: 'contact@chipmakershub.com',
+    subject: `New Freelancer Application: ${expertiseDomain}`,
+    html: `
+      <h2>New Freelancer Application</h2>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Contact Number:</strong> ${contact}</p>
+      <p><strong>Expertise/Domain:</strong> ${expertiseDomain}</p>
+      <p><strong>Years of Experience:</strong> ${yearsOfExperience}</p>
+    `,
+    attachments: cv ? [{
+      filename: cv.name,
+      content: Buffer.from(await cv.arrayBuffer())
+    }] : []
+  };
+  
+  return sendMail(mailOptions);
+};
+
+/**
+ * Send confirmation email to freelancer applicant
+ * @param {string} to - Applicant email
+ * @param {string} name - Applicant name
+ * @returns {Promise} - Resolves when email is sent
+ */
+export const sendFreelancerConfirmation = async (to, name) => {
+  const mailOptions = {
+    to,
+    subject: `Freelancer Application Received - ChipMakersHub`,
+    html: `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #2f55d4;">Thank You for Your Freelancer Application</h2>
+        <p>Dear ${name},</p>
+        <p>We have received your application to join our freelancer network at ChipMakersHub.</p>
+        <p>Our team will review your expertise and experience, and we'll get back to you shortly if there's a good match for your skills.</p>
+        <p>If you have any questions in the meantime, feel free to contact us at contact@chipmakershub.com.</p>
+        <p>Best regards,</p>
+        <p>The ChipMakersHub Team</p>
+      </div>
+    `
+  };
+  
+  return sendMail(mailOptions);
 }; 
