@@ -23,15 +23,14 @@ const companyInfo = {
   logo: '/assets/images/logo/ChipMakersHub.png', // Local path
   website: 'https://chipmakershub.com',
   email: 'contact@chipmakershub.com',
-  phone: '+33 752158205'
 };
 
 // Social media links
 const socialLinks = [
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/company/chipmakershub/' },
-  { name: 'Instagram', url: 'https://www.instagram.com/chipmakershub?igsh=MWU4cXFncmx3d2ttYg==' },
-  { name: 'Facebook', url: 'https://www.facebook.com/share/16MfwxpGA4/' },
-  { name: 'X', url: 'https://x.com/chipmakershub?t=wr4ulZeX_w4P5cSrDHAsiA&s=09' }
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/company/chipmakershub/', icon: '&#xf08c;' },
+  { name: 'Instagram', url: 'https://www.instagram.com/chipmakershub?igsh=MWU4cXFncmx3d2ttYg==', icon: '&#xf16d;' },
+  { name: 'Facebook', url: 'https://www.facebook.com/share/16MfwxpGA4/', icon: '&#xf09a;' },
+  { name: 'X', url: 'https://x.com/chipmakershub?t=wr4ulZeX_w4P5cSrDHAsiA&s=09', icon: '&#xf099;' }
 ];
 
 // Enhanced modern email template parts
@@ -42,8 +41,26 @@ const emailHeader = `
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${companyInfo.name}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .social-icon {
+      display: inline-block;
+      margin: 0 8px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background-color: #2f55d4;
+      color: white !important;
+      border-radius: 50%;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; background-color: #f9f9f9;">
+<body style="margin: 0; padding: 0; font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; background-color: #f9f9f9;">
   <div style="max-width: 650px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
     <!-- Header with logo -->
     <div style="padding: 25px 0; text-align: center; background-color: #2564eb;">
@@ -64,9 +81,7 @@ const emailFooter = `
             <p style="margin: 4px 0; color: #555;">
               <a href="mailto:${companyInfo.email}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">${companyInfo.email}</a>
             </p>
-            <p style="margin: 4px 0; color: #555;">
-              <a href="tel:${companyInfo.phone}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">${companyInfo.phone}</a>
-            </p>
+          
             <p style="margin: 4px 0; color: #555;">
               <a href="${companyInfo.website}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">${companyInfo.website}</a>
             </p>
@@ -77,10 +92,12 @@ const emailFooter = `
     
     <!-- Social Links Section -->
     <div style="background-color: #ffffff; padding: 20px; text-align: center; border-top: 1px solid #e6e9f0;">
-      <p style="margin: 0 0 10px; font-size: 15px; color: #555; font-weight: 600;">Connect with us</p>
+      <p style="margin: 0 0 15px; font-size: 15px; color: #555; font-weight: 600;">Connect with us</p>
       <div>
         ${socialLinks.map(social => 
-          `<a href="${social.url}" target="_blank" style="display: inline-block; margin: 0 10px; padding: 8px 16px; background-color: #f0f4ff; border-radius: 30px; color: #2f55d4; text-decoration: none; font-weight: 600; font-size: 14px;">${social.name}</a>`
+          `<a href="${social.url}" target="_blank" class="social-icon" title="${social.name}" style="display: inline-block; margin: 0 8px; width: 36px; height: 36px; line-height: 36px; text-align: center; background-color: #2f55d4; color: white !important; border-radius: 50%; font-size: 18px; text-decoration: none;">
+            <i class="fab fa-${social.name.toLowerCase()}"></i>
+          </a>`
         ).join('')}
       </div>
       <p style="margin-top: 30px; font-size: 12px; color: #888;">
