@@ -27,10 +27,31 @@ const companyInfo = {
 
 // Social media links
 const socialLinks = [
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/company/chipmakershub/', icon: '&#xf08c;' },
-  { name: 'Instagram', url: 'https://www.instagram.com/chipmakershub?igsh=MWU4cXFncmx3d2ttYg==', icon: '&#xf16d;' },
-  { name: 'Facebook', url: 'https://www.facebook.com/share/16MfwxpGA4/', icon: '&#xf09a;' },
-  { name: 'X', url: 'https://x.com/chipmakershub?t=wr4ulZeX_w4P5cSrDHAsiA&s=09', icon: '&#xf099;' }
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/company/chipmakershub/',
+    pngIcon:"https://img.icons8.com/?size=100&id=13930&format=png&color=000000",
+    svg: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path d="M7.12 9.75H4.75V19.25H7.12V9.75ZM5.94 8.69C6.77 8.69 7.44 8.01 7.44 7.19C7.44 6.37 6.77 5.69 5.94 5.69C5.12 5.69 4.44 6.37 4.44 7.19C4.44 8.01 5.12 8.69 5.94 8.69ZM19.25 14.25C19.25 11.6 17.6 10.25 15.5 10.25C14.13 10.25 13.5 10.97 13.25 11.38V9.75H10.88V19.25H13.25V14.75C13.25 13.75 13.5 12.75 14.75 12.75C16 12.75 16 13.88 16 14.81V19.25H18.38V14.25H19.25Z" fill="white"/></svg>`
+  },
+  {
+    name: 'Instagram',
+    url: 'https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000',
+    pngIcon:"https://img.icons8.com/?size=100&id=32323&format=png&color=000000",
+
+    svg: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#E1306C"/><path d="M12 8.5A3.5 3.5 0 1 0 12 15.5A3.5 3.5 0 1 0 12 8.5Z" fill="white"/><circle cx="17.5" cy="6.5" r="1.5" fill="white"/><rect x="4.5" y="4.5" width="15" height="15" rx="4.5" stroke="white" stroke-width="1.5"/></svg>`
+  },
+  {
+    name: 'Facebook',
+    url: 'https://www.facebook.com/share/16MfwxpGA4/',
+    pngIcon:"https://img.icons8.com/?size=100&id=118497&format=png&color=000000",
+    svg: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#1877F3"/><path d="M15.67 8.5H14.5C13.95 8.5 13.75 8.72 13.75 9.13V10.5H15.67L15.5 12.5H13.75V19.25H11.25V12.5H9.5V10.5H11.25V9.13C11.25 7.5 12.13 6.75 13.5 6.75C14.13 6.75 14.75 6.88 14.75 6.88V8.5H15.67Z" fill="white"/></svg>`
+  },
+  {
+    name: 'X',
+    url: 'https://x.com/chipmakershub?t=wr4ulZeX_w4P5cSrDHAsiA&s=09',
+    pngIcon:"https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=000000",    
+    svg: `<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"24\" height=\"24\" rx=\"4\" fill=\"#000000\"/><path d=\"M17.53 7.47C17.39 7.33 17.18 7.33 17.03 7.47L12 12.5L6.97 7.47C6.82 7.33 6.61 7.33 6.47 7.47C6.33 7.61 6.33 7.82 6.47 7.97L11.5 13L6.47 18.03C6.33 18.18 6.33 18.39 6.47 18.53C6.61 18.67 6.82 18.67 6.97 18.53L12 13.5L17.03 18.53C17.18 18.67 17.39 18.67 17.53 18.53C17.67 18.39 17.67 18.18 17.53 18.03L12.5 13L17.53 7.97C17.67 7.82 17.67 7.61 17.53 7.47Z\" fill=\"white\"/></svg>`
+  }
 ];
 
 // Enhanced modern email template parts
@@ -95,8 +116,8 @@ const emailFooter = `
       <p style="margin: 0 0 15px; font-size: 15px; color: #555; font-weight: 600;">Connect with us</p>
       <div>
         ${socialLinks.map(social => 
-          `<a href="${social.url}" target="_blank" class="social-icon" title="${social.name}" style="display: inline-block; margin: 0 8px; width: 36px; height: 36px; line-height: 36px; text-align: center; background-color: #2f55d4; color: white !important; border-radius: 50%; font-size: 18px; text-decoration: none;">
-            <i class="fab fa-${social.name.toLowerCase()}"></i>
+          `<a href="${social.url}" target="_blank" class="social-icon" title="${social.name}" style="display: inline-block; margin: 0 8px; width: 36px; height: 36px; line-height: 36px; text-align: center; text-decoration: none; vertical-align: middle; background: none; border-radius: 0;">
+            <img src="${social.pngIcon}" alt="${social.name}" style="width: 24px; height: 24px; vertical-align: middle; display: inline-block;" />
           </a>`
         ).join('')}
       </div>
