@@ -114,7 +114,53 @@ export default function Contact() {
         <>
             <Layout breadcrumbTitle="Contact Us" backgroundImage="url(assets/images/chipMaker/skyscrapper.jpg)">
                 {/*-contact*/}
-
+                <section className="contact-section">
+                    {/*-============spacing==========-*/}
+                    <div className="pd_top_80" />
+                    {/*-============spacing==========-*/}
+                    <div className="container">
+                        <div className="row">
+                         
+                            <div className="col-lg-6 col-md-6 col-sm-12">
+                                <div className="contact_box_content" style={{ minHeight: "180px" }}>
+                                    <div className="icon trans">
+                                        <img src="/assets/images/cont-2.png" alt="img" className="img-fluid" />
+                                    </div>
+                                    <div className="contact-infor">
+                                        <h6 className="title_no_a_24">Email</h6>
+                                        <Link href="mailto:contact@chipmakershub.com">contact@chipmakershub.com
+                                        </Link>
+                                        {/* <Link href="mailto:infoinsurace.com">infoinsurace.com</Link> */}
+                                    </div>
+                                </div>
+                                {/*-============spacing==========-*/}
+                                <div className="pd_bottom_30" />
+                                {/*-============spacing==========-*/}
+                            </div>
+                            <div className="col-lg-6 col-md-6 col-sm-12">
+                                <div className="contact_box_content" style={{ minHeight: "180px" }}>
+                                    <div className="icon trans">
+                                        <img src="/assets/images/cont-3.png" alt="img" className="img-fluid" />
+                                    </div>
+                                    <div className="contact-infor">
+                                        <h6 className="title_no_a_24">Call Us</h6>
+                                        <Link href="tel:+91 8848009689">+91 8848009689
+                                        </Link>
+                                        <Link href="tel:+91 9709733933">+91 9709733933
+                                        </Link>
+                                        <Link href="tel:+33 752158205">+33 752158205</Link>
+                                    </div>
+                                </div>
+                                {/*-============spacing==========-*/}
+                                <div className="pd_bottom_30" />
+                                {/*-============spacing==========-*/}
+                            </div>
+                        </div>
+                    </div>
+                    {/*-============spacing==========-*/}
+                    <div className="pd_bottom_40" />
+                    {/*-============spacing==========-*/}
+                </section>
                 {/*-contact end*/}
                 {/*map*/}
              

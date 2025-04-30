@@ -99,7 +99,7 @@ export default function OptionalPanel({ isOptionalPanel, handleOptionalPanel }) 
                                 </div>
                             </div>
                             <h2 className="title_no_a_28"> Need Any Help? </h2>
-                            <div className="contact_panel">
+                            {/* <div className="contact_panel">
                                 <div className="c_pan">
                                     <Link href="tel:+91 8848009689">
                                         <i className="fi-rr-phone-call" /> +91 8848009689 </Link>
@@ -113,7 +113,7 @@ export default function OptionalPanel({ isOptionalPanel, handleOptionalPanel }) 
                                         <i className="fi-rr-time-check" /> Working Hours : <span> Sun-monday, 09am-5pm </span>
                                     </a>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="c_pan"> © {new Date().getFullYear()} ChipMakersHub. All Rights Reserved. </div>
                         </div>
                     </div>

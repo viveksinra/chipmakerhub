@@ -286,19 +286,19 @@ export default function Footer2({ }) {
                                              <div className="pd_bottom_25" />
                                         {/*-============spacing==========-*/}
                                         <div className="d-flex align-items-center contact_header_one">
-                                            <div className="icon_s">
-                                                <i className=" fi-rr-headphones" /></div>
+                                            {/* <div className="icon_s">
+                                                <i className=" fi-rr-headphones" /></div> */}
                                             <div className="content">
                                             {/* <div className="content">
                                                 <h6 className="tite color_white">Need Help?</h6>
                                            
                                             </div> */}
-                                            <div className="title_20" style={{display: 'flex', flexDirection: 'column', gap: '4px'}}>
+                                            {/* <div className="title_20" style={{display: 'flex', flexDirection: 'column', gap: '4px'}}>
                                             <Link href="tel:+33 752158205" className="color_white">+33 752158205</Link>
                                                     <Link href="tel:+91 8848009689" className="color_white">+91 8848009689</Link>
                                                     <Link href="tel:+91 9709733933" className="color_white">+91 9709733933</Link>
                                                   
-                                                </div>
+                                                </div> */}
                                             </div>
                                        
                                         </div>
