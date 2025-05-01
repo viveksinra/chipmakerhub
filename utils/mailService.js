@@ -19,7 +19,7 @@ const createTransporter = () => {
 
 // Company information to include in all emails
 const companyInfo = {
-  name: 'ChipMakersHub',
+  name: 'ChipMakersHub Technologies Pvt Ltd',
   logo: '/assets/images/logo/ChipMakersHub.png', // Local path
   website: 'https://chipmakershub.com',
   email: 'contact@chipmakershub.com',
