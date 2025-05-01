@@ -73,59 +73,78 @@ const emailHeader = `
       height: 36px;
       line-height: 36px;
       text-align: center;
-      background-color: #2f55d4;
       color: white !important;
       border-radius: 50%;
       font-size: 18px;
       text-decoration: none;
     }
+    /* Outlook-specific fix */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+      line-height: 100%;
+    }
+    table td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
   </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; background-color: #f9f9f9;">
-  <div style="max-width: 650px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 650px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
     <!-- Header with logo -->
-    <div style="padding: 25px 0; text-align: center; background-color: #2564eb;">
-      <img src="${companyInfo.website}/assets/images/logo/ChipMakersHubWhite.png" alt="${companyInfo.name}" style="max-width: 220px; height: auto;" />
-    </div>
+    <tr>
+      <td align="center" style="padding: 25px 0; text-align: center; background-color: #2564eb;">
+        <img src="${companyInfo.website}/assets/images/logo/ChipMakersHubWhite.png" alt="${companyInfo.name}" width="200" height="auto" style="width: 200px; height: auto; display: block; border: 0;" />
+      </td>
+    </tr>
     <!-- Content Area -->
-    <div style="padding: 30px 40px; line-height: 1.6;">
+    <tr>
+      <td style="padding: 30px 40px; line-height: 1.6;">
 `;
 
 const emailFooter = `
-    </div>
+      </td>
+    </tr>
     <!-- Company Info Section -->
-    <div style="background-color: #f5f7fd; padding: 25px 40px; border-top: 1px solid #e6e9f0;">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td>
-            <h3 style="margin: 0 0 15px; color: #2f55d4; font-size: 18px; font-weight: 600;">${companyInfo.name}</h3>
-            <p style="margin: 4px 0; color: #555;">
-              <a href="mailto:${companyInfo.email}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">${companyInfo.email}</a>
-            </p>
-          
-            <p style="margin: 4px 0; color: #555;">
-              <a href="${companyInfo.website}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">${companyInfo.website}</a>
-            </p>
-          </td>
-        </tr>
-      </table>
-    </div>
+    <tr>
+      <td style="background-color: #f5f7fd; padding: 25px 40px; border-top: 1px solid #e6e9f0;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td>
+              <h3 style="margin: 0 0 15px; color: #2f55d4; font-size: 18px; font-weight: 600;">${companyInfo.name}</h3>
+              <p style="margin: 4px 0; color: #555;">
+                <a href="mailto:${companyInfo.email}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">${companyInfo.email}</a>
+              </p>
+            
+              <p style="margin: 4px 0; color: #555;">
+                <a href="${companyInfo.website}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">${companyInfo.website}</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
     
     <!-- Social Links Section -->
-    <div style="background-color: #ffffff; padding: 20px; text-align: center; border-top: 1px solid #e6e9f0;">
-      <p style="margin: 0 0 15px; font-size: 15px; color: #555; font-weight: 600;">Connect with us</p>
-      <div>
-        ${socialLinks.map(social => 
-          `<a href="${social.url}" target="_blank" class="social-icon" title="${social.name}" style="display: inline-block; margin: 0 8px; width: 36px; height: 36px; line-height: 36px; text-align: center; text-decoration: none; vertical-align: middle; background: none; border-radius: 0;">
-            <img src="${social.pngIcon}" alt="${social.name}" style="width: 24px; height: 24px; vertical-align: middle; display: inline-block;" />
-          </a>`
-        ).join('')}
-      </div>
-      <p style="margin-top: 30px; font-size: 12px; color: #888;">
-        This email was sent from an automated system. Please do not reply to this message.
-      </p>
-    </div>
-  </div>
+    <tr>
+      <td style="background-color: #ffffff; padding: 20px; text-align: center; border-top: 1px solid #e6e9f0;">
+        <p style="margin: 0 0 15px; font-size: 15px; color: #555; font-weight: 600;">Connect with us</p>
+        <table cellpadding="0" cellspacing="0" border="0" align="center">
+          <tr>
+            ${socialLinks.map(social => 
+              `<td align="center" style="padding: 0 8px;">
+                <a href="${social.url}" target="_blank" title="${social.name}" style="display: inline-block; margin: 0 8px; text-decoration: none; vertical-align: middle;">
+                  <img src="${social.pngIcon}" alt="${social.name}" width="20" height="20" style="width: 20px; height: 20px; vertical-align: middle; display: inline-block; border: 0;" />
+                </a>
+              </td>`
+            ).join('')}
+          </tr>
+        </table>
+        <p style="margin-top: 30px; font-size: 12px; color: #888;">
+          This email was sent from an automated system. Please do not reply to this message.
+        </p>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
 `;
@@ -243,30 +262,46 @@ export const sendCareerApplication = async (formData) => {
  */
 export const sendCareerConfirmation = async (to, name, position) => {
   const messageBody = `
-    <div style="text-align: center; padding-bottom: 25px;">
-      <h1 style="color: #2f55d4; font-size: 28px; margin: 0 0 15px;">Application Received</h1>
-      <div style="display: inline-block; background-color: #eef2ff; border-radius: 50%; width: 80px; height: 80px; line-height: 80px; margin-bottom: 20px;">
-        <span style="font-size: 38px;">✓</span>
-      </div>
-    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="text-align:center; margin-bottom:25px;">
+      <tr>
+        <td align="center" style="padding-bottom: 25px;">
+          <h1 style="color: #2f55d4; font-size: 28px; margin: 0 0 15px;">Application Received</h1>
+          <table border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;">
+            <tr>
+              <td align="center" width="80" height="80" bgcolor="#eef2ff" style="border-radius: 50%; width:80px; height:80px; text-align:center; vertical-align:middle; margin-bottom:20px;">
+                <span style="font-size: 38px; line-height:80px; display:inline-block;">✓</span>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
     
-    <div style="background-color: #f9fafd; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
-      <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${name}</strong>,</p>
-      <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-        Thank you for applying for the <strong style="color: #2f55d4;">${position}</strong> position at ${companyInfo.name}. We've received your application and appreciate your interest in joining our team.
-      </p>
-      <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-        Our hiring team will review your application carefully and will be in touch if your qualifications match our requirements for the role.
-      </p>
-      <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
-        In the meantime, feel free to visit our <a href="${companyInfo.website}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">website</a> to learn more about our company and what we do in the semiconductor industry.
-      </p>
-    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f9fafd; border-radius: 8px; margin-bottom: 25px;">
+      <tr>
+        <td style="padding: 25px;">
+          <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${name}</strong>,</p>
+          <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
+            Thank you for applying for the <strong style="color: #2f55d4;">${position}</strong> position at ${companyInfo.name}. We've received your application and appreciate your interest in joining our team.
+          </p>
+          <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
+            Our hiring team will review your application carefully and will be in touch if your qualifications match our requirements for the role.
+          </p>
+          <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
+            In the meantime, feel free to visit our <a href="${companyInfo.website}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">website</a> to learn more about our company and what we do in the semiconductor industry.
+          </p>
+        </td>
+      </tr>
+    </table>
     
-    <div style="text-align: center; margin-top: 30px;">
-      <p style="margin: 0 0 8px; color: #555; font-size: 16px;">Questions about your application?</p>
-      <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px; background-color: #2f55d4; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
-    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="text-align: center; margin-top: 30px;">
+      <tr>
+        <td align="center">
+          <p style="margin: 0 0 8px; color: #555; font-size: 16px;">Questions about your application?</p>
+          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px; background-color: #2f55d4; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
+        </td>
+      </tr>
+    </table>
   `;
   
   const mailOptions = {
@@ -334,27 +369,37 @@ export const sendContactNotification = async (formData) => {
  */
 export const sendContactConfirmation = async (to, name) => {
   const messageBody = `
-    <div style="text-align: center; padding-bottom: 25px;">
-      <h1 style="color: #2f55d4; font-size: 28px; margin: 0 0 15px;">Message Received</h1>
-      <div style="display: inline-block; background-color: #eef2ff; border-radius: 50%; width: 80px; height: 80px; line-height: 80px; margin-bottom: 20px;">
-        <span style="font-size: 38px;">✓</span>
-      </div>
-    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="text-align:center; margin-bottom:25px;">
+      <tr>
+        <td align="center" style="padding-bottom: 25px;">
+          <h1 style="color: #2f55d4; font-size: 28px; margin: 0 0 15px;">Message Received</h1>
+          <table border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;">
+            <tr>
+              <td align="center" width="80" height="80" bgcolor="#eef2ff" style="border-radius: 50%; width:80px; height:80px; text-align:center; vertical-align:middle; margin-bottom:20px;">
+                <span style="font-size: 38px; line-height:80px; display:inline-block;">✓</span>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
     
-    <div style="background-color: #f9fafd; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
-      <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${name}</strong>,</p>
-      <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-        Thank you for reaching out to ${companyInfo.name}. We've received your message and a member of our team will get back to you as soon as possible.
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f9fafd; border-radius: 8px; margin-bottom: 25px;">
+      <tr>
+        <td style="padding: 25px;">
+          <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${name}</strong>,</p>
+          <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
+            Thank you for reaching out to ${companyInfo.name}. We've received your message and a member of our team will get back to you as soon as possible.
+          </p>
+           <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
+        At ${companyInfo.name}, we specialize in connecting companies with top VLSI talent for semiconductor design projects. Our network includes experienced engineers specialized in various aspects of chip design and verification.
       </p>
-      <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-        At ${companyInfo.name}, we connect VLSI talent with opportunities in the semiconductor industry. Our platform helps engineers and companies collaborate on cutting-edge chip design projects.
-      </p>
-      <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
-        In the meantime, feel free to explore our <a href="${companyInfo.website}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">website</a> to learn more about our services.
-      </p>
-    </div>
-    
-
+          <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
+            In the meantime, feel free to explore our <a href="${companyInfo.website}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">website</a> to learn more about our services.
+          </p>
+        </td>
+      </tr>
+    </table>
   `;
   
   const mailOptions = {
@@ -531,31 +576,47 @@ export const sendCompanyProjectNotification = async (formData) => {
  */
 export const sendCompanyProjectConfirmation = async (to, companyName, contactPersonName, projectTitle) => {
   const messageBody = `
-    <div style="text-align: center; padding-bottom: 25px;">
-      <h1 style="color: #2f55d4; font-size: 28px; margin: 0 0 15px;">Project Submission Received</h1>
-      <div style="display: inline-block; background-color: #eef2ff; border-radius: 50%; width: 80px; height: 80px; line-height: 80px; margin-bottom: 20px;">
-        <span style="font-size: 38px;">✓</span>
-      </div>
-    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="text-align:center; margin-bottom:25px;">
+      <tr>
+        <td align="center" style="padding-bottom: 25px;">
+          <h1 style="color: #2f55d4; font-size: 28px; margin: 0 0 15px;">Project Submission Received</h1>
+          <table border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;">
+            <tr>
+              <td align="center" width="80" height="80" bgcolor="#eef2ff" style="border-radius: 50%; width:80px; height:80px; text-align:center; vertical-align:middle; margin-bottom:20px;">
+                <span style="font-size: 38px; line-height:80px; display:inline-block;">✓</span>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
     
-    <div style="background-color: #f9fafd; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
-      <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${contactPersonName}</strong>,</p>
-      <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-        Thank you for submitting your project requirements for <strong style="color: #2f55d4;">${projectTitle}</strong> from ${companyName}. We've received your submission and are excited about the opportunity to connect you with the right talent.
-      </p>
-      <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-        At ${companyInfo.name}, we specialize in connecting companies with top VLSI talent for semiconductor design projects. Our network includes experienced engineers specialized in various aspects of chip design and verification.
-      </p>
-      <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
-        Our team will review the details and get back to you shortly to discuss how we can assist with your project needs. We're committed to finding the best talent match for your requirements.
-      </p>
-    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f9fafd; border-radius: 8px; margin-bottom: 25px;">
+      <tr>
+        <td style="padding: 25px;">
+          <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${contactPersonName}</strong>,</p>
+          <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
+            Thank you for submitting your project requirements for <strong style="color: #2f55d4;">${projectTitle}</strong> from ${companyName}. We've received your submission and are excited about the opportunity to connect you with the right talent.
+          </p>
+          <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
+            At ${companyInfo.name}, we specialize in connecting companies with top VLSI talent for semiconductor design projects. Our network includes experienced engineers specialized in various aspects of chip design and verification.
+          </p>
+          <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
+            Our team will review the details and get back to you shortly to discuss how we can assist with your project needs. We're committed to finding the best talent match for your requirements.
+          </p>
+        </td>
+      </tr>
+    </table>
     
-    <div style="margin-top: 20px; padding: 20px; background-color: #fff; border: 1px solid #e6e9f0; border-radius: 8px; text-align: center;">
-      <h3 style="color: #2f55d4; margin: 0 0 15px; font-size: 18px;">Have Questions or Need to Update Your Requirements?</h3>
-      <p style="margin: 0 0 15px; color: #555; font-size: 16px;">Our team is ready to assist you with any questions about your project submission.</p>
-      <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px; background-color: #2f55d4; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
-    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 20px; border: 1px solid #e6e9f0; border-radius: 8px;">
+      <tr>
+        <td align="center" style="padding: 20px; background-color: #fff;">
+          <h3 style="color: #2f55d4; margin: 0 0 15px; font-size: 18px;">Have Questions or Need to Update Your Requirements?</h3>
+          <p style="margin: 0 0 15px; color: #555; font-size: 16px;">Our team is ready to assist you with any questions about your project submission.</p>
+          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px; background-color: #2f55d4; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
+        </td>
+      </tr>
+    </table>
   `;
   
   const mailOptions = {
@@ -634,54 +695,91 @@ export const sendFreelancerApplication = async (formData) => {
  */
 export const sendFreelancerConfirmation = async (to, name) => {
   const messageBody = `
-    <div style="text-align: center; padding-bottom: 25px;">
-      <h1 style="color: #2f55d4; font-size: 28px; margin: 0 0 15px;">Application Received</h1>
-      <div style="display: inline-block; background-color: #eef2ff; border-radius: 50%; width: 80px; height: 80px; line-height: 80px; margin-bottom: 20px;">
-        <span style="font-size: 38px;">✓</span>
-      </div>
-    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="text-align:center; margin-bottom:25px;">
+      <tr>
+        <td align="center" style="padding-bottom: 25px;">
+          <h1 style="color: #2f55d4; font-size: 28px; margin: 0 0 15px;">Application Received</h1>
+          <table border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;">
+            <tr>
+              <td align="center" width="80" height="80" bgcolor="#eef2ff" style="border-radius: 50%; width:80px; height:80px; text-align:center; vertical-align:middle; margin-bottom:20px;">
+                <span style="font-size: 38px; line-height:80px; display:inline-block;">✓</span>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
     
-    <div style="background-color: #f9fafd; border-radius: 8px; padding: 25px; margin-bottom: 25px;">
-      <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${name}</strong>,</p>
-      <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-        Thank you for applying to join our freelancer network at ${companyInfo.name}. We've received your application and are excited about the possibility of working with you.
-      </p>
-      <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-        ${companyInfo.name} is a leading platform connecting VLSI professionals with semiconductor companies worldwide. We help talented engineers find exciting projects and help companies access specialized expertise for their chip design needs.
-      </p>
-      <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
-        Our team will review your expertise and experience, and we'll get back to you shortly about potential opportunities that match your skill set.
-      </p>
-    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f9fafd; border-radius: 8px; margin-bottom: 25px;">
+      <tr>
+        <td style="padding: 25px;">
+          <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${name}</strong>,</p>
+          <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
+            Thank you for applying to join our freelancer network at ${companyInfo.name}. We've received your application and are excited about the possibility of working with you.
+          </p>
+          <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
+            ${companyInfo.name} is a leading platform connecting VLSI professionals with semiconductor companies worldwide. We help talented engineers find exciting projects and help companies access specialized expertise for their chip design needs.
+          </p>
+          <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
+            Our team will review your expertise and experience, and we'll get back to you shortly about potential opportunities that match your skill set.
+          </p>
+        </td>
+      </tr>
+    </table>
     
-    <div style="margin: 30px 0; text-align: center;">
-      <div style="display: inline-block; max-width: 500px;">
-        <h3 style="color: #2f55d4; margin: 0 0 15px; font-size: 18px;">What Happens Next?</h3>
-        <div style="display: flex; align-items: flex-start; margin-bottom: 15px; text-align: left;">
-          <div style="background-color: #2f55d4; color: white; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px; flex-shrink: 0;">1</div>
-          <div>
-            <p style="margin: 0; color: #555; font-size: 15px;">Our team reviews your application and expertise</p>
-          </div>
-        </div>
-        <div style="display: flex; align-items: flex-start; margin-bottom: 15px; text-align: left;">
-          <div style="background-color: #2f55d4; color: white; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px; flex-shrink: 0;">2</div>
-          <div>
-            <p style="margin: 0; color: #555; font-size: 15px;">We match you with relevant project opportunities</p>
-          </div>
-        </div>
-        <div style="display: flex; align-items: flex-start; text-align: left;">
-          <div style="background-color: #2f55d4; color: white; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px; flex-shrink: 0;">3</div>
-          <div>
-            <p style="margin: 0; color: #555; font-size: 15px;">We contact you to discuss specific projects and next steps</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="margin: 30px 0; text-align: center;">
+      <tr>
+        <td align="center">
+          <table border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 500px;">
+            <tr>
+              <td align="center">
+                <h3 style="color: #2f55d4; margin: 0 0 15px; font-size: 18px;">What Happens Next?</h3>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 15px;">
+                  <tr valign="top">
+                    <td width="30" align="center" style="background-color: #2f55d4; color: white; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">1</td>
+                    <td width="15"></td>
+                    <td align="left">
+                      <p style="margin: 0; color: #555; font-size: 15px;">Our team reviews your application and expertise</p>
+                    </td>
+                  </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 15px;">
+                  <tr valign="top">
+                    <td width="30" align="center" style="background-color: #2f55d4; color: white; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">2</td>
+                    <td width="15"></td>
+                    <td align="left">
+                      <p style="margin: 0; color: #555; font-size: 15px;">We match you with relevant project opportunities</p>
+                    </td>
+                  </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr valign="top">
+                    <td width="30" align="center" style="background-color: #2f55d4; color: white; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">3</td>
+                    <td width="15"></td>
+                    <td align="left">
+                      <p style="margin: 0; color: #555; font-size: 15px;">We contact you to discuss specific projects and next steps</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
     
-    <div style="text-align: center; margin-top: 20px;">
-      <p style="margin: 0 0 8px; color: #555; font-size: 16px;">Questions about your application?</p>
-      <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px; background-color: #2f55d4; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
-    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="text-align: center; margin-top: 20px;">
+      <tr>
+        <td align="center">
+          <p style="margin: 0 0 8px; color: #555; font-size: 16px;">Questions about your application?</p>
+          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px; background-color: #2f55d4; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
+        </td>
+      </tr>
+    </table>
   `;
   
   const mailOptions = {
