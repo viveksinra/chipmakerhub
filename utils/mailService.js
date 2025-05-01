@@ -609,24 +609,17 @@ export const sendCompanyProjectConfirmation = async (to, companyName, contactPer
         <td style="padding: 25px;">
           <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${contactPersonName}</strong>,</p>
           <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-            Thank you for submitting your project requirements for <strong style="color: #2f55d4;">${projectTitle}</strong> from ${companyName}. We've received your submission and are excited about the opportunity to connect you with the right talent.
+            Thank you for submitting your project requirements to ChipMakersHub Technologies Pvt Ltd. We're excited about the opportunity to collaborate with you.
           </p>
           <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-            At ${companyInfo.name}, we specialize in connecting companies with top VLSI talent for semiconductor design projects. Our network includes experienced engineers specialized in various aspects of chip design and verification.
+            At ChipMakersHub, we specialize in connecting companies with top VLSI talent for semiconductor design projects. Our network includes highly skilled engineers experienced in all areas of chip design, verification, DFT, physical design, and beyond.
           </p>
           <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
-            Our team will review the details and get back to you shortly to discuss how we can assist with your project needs. We're committed to finding the best talent match for your requirements.
+            Our team is currently reviewing the details you submitted. We will get back to you shortly to discuss how we can best support your project needs. We're committed to finding the perfect talent match to help you achieve your goals.
           </p>
-        </td>
-      </tr>
-    </table>
-    
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 20px; border: 1px solid #e6e9f0; border-radius: 8px;">
-      <tr>
-        <td align="center" style="padding: 20px; background-color: #fff;">
-          <h3 style="color: #2f55d4; margin: 0 0 15px; font-size: 18px;">Have Questions or Need to Update Your Requirements?</h3>
-          <p style="margin: 0 0 15px; color: #555; font-size: 16px;">Our team is ready to assist you with any questions about your project submission.</p>
-          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px; color: #2f55d4; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
+          <p style="margin: 15px 0 0; font-size: 16px; color: #444; line-height: 1.7; font-weight: 500;">
+            Thank you for choosing ChipMakersHub — Hire the World's Top VLSI Freelancer!
+          </p>
         </td>
       </tr>
     </table>
@@ -634,7 +627,7 @@ export const sendCompanyProjectConfirmation = async (to, companyName, contactPer
   
   const mailOptions = {
     to,
-    subject: `Project Requirements Received - ${projectTitle}`,
+    subject: `Thank You for Your Submission – ChipMakersHub Technologies Pvt Ltd.`,
     html: emailHeader + messageBody + emailFooter
   };
   
@@ -708,88 +701,22 @@ export const sendFreelancerApplication = async (formData) => {
  */
 export const sendFreelancerConfirmation = async (to, name) => {
   const messageBody = `
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="text-align:center; margin-bottom:25px;">
-      <tr>
-        <td align="center" style="padding-bottom: 25px;">
-          <h1 style="color: #2f55d4; font-size: 28px; margin: 0 0 15px;">Application Received</h1>
-          <table border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;">
-            <tr>
-              <td align="center" width="80" height="80" bgcolor="#eef2ff" style="border-radius: 50%; width:80px; height:80px; text-align:center; vertical-align:middle; margin-bottom:20px;">
-                <span style="font-size: 38px; line-height:80px; display:inline-block;">✓</span>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    
     <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f9fafd; border-radius: 8px; margin-bottom: 25px;">
       <tr>
         <td style="padding: 25px;">
           <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${name}</strong>,</p>
           <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-            Thank you for applying to join our freelancer network at ${companyInfo.name}. We've received your application and are excited about the possibility of working with you.
+            Thank you for applying to join our freelancer network at ChipMakersHub Technologies Pvt Ltd. We're excited about the possibility of working with you.
           </p>
           <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-            ${companyInfo.name} is a leading platform connecting VLSI professionals with semiconductor companies worldwide. We help talented engineers find exciting projects and help companies access specialized expertise for their chip design needs.
+            ChipMakersHub is a leading platform connecting VLSI professionals with semiconductor companies worldwide. We help talented engineers find exciting projects and enable companies to access specialized expertise for their chip design needs.
           </p>
-          <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
-            Our team will review your expertise and experience, and we'll get back to you shortly about potential opportunities that match your skill set.
+          <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
+            Our team will carefully review your expertise and experience, and we'll get back to you shortly regarding potential opportunities that match your skill set.
           </p>
-        </td>
-      </tr>
-    </table>
-    
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="margin: 30px 0; text-align: center;">
-      <tr>
-        <td align="center">
-          <table border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 500px;">
-            <tr>
-              <td align="center">
-                <h3 style="color: #2f55d4; margin: 0 0 15px; font-size: 18px;">What Happens Next?</h3>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 15px;">
-                  <tr valign="top">
-                    <td width="30" align="center" style=" color: #2f55d4; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">1</td>
-                    <td width="15"></td>
-                    <td align="left">
-                      <p style="margin: 0; color: #555; font-size: 15px;">Our team reviews your application and expertise</p>
-                    </td>
-                  </tr>
-                </table>
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 15px;">
-                  <tr valign="top">
-                    <td width="30" align="center" style=" color: #2f55d4; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">2</td>
-                    <td width="15"></td>
-                    <td align="left">
-                      <p style="margin: 0; color: #555; font-size: 15px;">We match you with relevant project opportunities</p>
-                    </td>
-                  </tr>
-                </table>
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr valign="top">
-                    <td width="30" align="center" style=" color: #2f55d4; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">3</td>
-                    <td width="15"></td>
-                    <td align="left">
-                      <p style="margin: 0; color: #555; font-size: 15px;">We contact you to discuss specific projects and next steps</p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="text-align: center; margin-top: 20px;">
-      <tr>
-        <td align="center">
-          <p style="margin: 0 0 8px; color: #555; font-size: 16px;">Questions about your application?</p>
-          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px;  color: #2f55d4; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
+          <p style="margin: 15px 0 0; font-size: 16px; color: #444; line-height: 1.7; font-weight: 500;">
+            Thank you for considering ChipMakersHub — Hire the World's Top VLSI Freelancer!
+          </p>
         </td>
       </tr>
     </table>
@@ -797,7 +724,7 @@ export const sendFreelancerConfirmation = async (to, name) => {
   
   const mailOptions = {
     to,
-    subject: `Freelancer Application Received - ${companyInfo.name}`,
+    subject: `Thank You for Applying – ChipMakersHub Technologies Pvt Ltd.`,
     html: emailHeader + messageBody + emailFooter
   };
   
