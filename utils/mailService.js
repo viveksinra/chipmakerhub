@@ -92,8 +92,14 @@ const emailHeader = `
   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 650px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
     <!-- Header with logo -->
     <tr>
-      <td align="center" style="padding: 25px 0; text-align: center; ">
-        <img src="${companyInfo.website}/assets/images/logo/ChipMakersHub.png" alt="${companyInfo.name}" width="200" height="auto" style="width: 200px; height: auto; display: block; border: 0;" />
+      <td align="center" style="padding: 25px 0;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="center" valign="middle" style="text-align: center;">
+              <img src="${companyInfo.website}/assets/images/logo/ChipMakersHub.png" alt="${companyInfo.name}" width="200" height="auto" style="margin: 0 auto; display: block; border: 0;" />
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
     <!-- Content Area -->
