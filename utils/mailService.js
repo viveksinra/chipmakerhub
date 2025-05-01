@@ -292,23 +292,17 @@ export const sendCareerConfirmation = async (to, name, position) => {
         <td style="padding: 25px;">
           <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${name}</strong>,</p>
           <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-            Thank you for applying for the <strong style="color: #2f55d4;">${position}</strong> position at ${companyInfo.name}. We've received your application and appreciate your interest in joining our team.
+            Thank you for applying for the ${position} position at ChipMakersHub Technologies Pvt Ltd. We appreciate your interest in joining our team.
           </p>
           <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-            Our hiring team will review your application carefully and will be in touch if your qualifications match our requirements for the role.
+            Our hiring team will carefully review your application and will be in touch if your qualifications align with the requirements for the role.
+          </p>
+          <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
+            In the meantime, feel free to explore our website to learn more about our company and the work we do in the semiconductor industry.
           </p>
           <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
-            In the meantime, feel free to visit our <a href="${companyInfo.website}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">website</a> to learn more about our company and what we do in the semiconductor industry.
+            Thank you again for considering ChipMakersHub — Hire the World's Top VLSI Freelancer!
           </p>
-        </td>
-      </tr>
-    </table>
-    
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="text-align: center; margin-top: 30px;">
-      <tr>
-        <td align="center">
-          <p style="margin: 0 0 8px; color: #555; font-size: 16px;">Questions about your application?</p>
-          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px;  color: #2f55d4; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
         </td>
       </tr>
     </table>
@@ -316,7 +310,7 @@ export const sendCareerConfirmation = async (to, name, position) => {
   
   const mailOptions = {
     to,
-    subject: `Application Received - ${position} at ${companyInfo.name}`,
+    subject: `Thank You for Applying – ChipMakersHub Technologies Pvt Ltd.`,
     html: emailHeader + messageBody + emailFooter
   };
   
