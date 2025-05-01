@@ -92,8 +92,8 @@ const emailHeader = `
   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 650px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
     <!-- Header with logo -->
     <tr>
-      <td align="center" style="padding: 25px 0; text-align: center; background-color: #2564eb;">
-        <img src="${companyInfo.website}/assets/images/logo/ChipMakersHubWhite.png" alt="${companyInfo.name}" width="200" height="auto" style="width: 200px; height: auto; display: block; border: 0;" />
+      <td align="center" style="padding: 25px 0; text-align: center; ">
+        <img src="${companyInfo.website}/assets/images/logo/ChipMakersHub.png" alt="${companyInfo.name}" width="200" height="auto" style="width: 200px; height: auto; display: block; border: 0;" />
       </td>
     </tr>
     <!-- Content Area -->
@@ -298,7 +298,7 @@ export const sendCareerConfirmation = async (to, name, position) => {
       <tr>
         <td align="center">
           <p style="margin: 0 0 8px; color: #555; font-size: 16px;">Questions about your application?</p>
-          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px; background-color: #2f55d4; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
+          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px;  color: #2f55d4; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
         </td>
       </tr>
     </table>
@@ -613,7 +613,7 @@ export const sendCompanyProjectConfirmation = async (to, companyName, contactPer
         <td align="center" style="padding: 20px; background-color: #fff;">
           <h3 style="color: #2f55d4; margin: 0 0 15px; font-size: 18px;">Have Questions or Need to Update Your Requirements?</h3>
           <p style="margin: 0 0 15px; color: #555; font-size: 16px;">Our team is ready to assist you with any questions about your project submission.</p>
-          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px; background-color: #2f55d4; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
+          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px; color: #2f55d4; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
         </td>
       </tr>
     </table>
@@ -740,7 +740,7 @@ export const sendFreelancerConfirmation = async (to, name) => {
               <td>
                 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 15px;">
                   <tr valign="top">
-                    <td width="30" align="center" style="background-color: #2f55d4; color: white; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">1</td>
+                    <td width="30" align="center" style=" color: #2f55d4; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">1</td>
                     <td width="15"></td>
                     <td align="left">
                       <p style="margin: 0; color: #555; font-size: 15px;">Our team reviews your application and expertise</p>
@@ -749,7 +749,7 @@ export const sendFreelancerConfirmation = async (to, name) => {
                 </table>
                 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 15px;">
                   <tr valign="top">
-                    <td width="30" align="center" style="background-color: #2f55d4; color: white; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">2</td>
+                    <td width="30" align="center" style=" color: #2f55d4; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">2</td>
                     <td width="15"></td>
                     <td align="left">
                       <p style="margin: 0; color: #555; font-size: 15px;">We match you with relevant project opportunities</p>
@@ -758,7 +758,7 @@ export const sendFreelancerConfirmation = async (to, name) => {
                 </table>
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr valign="top">
-                    <td width="30" align="center" style="background-color: #2f55d4; color: white; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">3</td>
+                    <td width="30" align="center" style=" color: #2f55d4; width: 24px; height: 24px; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 15px;">3</td>
                     <td width="15"></td>
                     <td align="left">
                       <p style="margin: 0; color: #555; font-size: 15px;">We contact you to discuss specific projects and next steps</p>
@@ -776,7 +776,7 @@ export const sendFreelancerConfirmation = async (to, name) => {
       <tr>
         <td align="center">
           <p style="margin: 0 0 8px; color: #555; font-size: 16px;">Questions about your application?</p>
-          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px; background-color: #2f55d4; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
+          <a href="mailto:${companyInfo.email}" style="display: inline-block; padding: 10px 24px;  color: #2f55d4; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 15px;">Contact Us</a>
         </td>
       </tr>
     </table>

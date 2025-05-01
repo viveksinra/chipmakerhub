@@ -219,7 +219,7 @@ export default function Contact() {
                                                             <textarea 
                                                                 id="message"
                                                                 name="message" 
-                                                                placeholder="Additional Information... (Optional)" 
+                                                                placeholder="Additional Information..." 
                                                                 rows={3} 
                                                                 required="required" 
                                                                 data-error="Please, leave us a message."
