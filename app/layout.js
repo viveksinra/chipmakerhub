@@ -18,6 +18,7 @@ import "../public/assets/css/plugins/flaticon_vankine.css"
 import "../public/assets/css/plugins/font-awesome.min.css"
 import "../public/assets/css/plugins/uicons-regular-rounded.css"
 import "../public/assets/css/plugins/uicons-regular-straight.css"
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-J25YQBHP7G"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J25YQBHP7G');
+          `}
+        </Script>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
