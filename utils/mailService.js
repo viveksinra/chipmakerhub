@@ -107,6 +107,10 @@ const emailFooter = `
     <!-- Company Info Section -->
     <tr>
       <td style="background-color: #f5f7fd; padding: 25px 40px; border-top: 1px solid #e6e9f0;">
+        <p style="margin: 0 0 20px; color: #555; font-size: 16px; line-height: 1.5;">
+          Best regards,<br>
+          Team ChipMakersHub Technologies Pvt Ltd
+        </p>
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td>
@@ -389,13 +393,16 @@ export const sendContactConfirmation = async (to, name) => {
         <td style="padding: 25px;">
           <p style="margin: 0 0 15px; font-size: 17px;">Dear <strong>${name}</strong>,</p>
           <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-            Thank you for reaching out to ${companyInfo.name}. We've received your message and a member of our team will get back to you as soon as possible.
+            Thank you for reaching out to ${companyInfo.name}. We've received your message, and a member of our team will get back to you as soon as possible.
           </p>
-           <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
-        At ${companyInfo.name}, we specialize in connecting companies with top VLSI talent for semiconductor design projects. Our network includes experienced engineers specialized in various aspects of chip design and verification.
-      </p>
+          <p style="margin: 0 0 15px; font-size: 16px; color: #444; line-height: 1.7;">
+            At ${companyInfo.name}, we specialize in connecting companies with top VLSI talent for semiconductor design projects. Our network includes experienced engineers skilled in all aspects of chip design, verification, DFT, physical design, and beyond.
+          </p>
           <p style="margin: 0; font-size: 16px; color: #444; line-height: 1.7;">
-            In the meantime, feel free to explore our <a href="${companyInfo.website}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">website</a> to learn more about our services.
+            In the meantime, feel free to explore our <a href="${companyInfo.website}" style="color: #2f55d4; text-decoration: none; font-weight: 500;">website</a> to learn more about our services and how we can support your project needs.
+          </p>
+          <p style="margin: 20px 0 0; font-size: 16px; color: #444; line-height: 1.7; font-weight: 500;">
+            Thank you for choosing ChipMakersHub — Hire the World's Top VLSI Freelancer!
           </p>
         </td>
       </tr>
